@@ -9,7 +9,8 @@ public class TextManager : MonoBehaviour
     public string hotDocName;
     public string lightDocName;
     public char separator;
-    
+    public Canvas instructionsCanvas;
+
     bool allowHot;
 
     List<int> usedRandom = new List<int>();
@@ -74,9 +75,9 @@ public class TextManager : MonoBehaviour
         print(questionsList.Length);
     }
 
-    void Update()
+    public void OnScreenTap()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (!instructionsCanvas.enabled)
         {
             if (usedRandom.Count >= questionsList.Length)
             {

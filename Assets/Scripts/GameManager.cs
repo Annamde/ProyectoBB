@@ -8,8 +8,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { set; get; }
 
-    public Canvas instructionCanvas;
-
     static bool created = false;
 
     public bool allowHot = true;
@@ -29,23 +27,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    private void Start()
-    {
-        if (instructionCanvas != null)
-        {
-            instructionCanvas.enabled = false;
-        }
-        
-    }
-
     public void OnHotCheck()
     {
         allowHot = !allowHot;
         print(allowHot);
-    }
-
-    public void LoadScene(string name)
-    {
-        SceneManager.LoadScene(name);
     }
 }
