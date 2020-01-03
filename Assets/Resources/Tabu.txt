@@ -1,121 +1,101 @@
-NAVIDAD
+ÔªøNAVIDAD
 
 Diciembre
 Papa Noel
 Villancicos
-¡rbol
-Nacimiento/PALMERA
+√Årbol/PALMERA
 
-D·til
+D√°til
 Coco
-¡rbol
-Mono
-TrÛpico/MOSQUITO
+√Årbol
+Mono/MOSQUITO
 
 Picadura
 Rascarse
 Raid
-Espiral
 Insecto/CUNA
 
 Dormir
-BebÈ
-CanciÛn
-Barrotes
+Beb√©
+Canci√≥n
 Mueble/RONCAR
 
 Noche
 Ruido
 Nariz
-Dormir
-Molestar/TENIS
+Dormir/TENIS
 
 Deporte
 Pelota
-Pista
 Raqueta
-Red/¡NGEL
+Red/√ÅNGEL
 
-ParaÌso
-Diablo
+Para√≠so
 Demonio
 Cielo
 Alas/CINE
 
-PelÌcula
+Pel√≠cula
 Pantalla
-Grabar
 Proyectar
-C·mara/NIDO
+C√°mara/NIDO
 
-P·jaro
-Pichones
+P√°jaro
 Huevos
 Casa
-¡rbol/RISA
+√Årbol/RISA
 
-RidÌculo
-CÛmico
+Rid√≠culo
 Carcajada
 Chiste
 Broma/ESPOSAS
 
 Arresto
-PolicÌa
-Mano
+Polic√≠a
 Preso
-MuÒeca/CENIZAS
+Mu√±eca/CENIZAS
 
 Fuego
 Fumar
-Polvo
 Quemar
 Cigarrillo/PASAPORTE
 
 Documento
 Extranjero
 Viajar
-Aduana
-Visa/ANTIFAZ
+Aduana/ANTIFAZ
 
 Ojos
 Tapar
-M·scara
-Carnaval
-Cara/PINOCHO
+M√°scara
+Carnaval/PINOCHO
 
 Mentira
 Nariz
-Gepetto
-MuÒeco
-Cuento/L¡GRIMA
+Mu√±eco
+Cuento/L√ÅGRIMA
 
 Ojos
 Llorar
 Agua
-Gotas
-Triste/GR⁄A
+Triste/GR√öA
 
 Levantar
 Auto
-AverÌa
-Estacionamiento
-Auxilio/CONVENTO
+Aver√≠a
+Estacionamiento/CONVENTO
 
 Iglesia
-H·bito
-ReligiÛn
+Religi√≥n
 Monja
 Cura/NUBE
 
 Cielo
 Despejado
 Lluvia
-Sol
-Trueno/UNIFORME
+Sol/UNIFORME
 
 Vestido
-Igual
 Colegio
-EjÈrcito
-PolicÌa
+Ej√©rcito
+Polic√≠a
