@@ -148,7 +148,8 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
-    Android: com.Yaiza_Castillo.Know_Your_Next
+    Android: com.ToxicTeam.BB
+    Standalone: com.ToxicTeam.BB
   buildNumber: {}
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 16
