@@ -1404,7 +1404,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: "TAB\xDA"
+  m_text: TABU
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b6591f63a5040ed4db5239713ab75ef3, type: 2}
   m_sharedMaterial: {fileID: 21955733144151122, guid: b6591f63a5040ed4db5239713ab75ef3,
@@ -1481,7 +1481,7 @@ MonoBehaviour:
     linkCount: 0
     lineCount: 1
     pageCount: 1
-    materialCount: 2
+    materialCount: 1
   m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1640,8 +1640,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "La primera palabra mostrada es la que el resto tienen que adivinar.\n\nBeben
-    aquellas personas que S\xCD lo hayan hecho.\n\n"
+  m_Text: "La primera palabra mostrada es la que el resto tienen que adivinar.\n\nQuien
+    la adivine, NO BEBE.\nQuienes no la hayan adivinado, BEBEN.\n\nSi los jugadores
+    se rinden, BEBE quien describ\xEDa la palabra. \n\n"
 --- !u!222 &8206461144739517253
 CanvasRenderer:
   m_ObjectHideFlags: 0
