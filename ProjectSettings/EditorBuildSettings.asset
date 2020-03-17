@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tabu.unity
     guid: 86ba3a426c4796c4b89de197d2d4fd2c
+  - enabled: 1
+    path: Assets/Scenes/Retos.unity
+    guid: 9cf162c4bb589d6468af4b0b3ddc6217
   m_configObjects: {}
