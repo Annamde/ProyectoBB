@@ -28,6 +28,7 @@ public class TextManager : MonoBehaviour
     public float maxTime = 30.0f;
     float counterTime = 0.0f;
     public Text counterText; 
+    public Button tabButton;
 
     private void Start()
     {
@@ -85,7 +86,16 @@ public class TextManager : MonoBehaviour
         print(questionsList.Length);
 
         withTime = GameManager.Instance.withTime;
-
+        if (withTime)
+        {
+            tabButton.enabled = false;
+            counterText.enabled = true;
+        }
+        else
+        {
+            tabButton.enabled = true;
+            counterText.enabled = false;
+        }
     }
 
     private void Update()
@@ -106,25 +116,22 @@ public class TextManager : MonoBehaviour
 
     public void OnScreenTap()
     {
-        if (withTime)
+        if (!instructionsCanvas.enabled)
         {
-            if (!instructionsCanvas.enabled)
-            {
-                if (usedRandom.Count >= questionsList.Length)
-                {
-                    i = 0;
+           if (usedRandom.Count >= questionsList.Length)
+           {
+               i = 0;
 
-                    foreach (string s in questionsList)
-                    {
-                        freeRandom.Add(i);
-                        i++;
-                    }
+               foreach (string s in questionsList)
+               {
+                    freeRandom.Add(i);
+                    i++;
+               }
 
-                    usedRandom.Clear();
-                }
+               usedRandom.Clear();
+           }
 
-                screenText.text = questionsList[RandomQuestion()];
-            }
+         screenText.text = questionsList[RandomQuestion()];
         }
     }
 
@@ -133,20 +140,7 @@ public class TextManager : MonoBehaviour
     {
         if (!instructionsCanvas.enabled)
         {
-            if (usedRandom.Count >= questionsList.Length)
-            {
-                i = 0;
-
-                foreach (string s in questionsList)
-                {
-                    freeRandom.Add(i);
-                    i++;
-                }
-
-                usedRandom.Clear();
-            }
-
-            screenText.text = questionsList[RandomQuestion()];
+            OnScreenTap();
         }
     }
 

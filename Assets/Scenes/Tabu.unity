@@ -318,6 +318,7 @@ MonoBehaviour:
   screenText: {fileID: 1507851803}
   maxTime: 30
   counterText: {fileID: 1306813765}
+  tabButton: {fileID: 2061102308}
 --- !u!4 &387744850
 Transform:
   m_ObjectHideFlags: 0

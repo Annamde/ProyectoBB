@@ -12,7 +12,7 @@ public class GameManager : MonoBehaviour
 
     public bool allowHot = true;
 
-    public bool withTime = true;
+    public bool withTime = false;
     //estaria guay poner en el manager los tiempos que le daremos a cada modo, ya que cada uno será diferente (aunq por escena se podrá cambiar)
 
     private void Awake()
