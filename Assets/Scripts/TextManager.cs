@@ -12,6 +12,10 @@ public class TextManager : MonoBehaviour
     public Canvas instructionsCanvas;
 
     bool allowHot;
+    bool withTime;
+
+    float counterTime = 0.0f;
+    public float maxTime = 30.0f;
 
     List<int> usedRandom = new List<int>();
     List<int> freeRandom = new List<int>();
@@ -73,9 +77,52 @@ public class TextManager : MonoBehaviour
         print("total: " + questionsList.Length);
         screenText.text = questionsList[RandomQuestion()];
         print(questionsList.Length);
+
+        withTime = GameManager.Instance.withTime;
+
+    }
+
+    private void Update()
+    {
+        if (withTime)
+        {
+            print(counterTime);
+            counterTime += Time.deltaTime;
+            if (counterTime >= maxTime)
+            {
+                print("CHANGE");
+                GameModeWithTime();
+                counterTime = 0.0f;
+            }
+        }
     }
 
     public void OnScreenTap()
+    {
+        if (withTime)
+        {
+            if (!instructionsCanvas.enabled)
+            {
+                if (usedRandom.Count >= questionsList.Length)
+                {
+                    i = 0;
+
+                    foreach (string s in questionsList)
+                    {
+                        freeRandom.Add(i);
+                        i++;
+                    }
+
+                    usedRandom.Clear();
+                }
+
+                screenText.text = questionsList[RandomQuestion()];
+            }
+        }
+    }
+
+
+    public void GameModeWithTime()
     {
         if (!instructionsCanvas.enabled)
         {
@@ -95,6 +142,7 @@ public class TextManager : MonoBehaviour
             screenText.text = questionsList[RandomQuestion()];
         }
     }
+
 
     int RandomQuestion()
     {

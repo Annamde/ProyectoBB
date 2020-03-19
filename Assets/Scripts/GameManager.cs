@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
 
     public bool allowHot = true;
 
+    public bool withTime = true;
+    //estaria guay poner en el manager los tiempos que le daremos a cada modo, ya que cada uno será diferente (aunq por escena se podrá cambiar)
+
     private void Awake()
     {
         if (!created)
@@ -31,5 +34,10 @@ public class GameManager : MonoBehaviour
     {
         allowHot = !allowHot;
         print(allowHot);
+    }
+
+    public void WithTimeCheck()
+    {
+        withTime = !withTime;
     }
 }
