@@ -316,6 +316,7 @@ MonoBehaviour:
   separator: 47
   instructionsCanvas: {fileID: 8206461144458096977}
   screenText: {fileID: 1507851803}
+  sceeneWithTime: 1
   maxTime: 30
   counterText: {fileID: 1306813765}
   tabButton: {fileID: 2061102308}

@@ -25,6 +25,7 @@ public class TextManager : MonoBehaviour
     int i;
 
     [Header("Time options")]
+    public bool sceeneWithTime = false;
     public float maxTime = 30.0f;
     float counterTime = 0.0f;
     public Text counterText; 
@@ -59,6 +60,8 @@ public class TextManager : MonoBehaviour
         
         allowHot = GameManager.Instance.allowHot;
 
+        withTime = GameManager.Instance.withTime;
+
         if (allowHot && hotTextFile != null)
         {
             if(separator != '-')
@@ -85,32 +88,37 @@ public class TextManager : MonoBehaviour
         screenText.text = questionsList[RandomQuestion()];
         print(questionsList.Length);
 
-        withTime = GameManager.Instance.withTime;
-        if (withTime)
+        print("WITH TIME IN SCENE " + withTime);
+        if (sceeneWithTime)
         {
-            tabButton.enabled = false;
-            counterText.enabled = true;
-        }
-        else
-        {
-            tabButton.enabled = true;
-            counterText.enabled = false;
+            if (withTime)
+            {
+                tabButton.enabled = false;
+                counterText.enabled = true;
+            }
+            else
+            {
+                tabButton.enabled = true;
+                counterText.enabled = false;
+            }
         }
     }
 
     private void Update()
     {
-        if (withTime)
+        if (sceeneWithTime)
         {
-            print(counterTime);
-            counterTime -= Time.deltaTime;
-            if (counterTime <= 0.0f)
+            if (withTime)
             {
-                GameModeWithTime();
-                counterTime = maxTime;
+                counterTime -= Time.deltaTime;
+                if (counterTime <= 0.0f)
+                {
+                    GameModeWithTime();
+                    counterTime = maxTime;
+                }
+
+                counterText.text = Mathf.FloorToInt(counterTime).ToString();
             }
-            
-            counterText.text = Mathf.FloorToInt(counterTime).ToString();
         }
     }
 
