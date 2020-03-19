@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class TextManager : MonoBehaviour
 {
+    [Header("Text options")]
     public string hotDocName;
     public string lightDocName;
     public char separator;
@@ -14,9 +15,8 @@ public class TextManager : MonoBehaviour
     bool allowHot;
     bool withTime;
 
-    float counterTime = 0.0f;
-    public float maxTime = 30.0f;
-
+    
+    
     List<int> usedRandom = new List<int>();
     List<int> freeRandom = new List<int>();
     TextAsset lightTextFile, hotTextFile;
@@ -24,9 +24,15 @@ public class TextManager : MonoBehaviour
     string[] lightQuestionsList, hotQuestionsList, questionsList;
     int i;
 
+    [Header("Time options")]
+    public float maxTime = 30.0f;
+    float counterTime = 0.0f;
+    public Text counterText; 
 
     private void Start()
     {
+        counterTime = maxTime;
+
         i = 0;
 
         lightTextFile = Resources.Load<TextAsset>(lightDocName);
@@ -87,13 +93,14 @@ public class TextManager : MonoBehaviour
         if (withTime)
         {
             print(counterTime);
-            counterTime += Time.deltaTime;
-            if (counterTime >= maxTime)
+            counterTime -= Time.deltaTime;
+            if (counterTime <= 0.0f)
             {
-                print("CHANGE");
                 GameModeWithTime();
-                counterTime = 0.0f;
+                counterTime = maxTime;
             }
+            
+            counterText.text = Mathf.FloorToInt(counterTime).ToString();
         }
     }
 
