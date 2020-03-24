@@ -18,14 +18,11 @@ public class ToggleScript : MonoBehaviour
     {
         allowHot = !allowHot;
         GameManager.Instance.allowHot = allowHot;
-        print(allowHot);
     }
 
     public void WithTimeCheck()
     {
-        print("HOLAAAAAAAAAA");
         withTime = !withTime;
         GameManager.Instance.withTime = withTime;
-        print(withTime);
     }
 }
