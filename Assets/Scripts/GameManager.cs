@@ -30,15 +30,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OnHotCheck()
-    {
-        allowHot = !allowHot;
-        print(allowHot);
-    }
+    //public void OnHotCheck()
+    //{
+      
+    //    allowHot = !allowHot;
+    //    print(allowHot);
+    //}
 
-    public void WithTimeCheck()
-    {
-        withTime = !withTime;
-        print(withTime);
-    }
+    //public void WithTimeCheck()
+    //{
+    //    print("HOLAAAAAAAAAA");
+    //    withTime = !withTime;
+    //    print(withTime);
+    //}
 }

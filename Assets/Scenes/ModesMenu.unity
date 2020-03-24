@@ -198,6 +198,7 @@ GameObject:
   - component: {fileID: 69967276}
   - component: {fileID: 69967275}
   - component: {fileID: 69967274}
+  - component: {fileID: 69967278}
   m_Layer: 5
   m_Name: InstructionsCanvas
   m_TagString: Untagged
@@ -287,6 +288,20 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &69967278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 69967273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef41adf4513dc3f4fb961e2cda2cd061, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allowHot: 1
+  withTime: 1
 --- !u!1 &116471032
 GameObject:
   m_ObjectHideFlags: 0
@@ -3731,7 +3746,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 420994937}
+      - m_Target: {fileID: 69967278}
         m_MethodName: WithTimeCheck
         m_Mode: 1
         m_Arguments:
@@ -4687,7 +4702,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 420994937}
+      - m_Target: {fileID: 69967278}
         m_MethodName: OnHotCheck
         m_Mode: 1
         m_Arguments:
