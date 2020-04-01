@@ -14,7 +14,7 @@ public class TextManager : MonoBehaviour
 
     bool allowHot;
     bool withTime;
-
+    bool timeEnded = false;
     
     
     List<int> usedRandom = new List<int>();
@@ -108,14 +108,21 @@ public class TextManager : MonoBehaviour
     {
         if (sceeneWithTime)
         {
-            if (withTime)
+            if (withTime & !timeEnded)
             {
-                counterTime -= Time.deltaTime;
-                if (counterTime <= 0.0f)
+                if (counterTime <= 0.1f)
                 {
-                    GameModeWithTime();
-                    counterTime = maxTime;
+                    tabButton.enabled = true;
+                    timeEnded = true;
+                    screenText.text = "¡TIEMPO!";
+                    Handheld.Vibrate();
+                    //GameModeWithTime();
+                    //counterTime = maxTime;
                 }
+
+                else
+                    counterTime -= Time.deltaTime;
+
 
                 counterText.text = Mathf.FloorToInt(counterTime).ToString();
             }
@@ -140,6 +147,16 @@ public class TextManager : MonoBehaviour
            }
 
          screenText.text = questionsList[RandomQuestion()];
+
+            if (sceeneWithTime)
+            {
+                if (withTime)
+                {
+                    counterTime = maxTime;
+                    timeEnded = false;
+                    tabButton.enabled = false;
+                }
+            }
         }
     }
 
