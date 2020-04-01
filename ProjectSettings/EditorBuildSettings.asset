@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arte/Quien_Arte.unity
     guid: 08dcc50c39da00545b82d15abdfbbabc
+  - enabled: 1
+    path: Assets/Arte/Mimica_Arte.unity
+    guid: ef7df07c0aa1078488fdbc43f936b57c
   m_configObjects: {}

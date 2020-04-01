@@ -1,0 +1,77 @@
+﻿Regar las plantas
+Modelo
+Comerte un plátano
+Pescar
+Pasear al perro
+Torear
+Mono
+Ordeñar una vaca
+Aullar
+Tocar la flauta
+Hacer el gorila
+Elefante
+Tocar el tambor
+Tocar la guitarra
+Tocar el piano
+Tocar el triangulo
+Tocar el violin
+Tocar las maracas
+Tocar la pandereta
+Ir en bicicleta
+Conducir un coche
+Marearse en un barco
+Ir al espacio
+Marcar un gol
+Cortarse el pelo
+Secarse el pelo
+Perder las gafas
+Lavarse los dientes
+Hacer una foto
+Escuchar musica
+Profesor de Educación Física
+Llamar por teléfono
+Sentarse en una silla
+Cerrar el grifo
+Cambiar de canal
+Jugar a la play
+Jugar al tennis
+Ponerse unos pantalones
+Ponerse un abrigo
+Caminar con tacones
+Ponerse guantes
+Ponerse una gorra
+Beber agua
+Dormir
+Comer
+Dibujar
+Mear
+Soplar una vela
+Profesor
+Policia
+Cocinero
+Doctor
+El rey leon
+La sirenita
+Batman
+Spiderman
+Joker
+Tiburon
+It (la película)
+Star wars
+Harry potter
+Frozen
+Rapuncel
+La bella y la bestia
+Titanic
+Jurassic park
+E.T
+Gladiator
+Psicosis
+Matrix
+El resplandor
+Indiana jones
+El señor de los anillos
+Grease
+El exorcista
+Saw
+Pinocho
