@@ -30,10 +30,16 @@ public class TextManager : MonoBehaviour
     float counterTime = 0.0f;
     public Text counterText; 
     public Button tabButton;
+    public Image outlineText;
 
     private void Start()
     {
         counterTime = maxTime;
+
+        if (outlineText)
+        {
+            outlineText.enabled = true;
+        }
 
         i = 0;
 
@@ -115,9 +121,11 @@ public class TextManager : MonoBehaviour
                     tabButton.enabled = true;
                     timeEnded = true;
                     screenText.text = "¡TIEMPO!";
+                    if (outlineText)
+                    {
+                        outlineText.enabled = false;
+                    }
                     Handheld.Vibrate();
-                    //GameModeWithTime();
-                    //counterTime = maxTime;
                 }
 
                 else
@@ -155,17 +163,13 @@ public class TextManager : MonoBehaviour
                     counterTime = maxTime;
                     timeEnded = false;
                     tabButton.enabled = false;
+                    if(outlineText)
+                    {
+                        outlineText.enabled = true;
+                    }
+                    
                 }
             }
-        }
-    }
-
-
-    public void GameModeWithTime()
-    {
-        if (!instructionsCanvas.enabled)
-        {
-            OnScreenTap();
         }
     }
 

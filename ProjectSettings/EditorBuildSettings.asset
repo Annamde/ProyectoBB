@@ -18,21 +18,21 @@ EditorBuildSettings:
     path: Assets/Scenes/Retos.unity
     guid: 9cf162c4bb589d6468af4b0b3ddc6217
   - enabled: 1
-    path: Assets/Arte/ModesMenu_Arte.unity
+    path: Assets/Arte/Scenes/ModesMenu_Arte.unity
     guid: f56b547868d493541aa6fc3f6f8cc6aa
   - enabled: 1
-    path: Assets/Arte/YoNunca_Arte.unity
+    path: Assets/Arte/Scenes/YoNunca_Arte.unity
     guid: 4ef62866b545e0e4489a0da190c85a17
   - enabled: 1
-    path: Assets/Arte/Tabu_Arte.unity
+    path: Assets/Arte/Scenes/Tabu_Arte.unity
     guid: c80aaccbbe8d5234b8875e080d3c8a15
   - enabled: 1
-    path: Assets/Arte/Retos_Arte.unity
+    path: Assets/Arte/Scenes/Retos_Arte.unity
     guid: 02e62145a0a3f004997e68ed013e9347
   - enabled: 1
-    path: Assets/Arte/Quien_Arte.unity
+    path: Assets/Arte/Scenes/Quien_Arte.unity
     guid: 08dcc50c39da00545b82d15abdfbbabc
   - enabled: 1
-    path: Assets/Arte/Mimica_Arte.unity
+    path: Assets/Arte/Scenes/Mimica_Arte.unity
     guid: ef7df07c0aa1078488fdbc43f936b57c
   m_configObjects: {}
