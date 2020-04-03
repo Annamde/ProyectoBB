@@ -15,6 +15,9 @@ public class GameManager : MonoBehaviour
     public bool withTime = true;
     //estaria guay poner en el manager los tiempos que le daremos a cada modo, ya que cada uno será diferente (aunq por escena se podrá cambiar)
 
+    public bool anyCanvasActive = false;
+
+
     private void Awake()
     {
         if (!created)
@@ -36,17 +39,28 @@ public class GameManager : MonoBehaviour
         {
             if(Input.GetKeyDown(KeyCode.Escape))
             {
-                if(SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+                if (!anyCanvasActive)
                 {
-                    Application.Quit();
-                }
-                else
-                {
-                    SceneManager.LoadScene("ModesMenu_Arte");
+                    if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+                    {
+                        Application.Quit();
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("ModesMenu_Arte");
+                    }
                 }
             }
         }
+
+        //print(anyCanvasActive);
     }
+
+    public void IsAnyCanvasActive()
+    {
+        anyCanvasActive = !anyCanvasActive;
+    }
+
 
     //public void OnHotCheck()
     //{
