@@ -30,9 +30,27 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(Application.platform == RuntimePlatform.Android)
+        {
+            if(Input.GetKeyDown(KeyCode.Escape))
+            {
+                if(SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+                {
+                    Application.Quit();
+                }
+                else
+                {
+                    SceneManager.LoadScene("ModesMenu_Arte");
+                }
+            }
+        }
+    }
+
     //public void OnHotCheck()
     //{
-      
+
     //    allowHot = !allowHot;
     //    print(allowHot);
     //}
