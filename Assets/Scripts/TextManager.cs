@@ -25,11 +25,10 @@ public class TextManager : MonoBehaviour
     int i;
 
     [Header("Time options")]
-    public bool sceeneWithTime = false;
+    public bool sceneWithTime = false;
     public float maxTime = 30.0f;
     float counterTime = 0.0f;
     public Text counterText; 
-    public Button tabButton;
     public Image outlineText;
 
     private void Start()
@@ -95,30 +94,16 @@ public class TextManager : MonoBehaviour
         print(questionsList.Length);
 
         print("WITH TIME IN SCENE " + withTime);
-        if (sceeneWithTime)
-        {
-            if (withTime)
-            {
-                tabButton.enabled = false;
-                counterText.enabled = true;
-            }
-            else
-            {
-                tabButton.enabled = true;
-                counterText.enabled = false;
-            }
-        }
     }
 
     private void Update()
     {
-        if (sceeneWithTime)
+        if (sceneWithTime)
         {
             if (withTime & !timeEnded)
             {
                 if (counterTime <= 0.1f)
                 {
-                    tabButton.enabled = true;
                     timeEnded = true;
                     screenText.text = "¡TIEMPO!";
                     if (outlineText)
@@ -156,13 +141,12 @@ public class TextManager : MonoBehaviour
 
          screenText.text = questionsList[RandomQuestion()];
 
-            if (sceeneWithTime)
+            if (sceneWithTime)
             {
                 if (withTime)
                 {
                     counterTime = maxTime;
                     timeEnded = false;
-                    tabButton.enabled = false;
                     if(outlineText)
                     {
                         outlineText.enabled = true;
