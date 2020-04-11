@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arte/Scenes/Mimica_Arte.unity
     guid: ef7df07c0aa1078488fdbc43f936b57c
+  - enabled: 1
+    path: Assets/Arte/Scenes/Letras_Arte.unity
+    guid: f0fe4884806782a4ab89d29e7b97f13a
   m_configObjects: {}
