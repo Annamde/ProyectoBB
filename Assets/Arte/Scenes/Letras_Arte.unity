@@ -2437,9 +2437,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "saldr\xE1 en pantalla una letra al azar y tres tipos de palabras.\n\nantes
-    de que se acabe el tiempo, el jugador al que le toque deber\xE1 decir una palabra
-    de cada tipo.\n\nsi lo cumple, el resto bebe.\n\nsi no, bebe el participante. "
+  m_Text: "saldr\xE1 en pantalla una letra al azar y \ntres tipos de palabras.\n\nantes
+    de que se acabe el tiempo, el jugador \nal que le toque deber\xE1 decir \nuna
+    palabra de cada tipo.\n\nsi lo cumple, el resto bebe.\n\nsi no, bebe el participante. "
 --- !u!222 &8206461144739517253
 CanvasRenderer:
   m_ObjectHideFlags: 0
