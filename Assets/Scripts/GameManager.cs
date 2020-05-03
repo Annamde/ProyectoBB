@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
     public bool allowHot = true;
 
     public bool withTime = true;
+
+    public bool switching = true;
     //estaria guay poner en el manager los tiempos que le daremos a cada modo, ya que cada uno será diferente (aunq por escena se podrá cambiar)
 
     public bool anyCanvasActive = false;
@@ -53,7 +55,6 @@ public class GameManager : MonoBehaviour
             }
         }
 
-        //print(anyCanvasActive);
     }
 
     public void IsAnyCanvasActive()
@@ -61,18 +62,4 @@ public class GameManager : MonoBehaviour
         anyCanvasActive = !anyCanvasActive;
     }
 
-
-    //public void OnHotCheck()
-    //{
-
-    //    allowHot = !allowHot;
-    //    print(allowHot);
-    //}
-
-    //public void WithTimeCheck()
-    //{
-    //    print("HOLAAAAAAAAAA");
-    //    withTime = !withTime;
-    //    print(withTime);
-    //}
 }

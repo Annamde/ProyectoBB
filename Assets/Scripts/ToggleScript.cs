@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,11 +19,13 @@ public class ToggleScript : MonoBehaviour
     {
         allowHot = !allowHot;
         GameManager.Instance.allowHot = allowHot;
+        GameManager.Instance.switching = true;
     }
 
     public void WithTimeCheck()
     {
         withTime = !withTime;
         GameManager.Instance.withTime = withTime;
+        GameManager.Instance.switching = true;
     }
 }
