@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ToggleScript : MonoBehaviour
 {
@@ -15,17 +16,21 @@ public class ToggleScript : MonoBehaviour
         GameManager.Instance.withTime = withTime;
     }
 
-    public void OnHotCheck()
+    public void OnHotCheck(MovementToggleScript a)
     {
         allowHot = !allowHot;
         GameManager.Instance.allowHot = allowHot;
-        GameManager.Instance.switching = true;
+        a.CheckToggleSprite(allowHot);
+
+        //GameManager.Instance.switching = true;
     }
 
-    public void WithTimeCheck()
+    public void WithTimeCheck(MovementToggleScript a)
     {
         withTime = !withTime;
         GameManager.Instance.withTime = withTime;
-        GameManager.Instance.switching = true;
+        a.CheckToggleSprite(withTime);
+
+        //GameManager.Instance.switching = true;
     }
 }

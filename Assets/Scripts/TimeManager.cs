@@ -19,6 +19,15 @@ public class TimeManager : MonoBehaviour
     {
         counterTime = maxTime;
 
+        if(!GameManager.Instance.withTime)
+        {
+            this.enabled = false;
+        }
+        else
+        {
+            this.enabled = true;
+        }
+
         if (outlineTextImage)
         {
             outlineTextImage.enabled = true;

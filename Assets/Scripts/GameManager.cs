@@ -14,10 +14,11 @@ public class GameManager : MonoBehaviour
 
     public bool withTime = true;
 
-    public bool switching = true;
+    //public bool switching = true;
     //estaria guay poner en el manager los tiempos que le daremos a cada modo, ya que cada uno será diferente (aunq por escena se podrá cambiar)
 
     public bool anyCanvasActive = false;
+    
 
 
     private void Awake()
@@ -33,7 +34,10 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
+       
+
     }
+
 
     private void Update()
     {

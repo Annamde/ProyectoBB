@@ -519,6 +519,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowHot: 1
   withTime: 1
+  switching: 1
   anyCanvasActive: 0
 --- !u!4 &838418357
 Transform:
@@ -1556,8 +1557,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 5, y: 46.8}
-  m_SizeDelta: {x: 990, y: 1334.7}
+  m_AnchoredPosition: {x: 5, y: -108.6}
+  m_SizeDelta: {x: 990, y: 1645.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2061102308
 MonoBehaviour:
