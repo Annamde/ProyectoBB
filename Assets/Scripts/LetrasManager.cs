@@ -11,7 +11,7 @@ public class LetrasManager : MonoBehaviour
     public Text bottomText;
 
     char[] abcArray = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
-    string[] parametersArray = {"famoso", "comida", "país", "objeto", "marca", "animal", "bebida alcohólica", "discoteca"};
+    string[] parametersArray = {"famoso", "comida", "país", "objeto", "marca", "animal", "bebida", "discoteca", "ciudad", "instrumento", "nombre de chica", "nombre de chico"};
 
     void Start()
     {

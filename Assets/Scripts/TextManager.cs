@@ -15,8 +15,8 @@ public class TextManager : MonoBehaviour
     bool allowHot;
     bool withTime;
     bool timeEnded = false;
-    
-    
+
+
     List<int> usedRandom = new List<int>();
     List<int> freeRandom = new List<int>();
     TextAsset lightTextFile, hotTextFile;
@@ -28,7 +28,7 @@ public class TextManager : MonoBehaviour
     public bool sceneWithTime = false;
     public float maxTime = 30.0f;
     float counterTime = 0.0f;
-    public Text counterText; 
+    public Text counterText;
     public Image outlineText;
 
     private void Start()
@@ -47,7 +47,7 @@ public class TextManager : MonoBehaviour
 
         if (lightTextFile != null)
         {
-            if(separator != '-')
+            if (separator != '-')
                 lightQuestionsList = lightTextFile.text.Split(separator);
             else
                 lightQuestionsList = lightTextFile.text.Split('\n');
@@ -62,18 +62,18 @@ public class TextManager : MonoBehaviour
 
         else
             screenText.text = "No text file found";
-        
+
         allowHot = GameManager.Instance.allowHot;
 
         withTime = GameManager.Instance.withTime;
 
         if (allowHot && hotTextFile != null)
         {
-            if(separator != '-')
+            if (separator != '-')
                 hotQuestionsList = hotTextFile.text.Split(separator);
             else
                 hotQuestionsList = hotTextFile.text.Split('\n');
-            
+
             print("hots: " + hotQuestionsList.Length);
             questionsList = new string[lightQuestionsList.Length + hotQuestionsList.Length];
             lightQuestionsList.CopyTo(questionsList, 0);
@@ -94,6 +94,16 @@ public class TextManager : MonoBehaviour
         print(questionsList.Length);
 
         print("WITH TIME IN SCENE " + withTime);
+
+        if (withTime)
+        {
+            if (counterText != null)
+            {
+                counterText.enabled = true;
+            }
+        }
+        else
+            counterText.enabled = false;
     }
 
     private void Update()
@@ -126,20 +136,20 @@ public class TextManager : MonoBehaviour
     {
         if (!instructionsCanvas.enabled)
         {
-           if (usedRandom.Count >= questionsList.Length)
-           {
-               i = 0;
+            if (usedRandom.Count >= questionsList.Length)
+            {
+                i = 0;
 
-               foreach (string s in questionsList)
-               {
+                foreach (string s in questionsList)
+                {
                     freeRandom.Add(i);
                     i++;
-               }
+                }
 
-               usedRandom.Clear();
-           }
+                usedRandom.Clear();
+            }
 
-         screenText.text = questionsList[RandomQuestion()];
+            screenText.text = questionsList[RandomQuestion()];
 
             if (sceneWithTime)
             {
@@ -147,11 +157,11 @@ public class TextManager : MonoBehaviour
                 {
                     counterTime = maxTime;
                     timeEnded = false;
-                    if(outlineText)
+                    if (outlineText)
                     {
                         outlineText.enabled = true;
                     }
-                    
+
                 }
             }
         }

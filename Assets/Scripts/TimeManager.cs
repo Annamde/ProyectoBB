@@ -14,12 +14,13 @@ public class TimeManager : MonoBehaviour
     public Text counterText;
     public Text outlineText;
     public Image outlineTextImage;
+    bool withTime = true;
 
     void Start()
     {
         counterTime = maxTime;
 
-        if(!GameManager.Instance.withTime)
+        if (!GameManager.Instance.withTime)
         {
             this.enabled = false;
         }
@@ -32,30 +33,42 @@ public class TimeManager : MonoBehaviour
         {
             outlineTextImage.enabled = true;
         }
+
+        withTime = GameManager.Instance.withTime;
+
+        if (withTime)
+            counterText.enabled = true;
+        else
+            counterText.enabled = false;
     }
 
     void Update()
     {
-        if (counterTime <= 0.1f)
-        {
-            timeEnded = true;
-            outlineTextImage.enabled = false;
-            outlineText.text = "";
-            topText.text = "";
-            centerText.text = "¡TIEMPO!";
-            bottomText.text = "";
-            
-            if (outlineTextImage)
+        if (withTime)
+            if (!timeEnded)
             {
-                outlineTextImage.enabled = false;
+                if (counterTime <= 0.1f)
+                {
+                    timeEnded = true;
+                    outlineTextImage.enabled = false;
+                    outlineText.text = "";
+                    topText.text = "";
+                    centerText.text = "¡TIEMPO!";
+                    bottomText.text = "";
+
+                    if (outlineTextImage)
+                    {
+                        outlineTextImage.enabled = false;
+                    }
+                    Handheld.Vibrate();
+                    print("vibra");
+                }
+
+                else
+                    counterTime -= Time.deltaTime;
+
+                counterText.text = Mathf.FloorToInt(counterTime).ToString();
             }
-            Handheld.Vibrate();
-        }
-
-        else
-            counterTime -= Time.deltaTime;
-
-        counterText.text = Mathf.FloorToInt(counterTime).ToString();
     }
 
     public void OnScreenTap()
