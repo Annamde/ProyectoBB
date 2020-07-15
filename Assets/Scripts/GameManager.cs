@@ -13,12 +13,16 @@ public class GameManager : MonoBehaviour
     public bool allowHot = true;
 
     public bool withTime = true;
-
-    //public bool switching = true;
+    
     //estaria guay poner en el manager los tiempos que le daremos a cada modo, ya que cada uno será diferente (aunq por escena se podrá cambiar)
 
     public bool anyCanvasActive = false;
-    
+
+    public Canvas yonunca, tabu, retos, quienesmas, letras, mimica;
+
+    private Canvas activecanvas;
+
+    List<Canvas> allCanvas = new List<Canvas>();
 
 
     private void Awake()
@@ -34,32 +38,139 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-       
+        
+    }
 
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+        {
+            //falta
+            if (GameObject.Find("YoNuncaInstructions"))
+            {
+                //allCanvas.Add(Canvas.Find("YoNuncaInstructions"));
+            }
+
+            allCanvas.Add(yonunca);
+            allCanvas.Add(tabu);
+            allCanvas.Add(retos);
+            allCanvas.Add(quienesmas);
+            allCanvas.Add(letras);
+            allCanvas.Add(mimica);
+        }
+      
+
+        Screen.sleepTimeout = SleepTimeout.NeverSleep;
+        
     }
 
 
     private void Update()
     {
-        if(Application.platform == RuntimePlatform.Android)
+        print(anyCanvasActive);
+
+        if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
         {
-            if(Input.GetKeyDown(KeyCode.Escape))
+            for (int i = 0; i < allCanvas.Count; i++)
             {
-                if (!anyCanvasActive)
+                if (allCanvas[i].isActiveAndEnabled)
                 {
-                    if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
-                    {
-                        Application.Quit();
-                    }
-                    else
-                    {
-                        SceneManager.LoadScene("ModesMenu_Arte");
-                    }
+                    activecanvas = allCanvas[i];
+
+                    anyCanvasActive = true;
+                    return;
+                }
+                else
+                {
+                    activecanvas = null;
                 }
             }
         }
+        //-----------------IMPORTANTISIMO-----------------------
+
+        //DESCOMENTAR PARA LA BUILD
+
+        //if (Application.platform == RuntimePlatform.Android)
+        //{
+        //    if(Input.GetKeyDown(KeyCode.Escape))
+        //    {
+        //        if (!anyCanvasActive)
+        //        {
+        //            if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+        //            {
+        //                Application.Quit();
+        //            }
+        //            else
+        //            {
+        //                SceneManager.LoadScene("ModesMenu_Arte");
+        //            }
+        //        }
+        //        else
+        //        {
+        //            print("SOY UNA GENIA");
+        //            anyCanvasActive = false;
+        //            activecanvas.enabled = false;
+        //        }
+        //    }
+        //}
+
+        //BORRAR PARA LA BUILD
+        //ANNA DEL FUTURO RECUERDA QUE AL ACTIVAR EL CANVAS NO SABEMOS PQ NO VA LO DE APRETAR UN BOTÓN
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            print("ESCAPEEEEEEEEE");
+            if (!anyCanvasActive)
+            {
+                if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+                {
+                    Application.Quit();
+                }
+                else
+                {
+                    SceneManager.LoadScene("ModesMenu_Arte");
+                }
+            }
+            else
+            {
+                print("SOY UNA GENIA");
+                anyCanvasActive = false;
+                activecanvas.enabled = false;
+            }
+        }
+
+
+
+        print(activecanvas);
 
     }
+
+    void CanvasSwitch() //no sirve en algun mom lo borrare
+    {
+        switch(activecanvas.name)
+        {
+            case "yonunca":
+
+                break;
+            case "tabu":
+
+                break;
+            case "retos":
+
+                break;
+            case "quienesmas":
+
+                break;
+            case "letras":
+
+                break;
+            case "mimca":
+
+                break;
+        }
+
+    }
+
 
     public void IsAnyCanvasActive()
     {

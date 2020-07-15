@@ -21,13 +21,11 @@ public class MovementToggleScript : MonoBehaviour
     {
         if (isActive)
         {
-            print("OOOOOOOOON");
             onSprite.SetActive(true);
             offSprite.SetActive(false);
         }
         else
         {
-            print("OFFFFFFFFFFFFFF");
             onSprite.SetActive(false);
             offSprite.SetActive(true);
         }

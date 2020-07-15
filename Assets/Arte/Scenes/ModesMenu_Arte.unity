@@ -2124,6 +2124,12 @@ MonoBehaviour:
   allowHot: 1
   withTime: 1
   anyCanvasActive: 0
+  yonunca: {fileID: 483333251}
+  tabu: {fileID: 2051678989}
+  retos: {fileID: 1927182499}
+  quienesmas: {fileID: 1305601405}
+  letras: {fileID: 1807027498}
+  mimica: {fileID: 590403955}
 --- !u!4 &420994938
 Transform:
   m_ObjectHideFlags: 0
@@ -12863,7 +12869,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -540, y: 0}
+  m_AnchoredPosition: {x: -540, y: 0.00012207031}
   m_SizeDelta: {x: 1080, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1939418818
