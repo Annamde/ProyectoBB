@@ -13,8 +13,6 @@ public class GameManager : MonoBehaviour
     public bool allowHot = true;
 
     public bool withTime = true;
-    
-    //estaria guay poner en el manager los tiempos que le daremos a cada modo, ya que cada uno será diferente (aunq por escena se podrá cambiar)
 
     public bool anyCanvasActive = false;
 
@@ -43,7 +41,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        print("Start");
         if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
         {
 
