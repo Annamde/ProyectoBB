@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public bool anyCanvasActive = false;
 
-    public Canvas yonunca, tabu, retos, quienesmas, letras, mimica;
+    //public Canvas yonunca, tabu, retos, quienesmas, letras, mimica;
 
     private Canvas activecanvas;
 
@@ -43,20 +43,18 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        print("Start");
         if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
         {
-            //falta
-            if (GameObject.Find("YoNuncaInstructions"))
-            {
-                //allCanvas.Add(Canvas.Find("YoNuncaInstructions"));
-            }
 
-            allCanvas.Add(yonunca);
-            allCanvas.Add(tabu);
-            allCanvas.Add(retos);
-            allCanvas.Add(quienesmas);
-            allCanvas.Add(letras);
-            allCanvas.Add(mimica);
+            SetAllCanvas();
+
+            //allCanvas.Add(yonunca);
+            //allCanvas.Add(tabu);
+            //allCanvas.Add(retos);
+            //allCanvas.Add(quienesmas);
+            //allCanvas.Add(letras);
+            //allCanvas.Add(mimica);
         }
       
 
@@ -67,59 +65,40 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        print(anyCanvasActive);
-
-        if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
-        {
-            for (int i = 0; i < allCanvas.Count; i++)
-            {
-                if (allCanvas[i].isActiveAndEnabled)
-                {
-                    activecanvas = allCanvas[i];
-
-                    anyCanvasActive = true;
-                    return;
-                }
-                else
-                {
-                    activecanvas = null;
-                }
-            }
-        }
         //-----------------IMPORTANTISIMO-----------------------
 
         //DESCOMENTAR PARA LA BUILD
 
-        //if (Application.platform == RuntimePlatform.Android)
-        //{
-        //    if(Input.GetKeyDown(KeyCode.Escape))
-        //    {
-        //        if (!anyCanvasActive)
-        //        {
-        //            if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
-        //            {
-        //                Application.Quit();
-        //            }
-        //            else
-        //            {
-        //                SceneManager.LoadScene("ModesMenu_Arte");
-        //            }
-        //        }
-        //        else
-        //        {
-        //            print("SOY UNA GENIA");
-        //            anyCanvasActive = false;
-        //            activecanvas.enabled = false;
-        //        }
-        //    }
-        //}
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                StartCoroutine(DesactiveCanvas());
+                if (!anyCanvasActive)
+                {
+                    if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+                    {
+                        Application.Quit();
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("ModesMenu_Arte");
+                    }
+                }
+                else
+                {
+                    anyCanvasActive = false;
+                    activecanvas.enabled = false;
+                }
+            }
+        }
 
         //BORRAR PARA LA BUILD
-        //ANNA DEL FUTURO RECUERDA QUE AL ACTIVAR EL CANVAS NO SABEMOS PQ NO VA LO DE APRETAR UN BOTÓN
+
 
         if (Input.GetKeyDown(KeyCode.A))
         {
-            print("ESCAPEEEEEEEEE");
+            StartCoroutine(DesactiveCanvas());
             if (!anyCanvasActive)
             {
                 if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
@@ -133,44 +112,46 @@ public class GameManager : MonoBehaviour
             }
             else
             {
-                print("SOY UNA GENIA");
                 anyCanvasActive = false;
                 activecanvas.enabled = false;
             }
         }
-
-
-
-        print(activecanvas);
-
+        
     }
 
-    void CanvasSwitch() //no sirve en algun mom lo borrare
+
+    IEnumerator DesactiveCanvas()
     {
-        switch(activecanvas.name)
+        if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
         {
-            case "yonunca":
+            for (int i = 0; i < allCanvas.Count; i++)
+            {
+                if (allCanvas[i].isActiveAndEnabled)
+                {
+                    activecanvas = allCanvas[i];
 
-                break;
-            case "tabu":
-
-                break;
-            case "retos":
-
-                break;
-            case "quienesmas":
-
-                break;
-            case "letras":
-
-                break;
-            case "mimca":
-
-                break;
+                    anyCanvasActive = true;
+                    yield return anyCanvasActive = true;
+                }
+                else
+                {
+                    activecanvas = null;
+                }
+            }
         }
-
+        yield return null;
     }
 
+    public void SetAllCanvas()
+    {
+        print("pon los canvas plisss");
+        allCanvas.Add(GameObject.Find("YoNuncaInstructions").GetComponent<Canvas>());
+        allCanvas.Add(GameObject.Find("TabuInstructions").GetComponent<Canvas>());
+        allCanvas.Add(GameObject.Find("RetosInstructions").GetComponent<Canvas>());
+        allCanvas.Add(GameObject.Find("QuienInstructions").GetComponent<Canvas>());
+        allCanvas.Add(GameObject.Find("LetrasInstructions").GetComponent<Canvas>());
+        allCanvas.Add(GameObject.Find("MimicaInstructions").GetComponent<Canvas>());
+    }
 
     public void IsAnyCanvasActive()
     {
