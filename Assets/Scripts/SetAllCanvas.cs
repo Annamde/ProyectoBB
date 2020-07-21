@@ -7,14 +7,6 @@ public class SetAllCanvas : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        print("RESETEOOOOOOOOO");
-
-        GameManager.Instance.SetAllCanvas();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+       // GameManager.Instance.SetAllCanvas();
     }
 }

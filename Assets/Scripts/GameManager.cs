@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     List<Canvas> allCanvas = new List<Canvas>();
 
+    public int counterAllModes;
+
 
     private void Awake()
     {
@@ -62,33 +64,43 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        print(allCanvas.Count);
+
+
+        if (allCanvas.Count < counterAllModes)
+        {
+            print("NO HAY Y LOS INSRANCIO");
+            SetAllCanvas();
+        }
+
+
         //-----------------IMPORTANTISIMO-----------------------
 
         //DESCOMENTAR PARA LA BUILD
 
-        if (Application.platform == RuntimePlatform.Android)
-        {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                StartCoroutine(DesactiveCanvas());
-                if (!anyCanvasActive)
-                {
-                    if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
-                    {
-                        Application.Quit();
-                    }
-                    else
-                    {
-                        SceneManager.LoadScene("ModesMenu_Arte");
-                    }
-                }
-                else
-                {
-                    anyCanvasActive = false;
-                    activecanvas.enabled = false;
-                }
-            }
-        }
+        //if (Application.platform == RuntimePlatform.Android)
+        //{
+        //    if (Input.GetKeyDown(KeyCode.Escape))
+        //    {
+        //        StartCoroutine(DesactiveCanvas());
+        //        if (!anyCanvasActive)
+        //        {
+        //            if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+        //            {
+        //                Application.Quit();
+        //            }
+        //            else
+        //            {
+        //                SceneManager.LoadScene("ModesMenu_Arte");
+        //            }
+        //        }
+        //        else
+        //        {
+        //            anyCanvasActive = false;
+        //            activecanvas.enabled = false;
+        //        }
+        //    }
+        //}
 
         //BORRAR PARA LA BUILD
 
@@ -148,6 +160,11 @@ public class GameManager : MonoBehaviour
         allCanvas.Add(GameObject.Find("QuienInstructions").GetComponent<Canvas>());
         allCanvas.Add(GameObject.Find("LetrasInstructions").GetComponent<Canvas>());
         allCanvas.Add(GameObject.Find("MimicaInstructions").GetComponent<Canvas>());
+    }
+
+    public void ResetListOfCanvas()
+    {
+        allCanvas.Clear();
     }
 
     public void IsAnyCanvasActive()
