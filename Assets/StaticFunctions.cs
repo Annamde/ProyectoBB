@@ -7,7 +7,10 @@ public class StaticFunctions : MonoBehaviour
 {
     public void LoadScene(string name)
     {
-        GameManager.Instance.ShowIntersticial();
-        SceneManager.LoadScene(name);
+        if (name == "ModesMenu_Arte")
+        {
+            GameManager.Instance.ShowIntersticial();
+            SceneManager.LoadScene(name);
+        }
     }
 }

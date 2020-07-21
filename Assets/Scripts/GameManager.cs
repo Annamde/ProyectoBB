@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     public bool allowHot = true;
     public bool withTime = true;
     public bool anyCanvasActive = false;
-    //public Canvas yonunca, tabu, retos, quienesmas, letras, mimica;
     private Canvas activecanvas;
     List<Canvas> allCanvas = new List<Canvas>();
     public int counterAllModes;
@@ -54,13 +53,6 @@ public class GameManager : MonoBehaviour
         {
 
             SetAllCanvas();
-
-            //allCanvas.Add(yonunca);
-            //allCanvas.Add(tabu);
-            //allCanvas.Add(retos);
-            //allCanvas.Add(quienesmas);
-            //allCanvas.Add(letras);
-            //allCanvas.Add(mimica);
         }
       
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
@@ -84,53 +76,53 @@ public class GameManager : MonoBehaviour
 
         //DESCOMENTAR PARA LA BUILD
 
-        //if (Application.platform == RuntimePlatform.Android)
-        //{
-        //    if (Input.GetKeyDown(KeyCode.Escape))
-        //    {
-        //        StartCoroutine(DesactiveCanvas());
-        //        if (!anyCanvasActive)
-        //        {
-        //            if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
-        //            {
-        //                Application.Quit();
-        //            }
-        //            else
-        //            {
-        //                SceneManager.LoadScene("ModesMenu_Arte");
-        //            }
-        //        }
-        //        else
-        //        {
-        //            anyCanvasActive = false;
-        //            activecanvas.enabled = false;
-        //        }
-        //    }
-        //}
+        if (Application.platform == RuntimePlatform.Android)
+        {
+            if (Input.GetKeyDown(KeyCode.Escape))
+            {
+                StartCoroutine(DesactiveCanvas());
+                if (!anyCanvasActive)
+                {
+                    if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+                    {
+                        Application.Quit();
+                    }
+                    else
+                    {
+                        SceneManager.LoadScene("ModesMenu_Arte");
+                    }
+                }
+                else
+                {
+                    anyCanvasActive = false;
+                    activecanvas.enabled = false;
+                }
+            }
+        }
 
         //BORRAR PARA LA BUILD
 
 
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            StartCoroutine(DesactiveCanvas());
-            if (!anyCanvasActive)
-            {
-                if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
-                {
-                    Application.Quit();
-                }
-                else
-                {
-                    SceneManager.LoadScene("ModesMenu_Arte");
-                }
-            }
-            else
-            {
-                anyCanvasActive = false;
-                activecanvas.enabled = false;
-            }
-        }
+        //if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    StartCoroutine(DesactiveCanvas());
+        //    if (!anyCanvasActive)
+        //    {
+        //        if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
+        //        {
+        //            Application.Quit();
+        //        }
+        //        else
+        //        {
+        //            SceneManager.LoadScene("ModesMenu_Arte");
+        //        }
+        //    }
+        //    else
+        //    {
+        //        anyCanvasActive = false;
+        //        activecanvas.enabled = false;
+        //    }
+        //}
         
     }
 
