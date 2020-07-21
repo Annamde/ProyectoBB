@@ -2137,7 +2137,10 @@ MonoBehaviour:
   allowHot: 1
   withTime: 1
   anyCanvasActive: 0
-  counterAllModes: 6
+  counterAllModes: 0
+  appID: ca-app-pub-7167289121533604~1862727572
+  bannerID: ca-app-pub-3940256099942544/6300978111
+  intersticialID: ca-app-pub-3940256099942544/1033173712
 --- !u!4 &420994938
 Transform:
   m_ObjectHideFlags: 0

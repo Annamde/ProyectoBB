@@ -3,27 +3,31 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using GoogleMobileAds.Api;
 
 public class GameManager : MonoBehaviour
 {
+    
     public static GameManager Instance { set; get; }
 
     static bool created = false;
 
+    [Header("GameManager")]
     public bool allowHot = true;
-
     public bool withTime = true;
-
     public bool anyCanvasActive = false;
-
     //public Canvas yonunca, tabu, retos, quienesmas, letras, mimica;
-
     private Canvas activecanvas;
-
     List<Canvas> allCanvas = new List<Canvas>();
-
     public int counterAllModes;
 
+    [Header("AdsManager")]
+    [SerializeField] private string appID = "";
+    [SerializeField] private string bannerID = "";
+    [SerializeField] private string intersticialID = "";
+
+    private BannerView bannerAd;
+    private InterstitialAd interstitialAd;
 
     private void Awake()
     {
@@ -38,7 +42,10 @@ public class GameManager : MonoBehaviour
         {
             Destroy(this.gameObject);
         }
-        
+
+        MobileAds.Initialize(initStatus => { });
+        RequestIntersticial();
+        RequestBanner();
     }
 
     private void Start()
@@ -56,7 +63,6 @@ public class GameManager : MonoBehaviour
             //allCanvas.Add(mimica);
         }
       
-
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         
     }
@@ -170,6 +176,29 @@ public class GameManager : MonoBehaviour
     public void IsAnyCanvasActive()
     {
         anyCanvasActive = !anyCanvasActive;
+    }
+
+    //--------------------------------------------ADS-----------------------------------------
+
+    public void RequestBanner()
+    {
+        bannerAd = new BannerView(bannerID, AdSize.Banner, AdPosition.Bottom);
+        AdRequest request = new AdRequest.Builder().Build();
+        bannerAd.LoadAd(request);
+    }
+
+    public void RequestIntersticial()
+    {
+        interstitialAd = new InterstitialAd(intersticialID);
+        AdRequest request = new AdRequest.Builder().Build();
+        interstitialAd.LoadAd(request);
+    }
+
+    public void ShowIntersticial()
+    {
+        interstitialAd.Show();
+        interstitialAd.Destroy();
+        RequestIntersticial();
     }
 
 }

@@ -7,6 +7,7 @@ public class StaticFunctions : MonoBehaviour
 {
     public void LoadScene(string name)
     {
+        GameManager.Instance.ShowIntersticial();
         SceneManager.LoadScene(name);
     }
 }
