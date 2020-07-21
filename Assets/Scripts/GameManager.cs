@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
         {
-
             SetAllCanvas();
         }
       
@@ -62,9 +61,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        print(allCanvas.Count);
-
-
         if (allCanvas.Count < counterAllModes)
         {
             print("NO HAY Y LOS INSRANCIO");
