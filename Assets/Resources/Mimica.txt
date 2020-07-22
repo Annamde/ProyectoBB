@@ -1,26 +1,17 @@
 ﻿Regar las plantas
-Modelo
 Comerte un plátano
 Pescar
 Pasear al perro
-Torear
-Mono
 Ordeñar una vaca
-Aullar
 Tocar la flauta
-Hacer el gorila
-Elefante
 Tocar el tambor
 Tocar la guitarra
 Tocar el piano
 Tocar el triangulo
 Tocar el violin
 Tocar las maracas
-Tocar la pandereta
 Ir en bicicleta
-Conducir un coche
-Marearse en un barco
-Ir al espacio
+Conducir
 Marcar un gol
 Cortarse el pelo
 Secarse el pelo
@@ -28,50 +19,93 @@ Perder las gafas
 Lavarse los dientes
 Hacer una foto
 Escuchar musica
-Profesor de Educación Física
 Llamar por teléfono
-Sentarse en una silla
-Cerrar el grifo
 Cambiar de canal
-Jugar a la play
+Jugar a la consola
 Jugar al tennis
-Ponerse unos pantalones
-Ponerse un abrigo
 Caminar con tacones
 Ponerse guantes
-Ponerse una gorra
 Beber agua
 Dormir
 Comer
 Dibujar
 Mear
 Soplar una vela
-Profesor
+El rey león
+La sirenita
+Spiderman
+Superman
+Star Wars
+Harry Potter
+La bella y la bestia
+Titanic
+E.T
+Gladiator
+Matrix
+Grease
+Pinocho
+Buscando a nemo
+Frankenstein
+King Kong
+Dumbo
+Aladín
+Tarzán
+Crepúsculo
+Ratatouille
+Mono
+Gorila
+Elefante
+Jirafa
+León
+Pato
+Gallo
+Cerdo
+Vaca
+Caballo
+Estrella de mar
+Pez
+Tiburón
+Delfín
+Ballena 
+Perro
+Gato
+Ratón
+Rinoceronte
+Koala
+Hipopótamo
+Escorpión
+Búho
+Pulpo
+Araña
+Serpiente
+Cangrejo
+Tortuga
+Ostra
+Cocodrilo
+Mosquito
+Mosca
+Halcón
+Camaleón
+Mariposa
+Caracol
+Cebra
+Pingüino
+Piraña
+Conejo
+Hormiga
+Mofeta
+Abeja
+Canguro
+Rana
+Tigre
+Modelo
+Torero
 Policia
 Cocinero
 Doctor
-El rey leon
-La sirenita
-Batman
-Spiderman
-Joker
-Tiburon
-It (la película)
-Star wars
-Harry potter
-Frozen
-Rapuncel
-La bella y la bestia
-Titanic
-Jurassic park
-E.T
-Gladiator
-Psicosis
-Matrix
-El resplandor
-Indiana jones
-El señor de los anillos
-Grease
-El exorcista
-Saw
-Pinocho
+Cantante
+Bailarin
+Informático
+Bombero
+Dentista
+Jardinero
