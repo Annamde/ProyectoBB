@@ -43,8 +43,8 @@ public class GameManager : MonoBehaviour
         }
 
         MobileAds.Initialize(initStatus => { });
-        RequestIntersticial();
         RequestBanner();
+        RequestIntersticial();
     }
 
     private void Start()
