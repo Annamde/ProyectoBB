@@ -5,18 +5,6 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/ModesMenu.unity
-    guid: d7569c7927ec755409b1ea9df77329dd
-  - enabled: 0
-    path: Assets/Scenes/YoNunca.unity
-    guid: b3cdfe94efbb40244937107673c2bc15
-  - enabled: 0
-    path: Assets/Scenes/Tabu.unity
-    guid: 86ba3a426c4796c4b89de197d2d4fd2c
-  - enabled: 0
-    path: Assets/Scenes/Retos.unity
-    guid: 9cf162c4bb589d6468af4b0b3ddc6217
   - enabled: 1
     path: Assets/Arte/Scenes/ModesMenu_Arte.unity
     guid: f56b547868d493541aa6fc3f6f8cc6aa
