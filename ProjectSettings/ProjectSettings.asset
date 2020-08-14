@@ -244,7 +244,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/yaiza/Documents/GitHub/ProyectoBB/user.keystore
+  AndroidKeystoreName: D:/Users/yaiza/Documents/GitHub/ProyectoBB/user.keystore
   AndroidKeyaliasName: drink king
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
@@ -690,7 +690,8 @@ PlayerSettings:
     daydream:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
-  cloudServicesEnabled: {}
+  cloudServicesEnabled:
+    UNet: 1
   luminIcon:
     m_Name: 
     m_ModelFolderPath: 
@@ -710,10 +711,10 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 
+  cloudProjectId: e7cb9916-6409-4b73-a430-eb5484911524
   framebufferDepthMemorylessMode: 0
-  projectName: 
-  organizationId: 
+  projectName: Drink King
+  organizationId: yaizacastillo
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
   disableOldInputManagerSupport: 0
