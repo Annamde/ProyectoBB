@@ -53,38 +53,25 @@ Tarzán
 Crepúsculo
 Ratatouille
 Mono
-Gorila
 Elefante
 Jirafa
 León
-Pato
 Gallo
 Cerdo
-Vaca
 Caballo
 Estrella de mar
-Pez
 Tiburón
 Delfín
-Ballena 
 Perro
 Gato
 Ratón
-Rinoceronte
 Koala
-Hipopótamo
-Escorpión
-Búho
 Pulpo
 Araña
 Serpiente
 Cangrejo
-Tortuga
-Ostra
-Cocodrilo
 Mosquito
 Mosca
-Halcón
 Camaleón
 Mariposa
 Caracol
@@ -94,10 +81,8 @@ Piraña
 Conejo
 Hormiga
 Mofeta
-Abeja
 Canguro
 Rana
-Tigre
 Modelo
 Torero
 Policia
@@ -109,3 +94,50 @@ Informático
 Bombero
 Dentista
 Jardinero
+Tomar el sol
+Cambiarse el tampón
+Jugar al baloncesto
+Pintar un cuadro
+Limpiar el coche
+Cantar en la ducha
+Nadar en la playa
+Ponerse perfume
+Hacer surf
+Ir a la peluquería
+Jugar al póker
+Tatuar el dibujo de un pene
+Posar desnudo
+Ponerse las lentillas
+Fregar los platos
+Caerse de un monopatín
+Atarse los cordones
+Hacerse un piercing
+Viajar en barco
+Romperse un brazo
+Lamer un helado
+Hacerse una trenza
+Sufrir un infarto
+Lamerse el codo
+Dolor de espalda
+Ponerse el cinturón
+Ligar en la discoteca
+Ponerse lencería
+Pillar un resfriado
+Hacer la cama
+Beberse un chupito
+Estar borracho
+Besar a alguien
+Hacer la O con un canuto
+Parir
+Sacarse sangre
+Atar a alguien
+Montar a caballo
+Dirigir una orquesta
+Esquiar
+Grabar un Tiktok
+Rebuscar en la basura
+La Estatua de la Libertad
+Comer con palillos
+Poner unas esposas
+Romper la cama
+Te hacen la cobra

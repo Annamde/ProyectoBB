@@ -103,7 +103,7 @@ public class TextManager : MonoBehaviour
             }
         }
         else
-            counterText.enabled = false;
+            if (counterText != null) counterText.enabled = false;
     }
 
     private void Update()

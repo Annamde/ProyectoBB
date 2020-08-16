@@ -195,7 +195,7 @@ Yo nunca he dejado mierda de mi perro en la calle.
 Yo nunca se la he aguantado a alguien mientras meaba.
 Yo nunca le he sujetado el pelo a alguien mientras vomitaba.
 Yo nunca he comido algo con marihuana.
-Yo nunca he probado la cachimba.
+Yo nunca he fumado cachimba.
 Yo nunca he emborrachado a alguien para ligar con él/la.
 Yo nunca he tenido un crush en un/a profesor/a.
 Yo nunca he puesto un calcetín en la puerta para avisar de que estaba follando.
@@ -269,7 +269,6 @@ Yo nunca he vomitado y he seguido bebiendo.
 Yo nunca me he emborrachado más de tres días seguidos.
 Yo nunca he recibido una multa de tráfico.
 Yo nunca he suplicado a un ex para volver.
-Yo nunca he usado un consolador.
 Yo nunca he tenido un consolador en mis manos.
 Yo nunca he mentido a alguien de este grupo.
 Yo nunca he besado a alguien de este grupo.
@@ -278,3 +277,8 @@ Yo nunca he gritado a mi jefe.
 Yo nunca he llegado borracho al trabajo.
 Yo nunca he tenido una cita solo para lastimar a otra persona.
 Yo nunca me he chocado contra una puerta de vidrio.
+Yo nunca me he sentido atraído por un familiar.
+Yo nunca he sido pillado fumado al llegar a casa.
+Yo nunca he sido detenido por la policía.
+Yo nunca he visto a mis padres desnudos.
+Yo nunca me he emborrachado por la mañana.
