@@ -215,7 +215,7 @@ Ganador
 Pedestal
 Subir/DEDAL
 
-Ajuga
+Aguja
 Coser
 Pinchar
 Protección/CÍRCULO
