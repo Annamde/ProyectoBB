@@ -1,649 +1,779 @@
 ﻿NAVIDAD
 
+
 Diciembre
 Papa Noel
 Villancicos
 Árbol/PALMERA
+
 
 Dátil
 Coco
 Árbol
 Mono/MOSQUITO
 
+
 Picadura
 Rascarse
 Raid
 Insecto/CUNA
+
 
 Dormir
 Bebé
 Canción
 Mueble/RONCAR
 
+
 Noche
 Ruido
 Nariz
 Dormir/TENIS
+
 
 Deporte
 Pelota
 Raqueta
 Red/ÁNGEL
 
+
 Diablo
 Demonio
 Cielo
 Alas/CINE
+
 
 Película
 Pantalla
 Grabar
 Cámara/NIDO
 
+
 Pájaro
 Huevos
 Casa
 Árbol/RISA
+
 
 Ridículo
 Carcajada
 Chiste
 Broma/ESPOSAS
 
+
 Arresto
 Policía
 Mano
 Muñeca/CENIZAS
+
 
 Fuego
 Fumar
 Polvo
 Quemar/PASAPORTE
 
+
 Documento
 Extranjero
 Viajar
 Aduana/ANTIFAZ
+
 
 Ojos
 Tapar
 Máscara
 Carnaval/PINOCHO
 
+
 Mentira
 Nariz
 Gepetto
 Muñeco/LÁGRIMA
+
 
 Ojos
 Llorar
 Gotas
 Triste/GRÚA
 
+
 Levantar
 Auto
 Avería
 Estacionamiento/CONVENTO
+
 
 Iglesia
 Religión
 Monja
 Cura/NUBE
 
+
 Cielo
 Despejado
 Lluvia
 Sol/UNIFORME
+
 
 Vestido
 Igual
 Colegio
 Policía/MONJA
 
+
 Habito
 Religión
 Hermana
 Convento/TERREMOTO
+
 
 Derrumbe
 Temblor
 Tierra
 Movimiento/DIA
 
+
 Noche
 Sol
 Horas
 Despierto/RELOJ
+
 
 Hora
 Tiempo
 Agujas
 Muñeca/HIPNOTIZAR
 
+
 Dormir
 Mago
 Sueño
 Despertar/INCENDIO
+
 
 Quemar
 Apagar
 Fuego
 Bomberos/QUIOSCO
 
+
 Golosinas
 Tabaco
 Revistas
 Vender/SUERTE
+
 
 Buena
 Amuleto
 Trébol
 Mala/ROSA
 
+
 Flor
 Espinas
 Color
 Pantera/ARQUITECTO
+
 
 Obra
 Diseño
 Plano
 Dibujo/ESTÓMAGO
 
+
 Cuerpo
 Panza
 Tripa
 Comida/POLVO
+
 
 Limpio
 Sucio
 Plumero
 Muebles/MUSEO
 
+
 Arte
 Edificio
 Pinturas
 Exhibición/BARRO
+
 
 Lluvia
 Tierra
 Agua
 Fango/PIMIENTA
 
+
 Sal
 Picante
 Sabor
 Condimento/CONDUCIR
+
 
 Volante
 Coche
 Piloto
 Vehículo/CUCHILLO
 
+
 Tenedor
 Cortar
 Afilado
 Cubierto/COWBOY
+
 
 Pistola
 Sombrero
 Caballo
 Indios/CERDO
 
+
 Animal
 Jamón
 Embutido
 Fiambre/FECHA
+
 
 Mes
 Año
 Día
 Calendario/ARENA
 
+
 Playa
 Fina
 Piedra
 Rocas/FÚTBOL
+
 
 Deporte
 Messi
 Gol
 Pelota/PODIO
 
+
 Campeón
 Ganador
 Pedestal
 Subir/DEDAL
 
-Ajuga
+
+Aguja
 Coser
 Pinchar
 Protección/CÍRCULO
+
 
 Anillo
 Redondo
 Línea
 Curva/PESCADOR
 
+
 Pez
 Caña
 Anzuelo
 Lombriz/FLAN
+
 
 Leche
 Postre
 Huevos
 Caramelo/SKATE
 
+
 Monopatín
 Cuatro
 Ruedas
 Tabla/IZQUIERDA
+
 
 Lado
 Derecha
 Zurdo
 Dirección/GAS
 
+
 Estufa
 Cocinar
 Envasado
 Camping/CAMELLO
+
 
 Animal
 Desierto
 Joroba
 Arena/ALUMINIO
 
+
 Metal
 Cacerola
 Acero
 Óxido/POLLO
+
 
 Ave
 Plumas
 Comer
 Gallina/CONTRATO
 
+
 Papel
 Firmar
 Acuerdo
 Alquiler/MUÑECO
+
 
 Niñas
 Juguete
 Mamá
 Regalo/AGENDA
 
+
 Abecedario
 Días
 Direcciones
 Teléfonos/FARMACIA
+
 
 Médico
 Inyección
 Remedio
 Receta/ESTACIÓN
 
+
 Terminal
 Tren
 Parada
 Andén/CARNE
+
 
 Vaca
 Asado
 Comer
 Hamburguesa/COSQUILLAS
 
+
 Dedos
 Hacer
 Pies
 Risa/FUEGO
+
 
 Llamas
 Hoguera
 Quemar
 Leña/IDIOMA
 
+
 Lengua
 País
 Traducir
 Estudiar/HERIDA
+
 
 Sangre
 Corte
 Tirita
 Puntos/ARROZ
 
+
 Cereal
 Comida
 Grano
 Integral/LEVADURA
+
 
 Masa
 Pan
 Harina
 Cocinar/HUMOR
 
+
 Alegría
 Animo
 Broma
 Risa/COSTILLAS
+
 
 Esqueleto
 Huesos
 Pecho
 Cuerpo/HOJA
 
+
 Verde
 Caer
 Árbol
 Rama/BALONCESTO
+
 
 Deporte
 Pelota
 Equipo
 Canasta/PIZZA
 
+
 Napolitana
 Mozzarella
 Queso
 Italia/ALGODÓN
+
 
 Cura
 Sangre
 Herida
 Farmacia/OSTRA
 
+
 Perla
 Mar
 Marisco
 Comer/RECREO
+
 
 Patio
 Escuela
 Jugar
 Tiempo/ANCHOA
 
+
 Sardina
 Pescado
 Lata
 Comida/FANTASMA
+
 
 Sábana
 Miedo
 Castillo
 Espíritu/CUADRO
 
+
 Museo
 Pintor
 Caballete
 Tela/GOL
+
 
 Pelota
 Puntuación
 Futbol
 Arco/CIRCO
 
+
 Carpa
 Payasos
 Trapecista
 Domador/PINTAR
+
 
 Artista
 Cuadro
 Pincel
 Pared/NOCHE
 
+
 Día
 Luna
 Estrellas
 Sol/HAMSTER
+
 
 Animal
 Jaula
 Mascota
 Rata/COLCHÓN
 
+
 Cama
 Almohada
 Acostarse
 Dormir/CHINA
+
 
 Oriental
 País
 Asia
 Muralla/FOTOGRAFÍA
 
+
 Revelar
 Rollo
 Álbum
 Cámara/ESPÍA
+
 
 CIA
 Traidor
 Secreto
 James Bond/BRÚJULA
 
+
 Orientarse
 Norte
 Aguja
 Cardinales/CALEFACCIÓN
+
 
 Invierno
 Estufa
 Caldera
 Frío/GIRASOL
 
+
 Planta
 Semilla
 Aceite
 Sol/BEBIDA
+
 
 Líquido
 Tomar
 Agua
 Sed/CIUDAD
 
+
 Municipio
 Población
 Edificios
 Pueblo/DINERO
+
 
 Comprar
 Moneda
 Billete
 Rico/PELOTA
 
+
 Balón
 Bola
 Futbol
 Deporte/BOTELLA
+
 
 Tapón
 Envase
 Vidrio
 Recipiente/ARTISTA
 
+
 Pintor
 Actor
 Fama
 Escultor/PAÑUELO
+
 
 Nariz
 Sonarse
 Mocos
 Resfriado/DIABLO
 
+
 Ángel
 Demonio
 Infierno
 Satanás/CUPIDO
+
 
 Arco
 Flechazo
 Amor
 Alas/MANZANA
 
+
 Comer
 Fruta
 Roja
 Blancanieves/NIEVE
+
 
 Blanca
 Agua
 Invierno
 Frío/TELÉFONO
 
+
 Número
 Llamar
 Ocupado
 Móvil/ERUCTO
+
 
 Ruido
 Boca
 Provecho
 Beber/CABALLO
 
+
 Jinete
 Montar
 Carrera
 Cabalgar/SURF
+
 
 Playa
 Tabla
 Mar
 Olas/EDAD
 
+
 Años
 Vida
 Nacer
 Tiempo/GORILA
+
 
 Mono
 King Kong
 Chimpancé
 Orangután/PIRÁMIDE
 
+
 Tumba
 Momia
 Egipto
 Faraón/BATERÍA
+
 
 Instrumento
 Música
 Ritmo
 Percusión/CIRUJANO
 
+
 Hospital
 Anestesia
 Doctor
 Operación/BANCO
+
 
 Dinero
 Cuenta
 Cajero
 Cambio/PAN
 
+
 Harina
 Levadura
 Bocadillo
 Tostada/FIESTA
+
 
 Cumpleaños
 Amigos
 Discoteca
 Celebración/FIRMA
 
+
 Nombre
 Apellido
 Autógrafo
 Contrato/PIJAMA
+
 
 Dormir
 Cama
 Ropa
 Camisón/ALFOMBRA
 
+
 Suelo
 Maqueta
 Piso
 Carpeta/DULCE
+
 
 Chocolate
 Caramelo
 Sabor
 Azúcar/ALMOHADA
 
+
 Cama
 Dormir
 Acostarse
 Cabeza/LUNA
+
 
 Noche
 Sol
 Cielo
 Estrellas/CICATRIZ
 
+
 Señal
 Marca
 Herida
 Piel//PAYASO
+
 
 Circo
 Nariz
 Zapatos
 Reír/ALBINO
 
+
 Blanco
 Ojos
 Piel
 Color/GELATINA
+
 
 Flan
 Postre
 Comer
 Transparente/HUELLA
 
+
 Digital
 Rastro
 Mano
 Pisada/OXÍGENO
+
 
 Respirar
 Aire
 Gas
 Atmósfera/INODORO
 
+
 Baño
 Cagar
 Mear
 Agua/COLOR
+
 
 Amarillo
 Rojo
 Verde
 Azul/ANÁLISIS
 
+
 Sangre
 Orina
 Médico
 Drogas/ANIMAL
+
 
 Vivo
 Salvaje
 Doméstico
 Veterinario/INOCENTE
 
+
 Niño
 Culpable
 Ingenuo
 Absuelto/MERCENARIO
 
+
 Militar
 Guerra
 Asesino
 Pago/CORONA
+
 
 Rey
 Cabeza
