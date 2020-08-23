@@ -31,6 +31,10 @@ public class TextManager : MonoBehaviour
     public Text counterText;
     public Image outlineText;
 
+    public int clicks;
+    float time_secs;
+    public float time;
+
     private void Start()
     {
         counterTime = maxTime;
@@ -104,6 +108,10 @@ public class TextManager : MonoBehaviour
         }
         else
             if (counterText != null) counterText.enabled = false;
+
+        clicks = 0;
+        time_secs = 0;
+        time = 0;
     }
 
     private void Update()
@@ -126,10 +134,13 @@ public class TextManager : MonoBehaviour
                 else
                     counterTime -= Time.deltaTime;
 
-
                 counterText.text = Mathf.FloorToInt(counterTime).ToString();
             }
         }
+
+        time_secs += Time.deltaTime;
+        time = time_secs / 60; 
+        
     }
 
     public void OnScreenTap()
@@ -149,6 +160,7 @@ public class TextManager : MonoBehaviour
                 usedRandom.Clear();
             }
 
+            clicks++;
             screenText.text = questionsList[RandomQuestion()];
 
             if (sceneWithTime)

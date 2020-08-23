@@ -10,6 +10,10 @@ public class LetrasManager : MonoBehaviour
     public Text centerText;
     public Text bottomText;
 
+    public int clicks;
+    float time_secs;
+    public float time;
+
     char[] abcArray = { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z' };
     string[] parametersArray = {"famoso", "comida", "país", "objeto", "marca", "animal", "bebida", "discoteca", "ciudad", "instrumento", "nombre de chica", "nombre de chico",
         "idioma", "dibujo animado", "estilo musical", "color", "superhéroe", "algo de navidad", "personaje disney", "fruta/verdura", "capital", "pez", "hobbie", "sabor de condón",
@@ -20,6 +24,16 @@ public class LetrasManager : MonoBehaviour
     {
         RandomLetter();
         RandomParameters();
+
+        clicks = 0;
+        time_secs = 0;
+        time = 0;
+    }
+
+    private void Update()
+    {
+        time_secs += Time.deltaTime;
+        time = time_secs / 60;
     }
 
     void RandomLetter()
@@ -51,6 +65,7 @@ public class LetrasManager : MonoBehaviour
 
     public void OnScreenTap()
     {
+        clicks++;
         RandomLetter();
         RandomParameters();
     }
