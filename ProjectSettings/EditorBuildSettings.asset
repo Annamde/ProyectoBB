@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arte/Scenes/Letras_Arte.unity
     guid: f0fe4884806782a4ab89d29e7b97f13a
+  - enabled: 1
+    path: Assets/Arte/Scenes/XSegundos_Arte.unity
+    guid: c255b988e574a324683c06976095507e
   m_configObjects: {}
