@@ -575,7 +575,7 @@ GameObject:
   - component: {fileID: 825024686}
   - component: {fileID: 825024685}
   m_Layer: 5
-  m_Name: Image
+  m_Name: RellenoTitulo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -591,8 +591,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 0.7142857, z: 1}
-  m_Children:
-  - {fileID: 8206461144403040385}
+  m_Children: []
   m_Father: {fileID: 8206461143945638873}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -621,7 +620,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5a23fd95b893ee442a0508304797a5fd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0b002be0123ded74c9e58b9a9938880c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -916,7 +915,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2cb3b289a0b13fb498c31755f0588a8b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a3e8f3447205d648ab94a3964d6d6f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1211,7 +1210,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ab5788bd8a0e48e4d9bd7c9d2bdb582a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a3e8f3447205d648ab94a3964d6d6f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1330,7 +1329,7 @@ GameObject:
   - component: {fileID: 1436277972}
   - component: {fileID: 1436277971}
   m_Layer: 5
-  m_Name: Image (2)
+  m_Name: Contorno
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1375,7 +1374,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: eacf7609fc680a5428610d336fea8651, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cf8d054bd5ba8442989d445a7bdb357, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1804,6 +1803,7 @@ RectTransform:
   m_Children:
   - {fileID: 1436277970}
   - {fileID: 825024684}
+  - {fileID: 8206461144403040385}
   - {fileID: 8206461144845843510}
   - {fileID: 8362583933569589131}
   m_Father: {fileID: 8206461144458096982}
@@ -1863,7 +1863,7 @@ GameObject:
   - component: {fileID: 8206461144403040391}
   - component: {fileID: 8206461144403040390}
   m_Layer: 5
-  m_Name: TextMeshPro Text
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1878,14 +1878,14 @@ RectTransform:
   m_GameObject: {fileID: 8206461144403040384}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.7142857, z: 1}
   m_Children: []
-  m_Father: {fileID: 825024684}
-  m_RootOrder: 0
+  m_Father: {fileID: 8206461143945638873}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -7.05, y: -5}
+  m_AnchoredPosition: {x: 0, y: 388.57144}
   m_SizeDelta: {x: 700, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &8206461144403040390
@@ -1937,8 +1937,8 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 140
+  m_fontSizeBase: 140
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2150,7 +2150,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: ab5788bd8a0e48e4d9bd7c9d2bdb582a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1a3e8f3447205d648ab94a3964d6d6f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2181,7 +2181,7 @@ RectTransform:
   - {fileID: 8206461143888897725}
   - {fileID: 1340848472}
   m_Father: {fileID: 8206461143945638873}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2320,7 +2320,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 0.7142855, z: 1}
   m_Children: []
   m_Father: {fileID: 8206461143945638873}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
