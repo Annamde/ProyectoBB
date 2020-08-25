@@ -464,7 +464,7 @@ MonoBehaviour:
   separator: 45
   instructionsCanvas: {fileID: 8206461144458096977}
   screenText: {fileID: 1507851803}
-  sceneWithTime: 1
+  sceneWithTime: 0
   maxTime: 10
   counterText: {fileID: 6381841862690632570}
   outlineText: {fileID: 0}
@@ -1692,7 +1692,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &8206461143888897698
 MonoBehaviour:
   m_ObjectHideFlags: 0
