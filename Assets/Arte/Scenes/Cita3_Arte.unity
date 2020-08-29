@@ -465,7 +465,7 @@ MonoBehaviour:
   instructionsCanvas: {fileID: 8206461144458096977}
   screenText: {fileID: 1507851803}
   sceneWithTime: 1
-  maxTime: 15
+  maxTime: 12
   counterText: {fileID: 6381841862690632570}
   outlineText: {fileID: 0}
   clicks: 0
@@ -1316,7 +1316,7 @@ MonoBehaviour:
             - enum
             m_Type: System.Single
             m_EnumType: 
-    m_Name: quit_mimica
+    m_Name: quit_cita3
 --- !u!1 &1436277969
 GameObject:
   m_ObjectHideFlags: 0
