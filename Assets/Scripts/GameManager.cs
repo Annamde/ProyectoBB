@@ -3,7 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using GoogleMobileAds.Api;
+using UnityEngine.Advertisements;
+//using GoogleMobileAds.Api;
 
 public class GameManager : MonoBehaviour
 {
@@ -21,12 +22,19 @@ public class GameManager : MonoBehaviour
     public int counterAllModes;
 
     [Header("AdsManager")]
+    public string gameID = "3760923";
+    public bool testMode;
+
+    /*
+    [Header("AdsManager")]
     [SerializeField] private string appID = "";
     [SerializeField] private string bannerID = "";
     [SerializeField] private string intersticialID = "";
+    
 
     private BannerView bannerAd;
     private InterstitialAd interstitialAd;
+    */
 
     private void Awake()
     {
@@ -42,9 +50,11 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        MobileAds.Initialize(initStatus => { });
-        RequestBanner();
-        RequestIntersticial();
+        Advertisement.Initialize(gameID, testMode);
+        StartCoroutine(ShowBannerWhenInitialized());
+        //MobileAds.Initialize(initStatus => { });
+        //RequestBanner();
+        //RequestIntersticial();
     }
 
     private void Start()
@@ -147,7 +157,6 @@ public class GameManager : MonoBehaviour
 
     public void SetAllCanvas()
     {
-        print("pon los canvas plisss");
         allCanvas.Add(GameObject.Find("YoNuncaInstructions").GetComponent<Canvas>());
         allCanvas.Add(GameObject.Find("TabuInstructions").GetComponent<Canvas>());
         allCanvas.Add(GameObject.Find("RetosInstructions").GetComponent<Canvas>());
@@ -166,27 +175,56 @@ public class GameManager : MonoBehaviour
         anyCanvasActive = !anyCanvasActive;
     }
 
-    //--------------------------------------------ADS-----------------------------------------
+    //--------------------------------------------Unity Ads-----------------------------------------
 
-    public void RequestBanner()
+    public void ShowInterstitialAd()
     {
-        bannerAd = new BannerView(bannerID, AdSize.Banner, AdPosition.Bottom);
-        AdRequest request = new AdRequest.Builder().Build();
-        bannerAd.LoadAd(request);
+        // Check if UnityAds ready before calling Show method:
+        if (Advertisement.IsReady())
+        {
+            Advertisement.Show();
+        }
+        else
+        {
+            Debug.Log("Interstitial ad not ready at the moment! Please try again later!");
+        }
     }
 
-    public void RequestIntersticial()
+    IEnumerator ShowBannerWhenInitialized()
     {
-        interstitialAd = new InterstitialAd(intersticialID);
-        AdRequest request = new AdRequest.Builder().Build();
-        interstitialAd.LoadAd(request);
+        while (!Advertisement.isInitialized)
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+
+        Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
+        Advertisement.Banner.Show();
     }
 
-    public void ShowIntersticial()
-    {
-        interstitialAd.Show();
-        interstitialAd.Destroy();
-        RequestIntersticial();
-    }
+    //--------------------------------------------ADMOB-----------------------------------------
+
+    /*
+public void RequestBanner()
+{
+    bannerAd = new BannerView(bannerID, AdSize.Banner, AdPosition.Bottom);
+    AdRequest request = new AdRequest.Builder().Build();
+    bannerAd.LoadAd(request);
+}
+
+public void RequestIntersticial()
+{
+    interstitialAd = new InterstitialAd(intersticialID);
+    AdRequest request = new AdRequest.Builder().Build();
+    interstitialAd.LoadAd(request);
+}
+
+public void ShowIntersticial()
+{
+    interstitialAd.Show();
+    interstitialAd.Destroy();
+    RequestIntersticial();
+}
+*/
+
 
 }
