@@ -175,6 +175,11 @@ public class GameManager : MonoBehaviour
         anyCanvasActive = !anyCanvasActive;
     }
 
+    public void OpenStore()
+    {
+        Application.OpenURL("market://details?id=" + Application.identifier);
+    }
+
     //--------------------------------------------Unity Ads-----------------------------------------
 
     public void ShowInterstitialAd()
