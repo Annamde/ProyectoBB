@@ -180,9 +180,9 @@ public class GameManager : MonoBehaviour
     public void ShowInterstitialAd()
     {
         // Check if UnityAds ready before calling Show method:
-        if (Advertisement.IsReady())
+        if (Advertisement.IsReady("Intersticial_menu"))
         {
-            Advertisement.Show();
+            Advertisement.Show("Intersticial_menu");
         }
         else
         {
@@ -198,7 +198,7 @@ public class GameManager : MonoBehaviour
         }
 
         Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
-        Advertisement.Banner.Show();
+        Advertisement.Banner.Show("Banner_abajo");
     }
 
     //--------------------------------------------ADMOB-----------------------------------------
