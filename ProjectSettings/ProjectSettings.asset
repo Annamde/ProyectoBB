@@ -244,7 +244,7 @@ PlayerSettings:
   AndroidTargetArchitectures: 3
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: D:/annad/Treballs/Altres/ProyectoBB/user.keystore
+  AndroidKeystoreName: D:/Users/yaiza/Documents/GitHub/ProyectoBB/user.keystore
   AndroidKeyaliasName: drink king
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 1
