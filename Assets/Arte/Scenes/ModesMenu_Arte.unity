@@ -2817,6 +2817,7 @@ GameObject:
   - component: {fileID: 452907049}
   - component: {fileID: 452907051}
   - component: {fileID: 452907052}
+  - component: {fileID: 452907053}
   m_Layer: 5
   m_Name: BotonAjustes
   m_TagString: Untagged
@@ -2921,7 +2922,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 420994937}
+      - m_Target: {fileID: 452907053}
         m_MethodName: OpenStore
         m_Mode: 1
         m_Arguments:
@@ -2975,6 +2976,18 @@ MonoBehaviour:
     m_Parameters:
       m_Parameters: []
     m_Name: click_rating
+--- !u!114 &452907053
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452907047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17aff188ecd52be4ba9c52e07cd78bdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &459900274
 GameObject:
   m_ObjectHideFlags: 0
@@ -15499,7 +15512,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -540, y: 0}
+  m_AnchoredPosition: {x: -540, y: 0.00048828125}
   m_SizeDelta: {x: 1080, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1939418818
