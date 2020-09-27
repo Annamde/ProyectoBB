@@ -98,11 +98,9 @@ public class GameManager : MonoBehaviour
                     {
                         TextManager tm = FindObjectOfType<TextManager>();
                         int clicks = tm.clicks;
-                        float time = tm.time;
 
                         Dictionary<string, object> dictionary = new Dictionary<string, object>();
                         dictionary.Add("clicks", clicks);
-                        dictionary.Add("time", time);
 
                         switch(SceneManager.GetActiveScene().name)
                         {

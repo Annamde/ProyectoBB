@@ -32,8 +32,6 @@ public class TextManager : MonoBehaviour
     public Image outlineText;
 
     public int clicks;
-    float time_secs;
-    public float time;
 
     private void Start()
     {
@@ -110,8 +108,6 @@ public class TextManager : MonoBehaviour
             if (counterText != null) counterText.enabled = false;
 
         clicks = 0;
-        time_secs = 0;
-        time = 0;
     }
 
     private void Update()
@@ -137,9 +133,6 @@ public class TextManager : MonoBehaviour
                 counterText.text = Mathf.FloorToInt(counterTime).ToString();
             }
         }
-
-        time_secs += Time.deltaTime;
-        time = time_secs / 60; 
         
     }
 
