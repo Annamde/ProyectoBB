@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Advertisements;
+using UnityEngine.Analytics;
 //using GoogleMobileAds.Api;
 
 public class GameManager : MonoBehaviour
@@ -95,6 +96,38 @@ public class GameManager : MonoBehaviour
                     }
                     else
                     {
+                        TextManager tm = FindObjectOfType<TextManager>();
+                        int clicks = tm.clicks;
+                        float time = tm.time;
+
+                        Dictionary<string, object> dictionary = new Dictionary<string, object>();
+                        dictionary.Add("clicks", clicks);
+                        dictionary.Add("time", time);
+
+                        switch(SceneManager.GetActiveScene().name)
+                        {
+                            case "Cita3_Arte":
+                                Analytics.CustomEvent("quit_cita3", dictionary);
+                                break;
+                            case "Letras_Arte":
+                                Analytics.CustomEvent("quit_letras", dictionary);
+                                break;
+                            case "Mimica_Arte":
+                                Analytics.CustomEvent("quit_mimica", dictionary);
+                                break;
+                            case "Quien_Arte":
+                                Analytics.CustomEvent("quit_quien", dictionary);
+                                break;
+                            case "Retos_Arte":
+                                Analytics.CustomEvent("quit_retos", dictionary);
+                                break;
+                            case "Tabu_Arte":
+                                Analytics.CustomEvent("quit_tabu", dictionary);
+                                break;
+                            case "YoNunca_Arte":
+                                Analytics.CustomEvent("quit_yonunca", dictionary);
+                                break;
+                        }
                         SceneManager.LoadScene("ModesMenu_Arte");
                     }
                 }
