@@ -11,6 +11,7 @@ public class TextManager : MonoBehaviour
     public string lightDocName;
     public char separator;
     public Canvas instructionsCanvas;
+    public bool startQuestion;
 
     bool allowHot;
     bool withTime;
@@ -19,6 +20,7 @@ public class TextManager : MonoBehaviour
 
     List<int> usedRandom = new List<int>();
     List<int> freeRandom = new List<int>();
+
     TextAsset lightTextFile, hotTextFile;
     public Text screenText;
     string[] lightQuestionsList, hotQuestionsList, questionsList;
@@ -92,7 +94,11 @@ public class TextManager : MonoBehaviour
             questionsList = lightQuestionsList;
 
         print("total: " + questionsList.Length);
-        screenText.text = questionsList[RandomQuestion()];
+
+        if (startQuestion)
+        {
+            screenText.text = questionsList[RandomQuestion()];
+        }
         print(questionsList.Length);
 
         print("WITH TIME IN SCENE " + withTime);
@@ -169,6 +175,24 @@ public class TextManager : MonoBehaviour
 
                 }
             }
+        }
+    }
+
+    public void OnVerdadClick()
+    {
+        if (!instructionsCanvas.enabled)
+        {
+            clicks++;
+            screenText.text = lightQuestionsList[Random.Range(0, lightQuestionsList.Length)]; //light = verdad, hot = reto
+
+        }
+    }
+    public void OnRetoClick()
+    {
+        if (!instructionsCanvas.enabled)
+        {
+            clicks++;
+            screenText.text = hotQuestionsList[Random.Range(0, hotQuestionsList.Length)];
         }
     }
 
