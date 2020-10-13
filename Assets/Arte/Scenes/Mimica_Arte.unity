@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c67cc02b9ad5794d90abdd3c1033f1a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hotDocName: 
+  hotDocName: Mimica_Hot
   lightDocName: Mimica
   separator: 45
   instructionsCanvas: {fileID: 8206461144458096977}
