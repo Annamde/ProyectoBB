@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arte/Scenes/Cita3_Arte.unity
     guid: c255b988e574a324683c06976095507e
+  - enabled: 1
+    path: Assets/Arte/Scenes/Verdad_o_Reto.unity
+    guid: 6b01b61552024104bb2f6a7d109bce91
   m_configObjects: {}
