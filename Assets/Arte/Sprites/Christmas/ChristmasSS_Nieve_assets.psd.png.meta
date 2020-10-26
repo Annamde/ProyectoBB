@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 7ae652961a3b654429e3304b1fba1b68
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: ChristmasSnow_1
+    21300002: ChristmasSS_Nieve_assets.psd_1
+    21300004: ChristmasSS_Nieve_assets.psd_2
+    21300006: ChristmasSnow_2
+    21300008: ChristmasSnow_3
+    21300010: ChristmasSS_Nieve_assets.psd_5
+    21300012: ChristmasSnow_4
+    21300014: ChristmasSS_Nieve_assets.psd_7
+    21300016: ChristmasSS_Nieve_assets.psd_8
+    21300018: ChristmasSnow_5
+    21300020: ChristmasSS_Nieve_assets.psd_10
+    21300022: ChristmasSS_Nieve_assets.psd_11
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -40,7 +52,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -69,9 +81,276 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: ChristmasSnow_1
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1777
+        width: 898
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9929929ed28430c458ee0c38640d8cef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSS_Nieve_assets.psd_1
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 1192
+        width: 599
+        height: 796
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -299.5, y: -398}
+        - {x: -299.5, y: 12}
+        - {x: -148.5, y: 398}
+        - {x: 297.5, y: 398}
+        - {x: 299.5, y: -398}
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0894a83e918cc1446b52a7d66fa2e37f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSS_Nieve_assets.psd_2
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 1508
+        width: 306
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86c0e4af4cd06da43b03fa5f2d5ec045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSnow_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1518
+        width: 760
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbb813f9068a754cb6dca1db689de29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSnow_3
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 1016
+        width: 479
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0577c124606866d4aaa23aebe94d848d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSS_Nieve_assets.psd_5
+      rect:
+        serializedVersion: 2
+        x: 1649
+        y: 964
+        width: 329
+        height: 404
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0984fdc3a61072b4db9b670528038fe4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSnow_4
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 612
+        width: 652
+        height: 305
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5cbfc064d0d4e048b9d31b9ae5f31cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSS_Nieve_assets.psd_7
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 667
+        width: 525
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94d32614c360d154192488c7d04515a6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSS_Nieve_assets.psd_8
+      rect:
+        serializedVersion: 2
+        x: 1672
+        y: 468
+        width: 306
+        height: 405
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 874f454b0761d524e83371f07cceafa0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSnow_5
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 128
+        width: 519
+        height: 410
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9bdafa874673c42a76ae2cf42ae340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSS_Nieve_assets.psd_10
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 44
+        width: 500
+        height: 445
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0866ec5b3b0edf846a9303f9e121b145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChristmasSS_Nieve_assets.psd_11
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 44
+        width: 337
+        height: 353
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2068b8ff013163d45b0ba714c106dfb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
