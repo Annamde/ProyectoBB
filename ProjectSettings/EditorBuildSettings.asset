@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Arte/Scenes/YoNunca_Arte.unity
     guid: 4ef62866b545e0e4489a0da190c85a17
   - enabled: 1
+    path: Assets/Arte/Scenes/Verdad_o_Reto.unity
+    guid: 6b01b61552024104bb2f6a7d109bce91
+  - enabled: 1
     path: Assets/Arte/Scenes/Tabu_Arte.unity
     guid: c80aaccbbe8d5234b8875e080d3c8a15
-  - enabled: 1
-    path: Assets/Arte/Scenes/Retos_Arte.unity
-    guid: 02e62145a0a3f004997e68ed013e9347
   - enabled: 1
     path: Assets/Arte/Scenes/Quien_Arte.unity
     guid: 08dcc50c39da00545b82d15abdfbbabc
@@ -29,7 +29,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arte/Scenes/Cita3_Arte.unity
     guid: c255b988e574a324683c06976095507e
-  - enabled: 1
-    path: Assets/Arte/Scenes/Verdad_o_Reto.unity
-    guid: 6b01b61552024104bb2f6a7d109bce91
   m_configObjects: {}
