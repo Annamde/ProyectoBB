@@ -21,7 +21,7 @@ public class SendTusFrases : MonoBehaviour
     private void Start()
     {
        thankuText = thanku.GetComponent<TMPro.TextMeshProUGUI>();
-        thankuText.enabled = false;
+       thankuText.enabled = false;
     }
 
 
@@ -41,13 +41,20 @@ public class SendTusFrases : MonoBehaviour
     {
         Name = username.GetComponent<InputField>().text;
         Frase = userfrase.GetComponent<InputField>().text;
-
+        
         if (Name != "" && Frase != "")
         {
-            StartCoroutine(Post(Name, Frase));
             thankuText.enabled = true;
+            StartCoroutine(Post(Name, Frase));
+
         }
 
+    }
+
+    public void ClearFrases()
+    {
+        username.GetComponent<InputField>().text = string.Empty;
+        userfrase.GetComponent<InputField>().text = string.Empty;
     }
 
 }
