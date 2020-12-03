@@ -3268,7 +3268,7 @@ PrefabInstance:
     - target: {fileID: 1632004534411841540, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1632004534411841540, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
@@ -11265,7 +11265,7 @@ PrefabInstance:
     - target: {fileID: 1632004534411841540, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1632004534411841540, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
@@ -14372,7 +14372,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1240}
+  m_AnchoredPosition: {x: 0, y: -1225}
   m_SizeDelta: {x: 550, y: 120}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &1180924763
@@ -17789,7 +17789,7 @@ PrefabInstance:
     - target: {fileID: 1632004535159203367, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -377
+      value: -362
       objectReference: {fileID: 0}
     - target: {fileID: 1632004535159203367, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
@@ -17899,7 +17899,7 @@ PrefabInstance:
     - target: {fileID: 1632004534411841540, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1632004534411841540, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
@@ -18200,7 +18200,7 @@ PrefabInstance:
     - target: {fileID: 1632004534411841540, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 1
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 1632004534411841540, guid: 2b5bdd4fe6828f24fb4bf9aac0624a47,
         type: 3}
