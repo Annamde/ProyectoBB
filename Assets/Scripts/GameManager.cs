@@ -5,11 +5,12 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Advertisements;
 using UnityEngine.Analytics;
+using Google.Play.Review;
 //using GoogleMobileAds.Api;
 
 public class GameManager : MonoBehaviour
 {
-    
+
     public static GameManager Instance { set; get; }
 
     static bool created = false;
@@ -23,8 +24,15 @@ public class GameManager : MonoBehaviour
     public int counterAllModes;
 
     [Header("AdsManager")]
-    public string gameID = "3760923";
+    public string iosGameID = "3760922";
+    public string androidGameID = "3760923";
     public bool testMode;
+
+    // Create instance of ReviewManager
+    private ReviewManager _reviewManager;
+    private float IARcounter = 0;
+    public float IARseconds;
+    private bool IARshowed = false;
 
     /*
     [Header("AdsManager")]
@@ -51,7 +59,12 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
 
-        Advertisement.Initialize(gameID, testMode);
+#if UNITY_ANDROID
+        Advertisement.Initialize(androidGameID, testMode);
+#endif
+#if UNITY_IPHONE
+        Advertisement.Initialize(iosGameID, testMode);
+#endif
         StartCoroutine(ShowBannerWhenInitialized());
         //MobileAds.Initialize(initStatus => { });
         //RequestBanner();
@@ -64,9 +77,9 @@ public class GameManager : MonoBehaviour
         {
             SetAllCanvas();
         }
-      
+
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
-        
+        _reviewManager = new ReviewManager();
     }
 
 
@@ -74,7 +87,7 @@ public class GameManager : MonoBehaviour
     {
         if (allCanvas.Count < counterAllModes)
         {
-            print("NO HAY Y LOS INSRANCIO");
+            print("NO HAY Y LOS INSTANCIO");
             SetAllCanvas();
         }
 
@@ -83,7 +96,7 @@ public class GameManager : MonoBehaviour
 
         //DESCOMENTAR PARA LA BUILD
 
-        if (Application.platform == RuntimePlatform.Android)
+        if (Application.platform == RuntimePlatform.Android || Application.platform == RuntimePlatform.IPhonePlayer)
         {
             if (Input.GetKeyDown(KeyCode.Escape))
             {
@@ -102,7 +115,7 @@ public class GameManager : MonoBehaviour
                         Dictionary<string, object> dictionary = new Dictionary<string, object>();
                         dictionary.Add("clicks", clicks);
 
-                        switch(SceneManager.GetActiveScene().name)
+                        switch (SceneManager.GetActiveScene().name)
                         {
                             case "Cita3_Arte":
                                 Analytics.CustomEvent("quit_cita3", dictionary);
@@ -137,6 +150,21 @@ public class GameManager : MonoBehaviour
             }
         }
 
+#if UNITY_ANDROID
+        if (!IARshowed)
+        {
+            if (IARcounter < IARseconds)
+                IARcounter += Time.deltaTime;
+            else
+            {
+                print("show IAR");
+                ShowReview();
+                IARshowed = true;
+            }
+        }
+#endif
+
+
         //BORRAR PARA LA BUILD
 
 
@@ -160,7 +188,7 @@ public class GameManager : MonoBehaviour
         //        activecanvas.enabled = false;
         //    }
         //}
-        
+
     }
 
 
@@ -230,6 +258,36 @@ public class GameManager : MonoBehaviour
 
         Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
         Advertisement.Banner.Show("Banner_abajo");
+    }
+
+    //---------------------------------------IN APP REVIEW----------------------------------------
+    public IEnumerator RequestReview()
+    {
+        var requestFlowOperation = _reviewManager.RequestReviewFlow();
+        yield return requestFlowOperation;
+        if (requestFlowOperation.Error != ReviewErrorCode.NoError)
+        {
+            // Log error. For example, using requestFlowOperation.Error.ToString().
+            yield break;
+        }
+        var _playReviewInfo = requestFlowOperation.GetResult();
+
+        var launchFlowOperation = _reviewManager.LaunchReviewFlow(_playReviewInfo);
+        yield return launchFlowOperation;
+        _playReviewInfo = null; // Reset the object
+        if (launchFlowOperation.Error != ReviewErrorCode.NoError)
+        {
+            // Log error. For example, using requestFlowOperation.Error.ToString().
+            yield break;
+        }
+        // The flow has finished. The API does not indicate whether the user
+        // reviewed or not, or even whether the review dialog was shown. Thus, no
+        // matter the result, we continue our app flow.
+    }
+
+    public void ShowReview()
+    {
+        StartCoroutine(RequestReview());
     }
 
     //--------------------------------------------ADMOB-----------------------------------------
