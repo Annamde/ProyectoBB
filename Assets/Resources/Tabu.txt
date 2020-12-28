@@ -588,7 +588,7 @@ Estrellas/CICATRIZ
 Señal
 Marca
 Herida
-Piel//PAYASO
+Piel/PAYASO
 
 Circo
 Nariz

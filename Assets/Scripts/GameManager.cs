@@ -27,23 +27,12 @@ public class GameManager : MonoBehaviour
     public string iosGameID = "3760922";
     public string androidGameID = "3760923";
     public bool testMode;
+    public bool removeAds;
 
-    // Create instance of ReviewManager
     private ReviewManager _reviewManager;
     private float IARcounter = 0;
     public float IARseconds;
     private bool IARshowed = false;
-
-    /*
-    [Header("AdsManager")]
-    [SerializeField] private string appID = "";
-    [SerializeField] private string bannerID = "";
-    [SerializeField] private string intersticialID = "";
-    
-
-    private BannerView bannerAd;
-    private InterstitialAd interstitialAd;
-    */
 
     private void Awake()
     {
@@ -65,10 +54,9 @@ public class GameManager : MonoBehaviour
 #if UNITY_IPHONE
         Advertisement.Initialize(iosGameID, testMode);
 #endif
-        StartCoroutine(ShowBannerWhenInitialized());
-        //MobileAds.Initialize(initStatus => { });
-        //RequestBanner();
-        //RequestIntersticial();
+
+        removeAds = PlayerPrefs.GetInt("removeAds") == 1 ? true : false;
+        if (!removeAds) StartCoroutine(ShowBannerWhenInitialized());
     }
 
     private void Start()
@@ -80,11 +68,21 @@ public class GameManager : MonoBehaviour
 
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
         _reviewManager = new ReviewManager();
+
+        //por si no le ha dado tiempo a procesar que está comprado, que lo vuelva a comprobar
+        removeAds = PlayerPrefs.GetInt("removeAds") == 1 ? true : false;
+        if (removeAds)
+        {
+            DisableRemoveAds();
+            StopBanner();
+        }
     }
 
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.A)) ResetPlayerPrefs();
+
         if (allCanvas.Count < counterAllModes)
         {
             print("NO HAY Y LOS INSTANCIO");
@@ -157,40 +155,18 @@ public class GameManager : MonoBehaviour
                 IARcounter += Time.deltaTime;
             else
             {
-                print("show IAR");
                 ShowReview();
                 IARshowed = true;
             }
         }
 #endif
 
-
-        //BORRAR PARA LA BUILD
-
-
-        //if (Input.GetKeyDown(KeyCode.A))
-        //{
-        //    StartCoroutine(DesactiveCanvas());
-        //    if (!anyCanvasActive)
-        //    {
-        //        if (SceneManager.GetActiveScene().name == "ModesMenu_Arte")
-        //        {
-        //            Application.Quit();
-        //        }
-        //        else
-        //        {
-        //            SceneManager.LoadScene("ModesMenu_Arte");
-        //        }
-        //    }
-        //    else
-        //    {
-        //        anyCanvasActive = false;
-        //        activecanvas.enabled = false;
-        //    }
-        //}
-
     }
 
+    public void ResetPlayerPrefs()
+    {
+        PlayerPrefs.DeleteAll();
+    }
 
     IEnumerator DesactiveCanvas()
     {
@@ -238,26 +214,47 @@ public class GameManager : MonoBehaviour
 
     public void ShowInterstitialAd()
     {
-        // Check if UnityAds ready before calling Show method:
-        if (Advertisement.IsReady("Intersticial_menu"))
+        if (!removeAds)
         {
-            Advertisement.Show("Intersticial_menu");
-        }
-        else
-        {
-            Debug.Log("Interstitial ad not ready at the moment! Please try again later!");
+            // Check if UnityAds ready before calling Show method:
+            if (Advertisement.IsReady("Intersticial_menu"))
+            {
+                Advertisement.Show("Intersticial_menu");
+            }
+            else
+            {
+                Debug.Log("Interstitial ad not ready at the moment! Please try again later!");
+            }
         }
     }
 
     IEnumerator ShowBannerWhenInitialized()
     {
-        while (!Advertisement.isInitialized)
+        if (!removeAds)
         {
-            yield return new WaitForSeconds(0.5f);
+            while (!Advertisement.isInitialized)
+            {
+                yield return new WaitForSeconds(0.5f);
+            }
+
+            Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
+            Advertisement.Banner.Show("Banner_abajo");
         }
 
-        Advertisement.Banner.SetPosition(BannerPosition.BOTTOM_CENTER);
-        Advertisement.Banner.Show("Banner_abajo");
+        else StopBanner();
+    }
+
+    public void StopBanner()
+    {
+        Advertisement.Banner.Hide();
+    }
+
+    public void DisableRemoveAds()
+    {
+        GameObject button;
+        button = GameObject.FindGameObjectWithTag("RemoveAds");
+        if (button != null) button.SetActive(false);
+        StopBanner();
     }
 
     //---------------------------------------IN APP REVIEW----------------------------------------
