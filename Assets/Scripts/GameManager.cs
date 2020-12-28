@@ -57,6 +57,11 @@ public class GameManager : MonoBehaviour
 
         removeAds = PlayerPrefs.GetInt("removeAds") == 1 ? true : false;
         if (!removeAds) StartCoroutine(ShowBannerWhenInitialized());
+        else
+        {
+            DisableRemoveAds();
+            StopBanner();
+        }
     }
 
     private void Start()
@@ -81,7 +86,6 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A)) ResetPlayerPrefs();
 
         if (allCanvas.Count < counterAllModes)
         {
