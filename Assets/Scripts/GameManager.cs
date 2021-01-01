@@ -51,7 +51,7 @@ public class GameManager : MonoBehaviour
 #if UNITY_ANDROID
         Advertisement.Initialize(androidGameID, testMode);
 #endif
-#if UNITY_IPHONE
+#if UNITY_IOS
         Advertisement.Initialize(iosGameID, testMode);
 #endif
 
@@ -160,6 +160,19 @@ public class GameManager : MonoBehaviour
             else
             {
                 ShowReview();
+                IARshowed = true;
+            }
+        }
+#endif
+
+#if UNITY_IOS
+        if (!IARshowed)
+        {
+            if (IARcounter < IARseconds)
+                IARcounter += Time.deltaTime;
+            else
+            {
+                NativeReviewRequest.RequestReview()
                 IARshowed = true;
             }
         }
