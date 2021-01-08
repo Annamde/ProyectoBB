@@ -19,12 +19,12 @@ MonoBehaviour:
   addedRulesIDs: []
   updatedRulesIDs: []
   deletedRulesIDs: []
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"efa09628-c331-4cdb-9775-340965831e6f\"\r\n
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a488f84f-a4d0-4f80-a712-cfcf460fb3ff\"\r\n
     \   },\r\n    \"rs\": {\r\n      \"key\": \"changeMenu\",\r\n      \"type\": \"bool\",\r\n
-    \     \"value\": true\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"efa09628-c331-4cdb-9775-340965831e6f\"\r\n
+    \     \"value\": false\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"a488f84f-a4d0-4f80-a712-cfcf460fb3ff\"\r\n
     \   },\r\n    \"rs\": {\r\n      \"key\": \"changeMenu\",\r\n      \"type\": \"bool\",\r\n
-    \     \"value\": true\r\n    }\r\n  }\r\n]"
+    \     \"value\": false\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"e7cb9916-6409-4b73-a430-eb5484911524\",\r\n
     \   \"name\": \"Initial\",\r\n    \"id\": \"3679f2ee-a85f-419f-a46a-34e402d05616\",\r\n
     \   \"createdAt\": \"2021-01-04T19:14:22Z\",\r\n    \"updatedAt\": \"2021-01-04T19:14:22Z\",\r\n
