@@ -215,6 +215,7 @@ public class GameManager : MonoBehaviour
         allCanvas.Add(GameObject.Find("QuienInstructions").GetComponent<Canvas>());
         allCanvas.Add(GameObject.Find("LetrasInstructions").GetComponent<Canvas>());
         allCanvas.Add(GameObject.Find("MimicaInstructions").GetComponent<Canvas>());
+
     }
 
     public void ResetListOfCanvas()
