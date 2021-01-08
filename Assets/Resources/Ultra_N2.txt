@@ -1,0 +1,50 @@
+﻿{0}, lame la mejilla de {1}
+{0}, dale un pico a todos los hombres
+{0}, quítate una prenda de ropa
+{0}, bésate con {1} o bebe 5 tragos
+{0}, muerde la mejilla de {1}
+{0}, dale un pico a todas las mujeres
+{0}, quítale una prenda de ropa a {1}
+{0}, cierra los ojos y adivina qué jugador te está besando el cuello
+{0}, lame la oreja de {1}
+{0}, toca sensualmente los pechos de alguna jugadora
+{0}, da un beso en la mejilla a los hombres
+{0}, intenta seducir a {1}
+{0}, elige a alguien para que se quite una prenda de ropa
+{0}, muerde la oreja de {1}
+{0}, deja que {1} te muerda el cuello
+{0}, tócale el pelo a {1} sensualmente
+{0}, da un beso en la mejilla a todas las mujeres
+{0}, quítale la camiseta a {1}
+{0}, lame la mejilla del jugador/a de tu derecha
+{0}, elige dos jugadores para que se azoten
+{0}, elige dos jugadores para que se besen
+{0}, besa al jugador/a con quien tendrías relaciones sexuales ahora mismo
+{0}, desabrocha el pantalón del jugador de tu izquierda
+{0}, bebe si tendrías relaciones con el jugador que tienes justo a tu izquierda o derecha
+{0}, desabrocha el sujetador de la chica que prefieras con una mano
+{0}, cierra los ojos y adivina qué jugador te está besando la oreja
+{0}, besa el culo de {1}
+{0}, muerde el culo de {1}
+{0}, besa el cuello de {1}
+{0}, cierra los ojos y adivina quién te está tocando el culo
+{0}, lámele la oreja sensualmente a {1}
+{0}, todos te besan el culo
+{0}, muerde el cuello de {1}
+{0}, {1} tendrá sus manos en tus partes íntimas tantos segundos como tragos bebas
+{0}, susurra algo caliente a {1}
+{0}, decide quién le morderá el labio a {1}
+{0}, muerde el labio a {1}
+{0}, besa la espalda de {1} dibujando un número. Si no lo adivina bebe 3 tragos
+{0}, lame sensualmente un dedo de {1}
+{0}, besa a {1}
+{0}, elige a dos jugadores para que te hagan un baile sensual
+{0}, haz un baile sexy a {1}
+{0}, elige con quién irte 5 minutos
+{0}, elige con quién {1} se va durante 5 minutos
+{0}, el grupo elige con quién te besas
+{0}, besa a alguien de tu mismo género
+{0}, besa a alguien del género contrario
+{0}, el grupo elige con quién te vas 5 minutos
+{0}, siéntate en el regazo de {1}
+{0}, siéntate en el regazo del jugador que quieras
