@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arte/Scenes/Cita3_Arte.unity
     guid: c255b988e574a324683c06976095507e
+  - enabled: 1
+    path: Assets/Arte/Scenes/Ultra_Arte.unity
+    guid: 27d233d5beb24e24ab7d4755cea198c8
   m_configObjects: {}

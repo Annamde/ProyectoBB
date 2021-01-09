@@ -28,7 +28,7 @@ public class TextManager_Ultra : MonoBehaviour
 
     public int clicks;
 
-    public int levelEnabled = 0;
+    public float levelEnabled = 1;
 
     string name1 = "";
     string name2 = "";
@@ -59,7 +59,6 @@ public class TextManager_Ultra : MonoBehaviour
 
 
         levelEnabled = GameManager.Instance.hotLevel;
-        levelEnabled = 1;
 
         switch (levelEnabled)
         {
@@ -101,8 +100,8 @@ public class TextManager_Ultra : MonoBehaviour
                 break;
         }
 
+        print(levelEnabled);
         ChangeText();
-        print("free: " + freeRandom.Count + " used: " + usedRandom.Count);
 
         clicks = 0;
     }

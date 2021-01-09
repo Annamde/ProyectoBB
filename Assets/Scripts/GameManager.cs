@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
     [Header("GameManager")]
     public bool allowHot = true;
     public bool withTime = true;
-    public int hotLevel = 0;
+    public float hotLevel = 1;
     public bool anyCanvasActive = false;
     private Canvas activecanvas;
     List<Canvas> allCanvas = new List<Canvas>();
