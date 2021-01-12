@@ -15,6 +15,7 @@ public class SortMenuScript : MonoBehaviour
 
     public void Awake()
     {
+        ConfigManager.FetchCompleted += ChangeNamesMenu;
         ConfigManager.FetchCompleted += SetMenuUI;
         ConfigManager.FetchConfigs<userAtributtes, appAtributtes>(new userAtributtes(), new appAtributtes());
         print("AWAKE " + changeMenu);
@@ -40,10 +41,21 @@ public class SortMenuScript : MonoBehaviour
         }
     }
 
+    void ChangeNamesMenu(ConfigResponse response)
+    {
+        modes[2].name = ConfigManager.appConfig.GetString("YoNuncaName");
+        modes[3].name = ConfigManager.appConfig.GetString("MimicaName");
+        modes[4].name = ConfigManager.appConfig.GetString("QuienName");
+        modes[5].name = ConfigManager.appConfig.GetString("VoRName");
+        modes[6].name = ConfigManager.appConfig.GetString("TabuName");
+        modes[7].name = ConfigManager.appConfig.GetString("CitaName");
+        modes[8].name = ConfigManager.appConfig.GetString("LetrasName");
+    }
+
     // Update is called once per frame
     void Update()
     {
-        print("UPDATE" + changeMenu);
+        
     }
 
 
