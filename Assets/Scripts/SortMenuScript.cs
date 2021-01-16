@@ -18,7 +18,6 @@ public class SortMenuScript : MonoBehaviour
         ConfigManager.FetchCompleted += ChangeNamesMenu;
         ConfigManager.FetchCompleted += SetMenuUI;
         ConfigManager.FetchConfigs<userAtributtes, appAtributtes>(new userAtributtes(), new appAtributtes());
-        print("AWAKE " + changeMenu);
     }
 
     // Start is called before the first frame update
