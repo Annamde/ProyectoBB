@@ -9,6 +9,8 @@ public class SendTusFrases : MonoBehaviour
     public GameObject username;
     public GameObject userfrase;
     public GameObject thanku;
+    public string firstField;
+    public string secondField;
 
     private string Name;
     private string Frase;
@@ -28,8 +30,8 @@ public class SendTusFrases : MonoBehaviour
     IEnumerator Post(string name, string frase)
     {
         WWWForm form = new WWWForm();
-        form.AddField("entry.1141775659", name);
-        form.AddField("entry.1066077310", frase);
+        form.AddField(firstField, name); //tus frases: name (entry.1141775659)
+        form.AddField(secondField, frase); // tus frases: frase (entry.1066077310)
 
         byte[] rawdata = form.data;
         WWW www = new WWW(BASE_URL, rawdata);
