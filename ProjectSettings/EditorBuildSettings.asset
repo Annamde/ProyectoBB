@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arte/Scenes/Cita3_Arte.unity
     guid: c255b988e574a324683c06976095507e
+  - enabled: 1
+    path: Assets/Arte/Scenes/EnviaOBebe_Arte.unity
+    guid: 48cd19f27f7996f448cae98b5ec55cbb
   m_configObjects: {}
