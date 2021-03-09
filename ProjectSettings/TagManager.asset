@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - RemoveAds
+  - playParent
+  - watchAdsParent
   layers:
   - Default
   - TransparentFX

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Purchasing;
+using UnityEngine.SceneManagement;
 
 // Deriving the Purchaser class from IStoreListener enables it to receive messages from Unity Purchasing.
 public class IAPManager : MonoBehaviour, IStoreListener
@@ -128,6 +129,8 @@ public class IAPManager : MonoBehaviour, IStoreListener
             PlayerPrefs.SetInt("removeAds", 1);
             GameManager.Instance.StopBanner();
             GameManager.Instance.DisableRemoveAds();
+            
+            SceneManager.LoadScene("ModesMenu_Arte");
         }
 
         else

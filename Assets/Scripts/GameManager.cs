@@ -8,7 +8,7 @@ using UnityEngine.Analytics;
 using Google.Play.Review;
 //using GoogleMobileAds.Api;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour, IUnityAdsListener
 {
 
     public static GameManager Instance { set; get; }
@@ -23,11 +23,16 @@ public class GameManager : MonoBehaviour
     List<Canvas> allCanvas = new List<Canvas>();
     public int counterAllModes;
 
+
     [Header("AdsManager")]
     public string iosGameID = "3760922";
     public string androidGameID = "3760923";
     public bool testMode;
     public bool removeAds;
+
+    [HideInInspector]
+    public GameObject playParent;
+    public GameObject watchAdsParent;
 
     private ReviewManager _reviewManager;
     private float IARcounter = 0;
@@ -48,6 +53,8 @@ public class GameManager : MonoBehaviour
             Destroy(this.gameObject);
         }
 
+        Advertisement.AddListener(this);
+
 #if UNITY_ANDROID
         Advertisement.Initialize(androidGameID, testMode);
 #endif
@@ -55,12 +62,23 @@ public class GameManager : MonoBehaviour
         Advertisement.Initialize(iosGameID, testMode);
 #endif
 
+        playParent = GameObject.FindGameObjectWithTag("playParent");
+        watchAdsParent = GameObject.FindGameObjectWithTag("watchAdsParent");
+
         removeAds = PlayerPrefs.GetInt("removeAds") == 1 ? true : false;
-        if (!removeAds) StartCoroutine(ShowBannerWhenInitialized());
+        if (!removeAds) //si no ha comprado eliminar anuncios
+        {
+            StartCoroutine(ShowBannerWhenInitialized());
+            if(watchAdsParent!=null) ChangeChildStatus(watchAdsParent, true);
+            if (playParent != null) ChangeChildStatus(playParent, false);
+
+        }
         else
         {
             DisableRemoveAds();
             StopBanner();
+            if (watchAdsParent != null) ChangeChildStatus(watchAdsParent, false);
+            if (playParent != null) ChangeChildStatus(playParent, true);
         }
     }
 
@@ -228,6 +246,14 @@ public class GameManager : MonoBehaviour
         anyCanvasActive = !anyCanvasActive;
     }
 
+    public void ChangeChildStatus(GameObject parent, bool status)
+    {
+        foreach (Transform child in parent.transform)
+        {
+            child.gameObject.SetActive(status);
+        }
+    }
+
     //--------------------------------------------Unity Ads-----------------------------------------
 
     public void ShowInterstitialAd()
@@ -273,6 +299,65 @@ public class GameManager : MonoBehaviour
         button = GameObject.FindGameObjectWithTag("RemoveAds");
         if (button != null) button.SetActive(false);
         StopBanner();
+    }
+
+    public void ShowRewardedVideo()
+    {
+        if (!removeAds)
+        {
+            if (Advertisement.IsReady("Rewarded_EoB"))
+            {
+                Advertisement.Show("Rewarded_EoB");
+            }
+            else
+            {
+                Debug.Log("Rewarded video is not ready at the moment! Please try again later!");
+            }
+        }
+    }
+
+    // Implement IUnityAdsListener interface methods:
+    public void OnUnityAdsDidFinish(string surfacingId, ShowResult showResult)
+    {
+        // Define conditional logic for each ad completion status:
+        if (showResult == ShowResult.Finished && surfacingId == "Rewarded_EoB")
+        {
+            //Recompensa
+            SceneManager.LoadScene("EnviaoBebe_Arte");
+        }
+        else if (showResult == ShowResult.Skipped)
+        {
+            // Do not reward the user for skipping the ad.
+        }
+        else if (showResult == ShowResult.Failed)
+        {
+            Debug.LogWarning("The ad did not finish due to an error.");
+        }
+    }
+
+    public void OnUnityAdsReady(string surfacingId)
+    {
+        // If the ready Ad Unit or legacy Placement is rewarded, show the ad:
+        if (surfacingId == "Rewarded_EoB")
+        {
+            // Optional actions to take when theAd Unit or legacy Placement becomes ready (for example, enable the rewarded ads button)
+        }
+    }
+
+    public void OnUnityAdsDidError(string message)
+    {
+        // Log the error.
+    }
+
+    public void OnUnityAdsDidStart(string surfacingId)
+    {
+        // Optional actions to take when the end-users triggers an ad.
+    }
+
+    // When the object that subscribes to ad events is destroyed, remove the listener:
+    public void OnDestroy()
+    {
+        Advertisement.RemoveListener(this);
     }
 
     //---------------------------------------IN APP REVIEW----------------------------------------
