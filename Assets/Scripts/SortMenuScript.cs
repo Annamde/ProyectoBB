@@ -6,7 +6,6 @@ using Unity.RemoteConfig;
 
 public class SortMenuScript : MonoBehaviour
 {
-    //public GameObject[] modes;
     public List<GameObject> modes = new List<GameObject>();
     public bool changeMenu = false;
 
@@ -18,13 +17,6 @@ public class SortMenuScript : MonoBehaviour
         ConfigManager.FetchCompleted += ChangeNamesMenu;
         ConfigManager.FetchCompleted += SetMenuUI;
         ConfigManager.FetchConfigs<userAtributtes, appAtributtes>(new userAtributtes(), new appAtributtes());
-        print("AWAKE " + changeMenu);
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-       
     }
 
     void SetMenuUI(ConfigResponse response)
@@ -50,13 +42,7 @@ public class SortMenuScript : MonoBehaviour
         modes[6].name = ConfigManager.appConfig.GetString("TabuName");
         modes[7].name = ConfigManager.appConfig.GetString("CitaName");
         modes[8].name = ConfigManager.appConfig.GetString("LetrasName");
+        modes[9].name = ConfigManager.appConfig.GetString("EnviaOBebeName");
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
 
 }

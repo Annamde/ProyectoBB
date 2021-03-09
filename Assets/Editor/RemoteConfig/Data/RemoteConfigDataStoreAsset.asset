@@ -12,65 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  configId: f0dd8b18-c15f-4d9b-b271-19d6ab17c235
-  currentEnvironment: Initial
-  currentEnvironmentId: 3679f2ee-a85f-419f-a46a-34e402d05616
-  currentEnvironmentIsDefault: 1
+  configId: 
+  currentEnvironment: Please create an environment.
+  currentEnvironmentId: 
+  currentEnvironmentIsDefault: 0
   addedRulesIDs: []
   updatedRulesIDs: []
   deletedRulesIDs: []
-  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"89ee183e-47ff-4ecb-9710-aa0bc4785d71\"\r\n
-    \   },\r\n    \"rs\": {\r\n      \"key\": \"changeMenu\",\r\n      \"type\": \"bool\",\r\n
-    \     \"value\": false\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"b3e21fcd-63c9-4616-9cc4-601df240fd81\"\r\n    },\r\n    \"rs\": {\r\n      \"key\":
-    \"YoNuncaName\",\r\n      \"type\": \"string\",\r\n      \"value\": \"3-YN_Button\"\r\n
-    \   }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8945d473-ccff-4042-87da-eb48906f27ce\"\r\n
-    \   },\r\n    \"rs\": {\r\n      \"key\": \"QuienName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"9-Quien_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"e2d3eaf1-c085-4340-a161-e77d020197b4\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"VoRName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"8-Retos_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"92a29783-a0e7-41c1-a7f7-b7b4e2a3480c\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"TabuName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"7-Tabu_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"9828d9b6-619f-4fde-bdce-c58f3c8d38c7\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"MimicaName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"5-Mimica_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"781e88e0-37d3-4b49-a4e2-1a4bdb6bf18e\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"CitaName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"6-Cita3_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"52b401ac-0067-4ee5-85d8-eebd14adf5b2\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"LetrasName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"4-Letras_Button\"\r\n    }\r\n  }\r\n]"
-  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"89ee183e-47ff-4ecb-9710-aa0bc4785d71\"\r\n
-    \   },\r\n    \"rs\": {\r\n      \"key\": \"changeMenu\",\r\n      \"type\": \"bool\",\r\n
-    \     \"value\": false\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
-    \"b3e21fcd-63c9-4616-9cc4-601df240fd81\"\r\n    },\r\n    \"rs\": {\r\n      \"key\":
-    \"YoNuncaName\",\r\n      \"type\": \"string\",\r\n      \"value\": \"3-YN_Button\"\r\n
-    \   }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"8945d473-ccff-4042-87da-eb48906f27ce\"\r\n
-    \   },\r\n    \"rs\": {\r\n      \"key\": \"QuienName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"9-Quien_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"e2d3eaf1-c085-4340-a161-e77d020197b4\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"VoRName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"8-Retos_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"92a29783-a0e7-41c1-a7f7-b7b4e2a3480c\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"TabuName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"7-Tabu_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"9828d9b6-619f-4fde-bdce-c58f3c8d38c7\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"MimicaName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"5-Mimica_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"781e88e0-37d3-4b49-a4e2-1a4bdb6bf18e\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"CitaName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"6-Cita3_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\":
-    {\r\n      \"entityId\": \"52b401ac-0067-4ee5-85d8-eebd14adf5b2\"\r\n    },\r\n
-    \   \"rs\": {\r\n      \"key\": \"LetrasName\",\r\n      \"type\": \"string\",\r\n
-    \     \"value\": \"4-Letras_Button\"\r\n    }\r\n  }\r\n]"
-  _environments: "[\r\n  {\r\n    \"projectId\": \"e7cb9916-6409-4b73-a430-eb5484911524\",\r\n
-    \   \"name\": \"Initial\",\r\n    \"id\": \"3679f2ee-a85f-419f-a46a-34e402d05616\",\r\n
-    \   \"createdAt\": \"2021-01-04T19:14:22Z\",\r\n    \"updatedAt\": \"2021-01-04T19:14:22Z\",\r\n
-    \   \"isDefault\": true\r\n  },\r\n  {\r\n    \"projectId\": \"e7cb9916-6409-4b73-a430-eb5484911524\",\r\n
-    \   \"name\": \"Production\",\r\n    \"id\": \"020703f7-f791-4760-bd6d-6fc260b5235f\",\r\n
-    \   \"createdAt\": \"2021-01-04T19:32:39Z\",\r\n    \"updatedAt\": \"2021-01-04T19:32:39Z\",\r\n
-    \   \"isDefault\": false\r\n  }\r\n]"
+  _rsKeyList: '[]'
+  _rsLastCachedKeyList: '[]'
+  _environments: '[]'
   _rulesList: '[]'
   _lastCachedRulesList: '[]'
