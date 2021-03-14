@@ -1,14 +1,24 @@
 fileFormatVersion: 2
 guid: 6a44504bebf8af74dbb1f81e77c1d229
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: ChristmasLOGO
-    21300002: ChristmasOFFToggle
-    21300004: ChristmasONToggle
-    21300006: ChristmasRenoLights
-    21300008: ChristmasLights
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: ChristmasLOGO
+  - first:
+      213: 21300002
+    second: ChristmasOFFToggle
+  - first:
+      213: 21300004
+    second: ChristmasONToggle
+  - first:
+      213: 21300006
+    second: ChristmasRenoLights
+  - first:
+      213: 21300008
+    second: ChristmasLights
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -62,8 +72,9 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -74,7 +85,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -85,7 +97,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -96,6 +109,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -115,6 +129,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5b665186e4290dc4caa0f6cc2c04493c
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -135,6 +150,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: a6cdf03d7e5d36f4cb3a42b3f82665d9
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -155,6 +171,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9d25433ba71733844a3392c90eefa539
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -175,6 +192,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2b980f11fead6ef45913217faa11191d
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -195,6 +213,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 35052ee8f44234a4ab2168c9b6d1f6ca
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -203,10 +222,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: a636d47548f26cc4c96f77587d116ea0
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

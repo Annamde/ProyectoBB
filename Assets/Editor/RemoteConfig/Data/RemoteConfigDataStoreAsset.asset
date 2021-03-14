@@ -12,15 +12,73 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 469c24fdb3bd6431b92cc1465bd9166b, type: 3}
   m_Name: RemoteConfigDataStoreAsset
   m_EditorClassIdentifier: 
-  configId: 
-  currentEnvironment: Please create an environment.
-  currentEnvironmentId: 
-  currentEnvironmentIsDefault: 0
+  configId: f0dd8b18-c15f-4d9b-b271-19d6ab17c235
+  currentEnvironment: Initial
+  currentEnvironmentId: 3679f2ee-a85f-419f-a46a-34e402d05616
+  currentEnvironmentIsDefault: 1
   addedRulesIDs: []
   updatedRulesIDs: []
   deletedRulesIDs: []
-  _rsKeyList: '[]'
-  _rsLastCachedKeyList: '[]'
-  _environments: '[]'
+  _rsKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9592ac37-6316-49d0-9e79-e1e7bab37674\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"NewPrefab\",\r\n      \"type\": \"bool\",\r\n     
+    \"value\": true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"32061652-3128-45bc-b15d-205321f5261f\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"EnviaOBebeName\",\r\n      \"type\": \"string\",\r\n      \"value\":
+    \"4,1-EoB_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"dc52b69a-32ec-4223-ad41-c56d4deb6173\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"changeMenu\",\r\n      \"type\": \"bool\",\r\n      \"value\": true\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"126d7f34-c3c3-4576-b04a-71ba87844090\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"YoNuncaName\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"4,2-YN_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"6629aa9b-4157-44ec-a65a-db051dc96251\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"QuienName\",\r\n      \"type\": \"string\",\r\n      \"value\":
+    \"9-Quien_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"8a303e3c-deba-4a57-bfb6-16bec256d3c0\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"VoRName\",\r\n      \"type\": \"string\",\r\n      \"value\": \"9-Retos_Button\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"54093a61-2444-4cc7-ac55-7edf01445479\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"TabuName\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"7-Tabu_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"4ec9a5b8-9720-447a-880d-b20ffb2dc674\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"MimicaName\",\r\n      \"type\": \"string\",\r\n      \"value\":
+    \"8-Mimica_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"98ccbcd5-ee65-4808-9df8-cd4b6b0a7ed7\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"CitaName\",\r\n      \"type\": \"string\",\r\n      \"value\": \"6-Cita3_Button\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9fdcef1e-f91e-4671-ab56-86534a9bac40\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"LetrasName\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"5-Letras_Button\"\r\n    }\r\n  }\r\n]"
+  _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9592ac37-6316-49d0-9e79-e1e7bab37674\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"NewPrefab\",\r\n      \"type\": \"bool\",\r\n     
+    \"value\": true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"32061652-3128-45bc-b15d-205321f5261f\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"EnviaOBebeName\",\r\n      \"type\": \"string\",\r\n      \"value\":
+    \"4,1-EoB_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"dc52b69a-32ec-4223-ad41-c56d4deb6173\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"changeMenu\",\r\n      \"type\": \"bool\",\r\n      \"value\": true\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"126d7f34-c3c3-4576-b04a-71ba87844090\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"YoNuncaName\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"4,2-YN_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"6629aa9b-4157-44ec-a65a-db051dc96251\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"QuienName\",\r\n      \"type\": \"string\",\r\n      \"value\":
+    \"9-Quien_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"8a303e3c-deba-4a57-bfb6-16bec256d3c0\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"VoRName\",\r\n      \"type\": \"string\",\r\n      \"value\": \"9-Retos_Button\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"54093a61-2444-4cc7-ac55-7edf01445479\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"TabuName\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"7-Tabu_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"4ec9a5b8-9720-447a-880d-b20ffb2dc674\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"MimicaName\",\r\n      \"type\": \"string\",\r\n      \"value\":
+    \"8-Mimica_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
+    \"98ccbcd5-ee65-4808-9df8-cd4b6b0a7ed7\"\r\n    },\r\n    \"rs\": {\r\n     
+    \"key\": \"CitaName\",\r\n      \"type\": \"string\",\r\n      \"value\": \"6-Cita3_Button\"\r\n   
+    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9fdcef1e-f91e-4671-ab56-86534a9bac40\"\r\n   
+    },\r\n    \"rs\": {\r\n      \"key\": \"LetrasName\",\r\n      \"type\": \"string\",\r\n     
+    \"value\": \"5-Letras_Button\"\r\n    }\r\n  }\r\n]"
+  _environments: "[\r\n  {\r\n    \"projectId\": \"e7cb9916-6409-4b73-a430-eb5484911524\",\r\n   
+    \"name\": \"Initial\",\r\n    \"id\": \"3679f2ee-a85f-419f-a46a-34e402d05616\",\r\n   
+    \"createdAt\": \"2021-01-04T19:14:22Z\",\r\n    \"updatedAt\": \"2021-01-04T19:14:22Z\",\r\n   
+    \"isDefault\": true\r\n  },\r\n  {\r\n    \"projectId\": \"e7cb9916-6409-4b73-a430-eb5484911524\",\r\n   
+    \"name\": \"Production\",\r\n    \"id\": \"020703f7-f791-4760-bd6d-6fc260b5235f\",\r\n   
+    \"createdAt\": \"2021-01-04T19:32:39Z\",\r\n    \"updatedAt\": \"2021-01-04T19:32:39Z\",\r\n   
+    \"isDefault\": false\r\n  }\r\n]"
   _rulesList: '[]'
   _lastCachedRulesList: '[]'

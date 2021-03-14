@@ -24,7 +24,6 @@ public class ForceUpdateScript : MonoBehaviour
         }
         else
         {
-            Debug.Log("Found ==>" + w.text + "<==");
             // don't forget to look in the 'bottom section'
             // of Unity console to see the full text of
             // multiline console messages.

@@ -80,6 +80,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
             if (watchAdsParent != null) ChangeChildStatus(watchAdsParent, false);
             if (playParent != null) ChangeChildStatus(playParent, true);
         }
+        
     }
 
     private void Start()
