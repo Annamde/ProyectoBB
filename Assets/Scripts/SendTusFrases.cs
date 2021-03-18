@@ -1,8 +1,7 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.Networking;
 
 public class SendTusFrases : MonoBehaviour
 {
@@ -31,10 +30,11 @@ public class SendTusFrases : MonoBehaviour
         form.AddField("entry.1141775659", name);
         form.AddField("entry.1066077310", frase);
 
-        byte[] rawdata = form.data;
-        WWW www = new WWW(BASE_URL, rawdata);
+        // byte[] rawdata = form.data;
+        // WWW www = new WWW(BASE_URL, rawdata);
+        UnityWebRequest www = UnityWebRequest.Post(BASE_URL, form);
 
-        yield return www;
+        yield return www.SendWebRequest();
     }
 
     public void Send()
