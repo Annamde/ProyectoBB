@@ -34,7 +34,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     public GameObject playParent;
     public GameObject watchAdsParent;
 
-    private ReviewManager _reviewManager;
+    //private ReviewManager _reviewManager;
     private float IARcounter = 0;
     public float IARseconds;
     private bool IARshowed = false;
@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
         }
 
         Screen.sleepTimeout = SleepTimeout.NeverSleep;
-        _reviewManager = new ReviewManager();
+        //_reviewManager = new ReviewManager();
 
         //por si no le ha dado tiempo a procesar que está comprado, que lo vuelva a comprobar
         removeAds = PlayerPrefs.GetInt("removeAds") == 1 ? true : false;
@@ -171,18 +171,18 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
             }
         }
 
-#if UNITY_ANDROID
-        if (!IARshowed)
-        {
-            if (IARcounter < IARseconds)
-                IARcounter += Time.deltaTime;
-            else
-            {
-                ShowReview();
-                IARshowed = true;
-            }
-        }
-#endif
+//#if UNITY_ANDROID
+//        if (!IARshowed)
+//        {
+//            if (IARcounter < IARseconds)
+//                IARcounter += Time.deltaTime;
+//            else
+//            {
+//                ShowReview();
+//                IARshowed = true;
+//            }
+//        }
+//#endif
 
 #if UNITY_IOS
         if (!IARshowed)
@@ -362,34 +362,34 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     }
 
     //---------------------------------------IN APP REVIEW----------------------------------------
-    public IEnumerator RequestReview()
-    {
-        var requestFlowOperation = _reviewManager.RequestReviewFlow();
-        yield return requestFlowOperation;
-        if (requestFlowOperation.Error != ReviewErrorCode.NoError)
-        {
-            // Log error. For example, using requestFlowOperation.Error.ToString().
-            yield break;
-        }
-        var _playReviewInfo = requestFlowOperation.GetResult();
+    //public IEnumerator RequestReview()
+    //{
+    //    var requestFlowOperation = _reviewManager.RequestReviewFlow();
+    //    yield return requestFlowOperation;
+    //    if (requestFlowOperation.Error != ReviewErrorCode.NoError)
+    //    {
+    //        // Log error. For example, using requestFlowOperation.Error.ToString().
+    //        yield break;
+    //    }
+    //    var _playReviewInfo = requestFlowOperation.GetResult();
 
-        var launchFlowOperation = _reviewManager.LaunchReviewFlow(_playReviewInfo);
-        yield return launchFlowOperation;
-        _playReviewInfo = null; // Reset the object
-        if (launchFlowOperation.Error != ReviewErrorCode.NoError)
-        {
-            // Log error. For example, using requestFlowOperation.Error.ToString().
-            yield break;
-        }
-        // The flow has finished. The API does not indicate whether the user
-        // reviewed or not, or even whether the review dialog was shown. Thus, no
-        // matter the result, we continue our app flow.
-    }
+    //    var launchFlowOperation = _reviewManager.LaunchReviewFlow(_playReviewInfo);
+    //    yield return launchFlowOperation;
+    //    _playReviewInfo = null; // Reset the object
+    //    if (launchFlowOperation.Error != ReviewErrorCode.NoError)
+    //    {
+    //        // Log error. For example, using requestFlowOperation.Error.ToString().
+    //        yield break;
+    //    }
+    //    // The flow has finished. The API does not indicate whether the user
+    //    // reviewed or not, or even whether the review dialog was shown. Thus, no
+    //    // matter the result, we continue our app flow.
+    //}
 
-    public void ShowReview()
-    {
-        StartCoroutine(RequestReview());
-    }
+    //public void ShowReview()
+    //{
+    //    StartCoroutine(RequestReview());
+    //}
 
     //--------------------------------------------ADMOB-----------------------------------------
 
