@@ -2,7 +2,7 @@
 {0}, ¿tienes alguna fantasía sexual secreta que no quieres que los demás sepan?
 {0}, cuéntanos tu orgasmo más rapido
 {0}, ¿tendrías sexo con {1}?
-{0}, si tuivieras que irte a un cuarto oscuro con algún jugador, ¿quién sería?
+{0}, si tuvieras que irte a un cuarto oscuro con algún jugador, ¿quién sería?
 {0}, ¿a quién aquí presente besarías ahora mismo?
 {0}, ¿qué característica te pone más de las personas del género que te atrae?
 {0}, ¿cuál es el objeto más extraño que has usado para darte placer?
@@ -17,7 +17,7 @@
 {0}, di con qué jugador te casarías, con cuál te acostarías y a cuál matarías
 {0}, si tuvieras relaciones con {1}, ¿dónde sería?
 {0}, explica cómo perdiste la virginidad
-{0}, ¿qué jugador crees que la tiene mas grande?
+{0}, ¿qué jugador crees que la tiene más grande?
 {0}, ¿qué dos personas aquí presentes serían buena pareja?
 {0}, ¿qué dos jugadores tendrían el mejor sexo juntos?
 {0}, ¿qué es lo peor de ser de tu género?
@@ -31,7 +31,7 @@
 {0}, ¿cuándo fue la última vez que te masturbaste?
 {0}, ¿cuánto suelen durar tus relaciones?
 {0}, ¿cuál es tu postura favorita?
-{0}, ¿cuál crees que es la postur favorita de {1}?
+{0}, ¿cuál crees que es la postura favorita de {1}?
 {0}, nombra todas las categorías pornográficas que puedas en 10 segundos
 {0}, explica tu mejor sueño erótico
 {0}, ¿cómo crees que es {1} en la cama?
