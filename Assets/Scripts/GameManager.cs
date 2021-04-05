@@ -22,6 +22,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     private Canvas activecanvas;
     List<Canvas> allCanvas = new List<Canvas>();
     public int counterAllModes;
+    public GameObject noAdsPopup;
 
 
     [Header("AdsManager")]
@@ -64,6 +65,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
 
         playParent = GameObject.FindGameObjectWithTag("playParent");
         watchAdsParent = GameObject.FindGameObjectWithTag("watchAdsParent");
+        noAdsPopup = GameObject.Find("NoAdCanvas");
 
         removeAds = PlayerPrefs.GetInt("removeAds") == 1 ? true : false;
         if (!removeAds) //si no ha comprado eliminar anuncios
@@ -312,7 +314,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
             }
             else
             {
-                Debug.Log("Rewarded video is not ready at the moment! Please try again later!");
+                noAdsPopup.GetComponent<Canvas>().enabled = true;
             }
         }
     }
@@ -325,6 +327,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
         {
             //Recompensa
             SceneManager.LoadScene("EnviaoBebe_Arte");
+            Analytics.CustomEvent("start_eob");
         }
         else if (showResult == ShowResult.Skipped)
         {
