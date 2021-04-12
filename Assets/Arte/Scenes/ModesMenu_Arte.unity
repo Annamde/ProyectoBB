@@ -173,7 +173,7 @@ MonoBehaviour:
   removeAds: 0
   playParent: {fileID: 300876009}
   watchAdsParent: {fileID: 0}
-  IARseconds: 600
+  IARseconds: 10
 --- !u!4 &420994938
 Transform:
   m_ObjectHideFlags: 0

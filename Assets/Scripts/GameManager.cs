@@ -39,6 +39,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     private float IARcounter = 0;
     public float IARseconds;
     private bool IARshowed = false;
+    private Canvas ratingCanvas;
 
     private void Awake()
     {
@@ -173,18 +174,20 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
             }
         }
 
-//#if UNITY_ANDROID
-//        if (!IARshowed)
-//        {
-//            if (IARcounter < IARseconds)
-//                IARcounter += Time.deltaTime;
-//            else
-//            {
-//                ShowReview();
-//                IARshowed = true;
-//            }
-//        }
-//#endif
+#if UNITY_ANDROID
+        if (!IARshowed)
+        {
+            if (IARcounter < IARseconds)
+                IARcounter += Time.deltaTime;
+            else
+            {
+                ShowReview();
+                IARshowed = true;
+            }
+        }
+
+        print(IARcounter);
+#endif
 
 #if UNITY_IOS
         if (!IARshowed)
@@ -393,6 +396,12 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     //{
     //    StartCoroutine(RequestReview());
     //}
+
+    public void ShowReview()
+    {
+        ratingCanvas = GameObject.Find("RatingCanvas").GetComponent<Canvas>();
+        ratingCanvas.enabled = true;
+    }
 
     //--------------------------------------------ADMOB-----------------------------------------
 
