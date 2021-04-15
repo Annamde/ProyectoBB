@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Arte/Scenes/EnviaOBebe_Arte.unity
     guid: 48cd19f27f7996f448cae98b5ec55cbb
+  - enabled: 1
+    path: Assets/Arte/Scenes/Ultra_Arte.unity
+    guid: 24608e58fed557e498061b327375599d
   m_configObjects: {}

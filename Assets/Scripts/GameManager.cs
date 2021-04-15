@@ -186,8 +186,6 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
                 IARshowed = true;
             }
         }
-
-        print(IARcounter);
 #endif
 
 #if UNITY_IOS
