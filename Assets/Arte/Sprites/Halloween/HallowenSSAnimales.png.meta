@@ -1,41 +1,105 @@
 fileFormatVersion: 2
 guid: dae5982abf27b094eacb4c72a8c206b0
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: Charco
-    21300002: HallowenSSAnimales_1
-    21300004: Sangre
-    21300006: "Ara\xF1a"
-    21300008: Buho
-    21300010: Calavera
-    21300012: HallowenSSAnimales_6
-    21300014: HallowenSSAnimales_7
-    21300016: "Telara\xF1a"
-    21300018: HallowenSSAnimales_9
-    21300020: HallowenSSAnimales_10
-    21300022: HallowenSSAnimales_11
-    21300024: HallowenSSAnimales_12
-    21300026: HallowenSSAnimales_13
-    21300028: HallowenSSAnimales_14
-    21300030: HallowenSSAnimales_15
-    21300032: HallowenSSAnimales_16
-    21300034: Murcielago
-    21300036: HallowenSSAnimales_18
-    21300038: HallowenSSAnimales_19
-    21300040: HallowenSSAnimales_20
-    21300042: HallowenSSAnimales_21
-    21300044: HallowenSSAnimales_22
-    21300046: HallowenSSAnimales_23
-    21300048: HallowenSSAnimales_24
-    21300050: HallowenSSAnimales_25
-    21300052: HallowenSSAnimales_26
-    21300054: MurcielagoSinColor
-    21300056: HallowenSSAnimales_28
-    21300058: HallowenSSAnimales_29
-    21300060: Tumba
-    21300062: LogoHalloween
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Charco
+  - first:
+      213: 21300002
+    second: HallowenSSAnimales_1
+  - first:
+      213: 21300004
+    second: Sangre
+  - first:
+      213: 21300006
+    second: "Ara\xF1a"
+  - first:
+      213: 21300008
+    second: Buho
+  - first:
+      213: 21300010
+    second: Calavera
+  - first:
+      213: 21300012
+    second: HallowenSSAnimales_6
+  - first:
+      213: 21300014
+    second: HallowenSSAnimales_7
+  - first:
+      213: 21300016
+    second: "Telara\xF1a"
+  - first:
+      213: 21300018
+    second: HallowenSSAnimales_9
+  - first:
+      213: 21300020
+    second: HallowenSSAnimales_10
+  - first:
+      213: 21300022
+    second: HallowenSSAnimales_11
+  - first:
+      213: 21300024
+    second: HallowenSSAnimales_12
+  - first:
+      213: 21300026
+    second: HallowenSSAnimales_13
+  - first:
+      213: 21300028
+    second: HallowenSSAnimales_14
+  - first:
+      213: 21300030
+    second: HallowenSSAnimales_15
+  - first:
+      213: 21300032
+    second: HallowenSSAnimales_16
+  - first:
+      213: 21300034
+    second: Murcielago
+  - first:
+      213: 21300036
+    second: HallowenSSAnimales_18
+  - first:
+      213: 21300038
+    second: HallowenSSAnimales_19
+  - first:
+      213: 21300040
+    second: HallowenSSAnimales_20
+  - first:
+      213: 21300042
+    second: HallowenSSAnimales_21
+  - first:
+      213: 21300044
+    second: HallowenSSAnimales_22
+  - first:
+      213: 21300046
+    second: HallowenSSAnimales_23
+  - first:
+      213: 21300048
+    second: HallowenSSAnimales_24
+  - first:
+      213: 21300050
+    second: HallowenSSAnimales_25
+  - first:
+      213: 21300052
+    second: HallowenSSAnimales_26
+  - first:
+      213: 21300054
+    second: MurcielagoSinColor
+  - first:
+      213: 21300056
+    second: HallowenSSAnimales_28
+  - first:
+      213: 21300058
+    second: HallowenSSAnimales_29
+  - first:
+      213: 21300060
+    second: Tumba
+  - first:
+      213: 21300062
+    second: LogoHalloween
   externalObjects: {}
-  serializedVersion: 7
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -89,8 +153,9 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -101,7 +166,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -112,7 +178,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
     buildTarget: Android
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,6 +190,7 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -142,6 +210,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 7815bf0de7122384cac983553c050e74
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -162,6 +231,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 985cb95fa79746c42b22799d088c9ab0
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -182,6 +252,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 593b98fbd1cd32d4a8ebfda5f815aafb
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -202,6 +273,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 2175127a3c02f0e429c759a8b75afb08
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -222,6 +294,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 149ca8013d74ff84a826f09a6b4d2860
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -242,6 +315,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 5bcf57beaa572844b893fb751de8f11f
+      internalID: 21300034
       vertices: []
       indices: 
       edges: []
@@ -262,6 +336,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ec83ae0e85e99264dbe4e899dce0c0e0
+      internalID: 21300054
       vertices: []
       indices: 
       edges: []
@@ -282,6 +357,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 227d28838bfd9aa47ad8517c05f8206f
+      internalID: 21300060
       vertices: []
       indices: 
       edges: []
@@ -302,6 +378,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 31015b6bc62ee31489ee28f6c0edc5b3
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -322,6 +399,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: ef864d5cf50cf144a98865c36d621def
+      internalID: 21300062
       vertices: []
       indices: 
       edges: []
@@ -330,10 +408,12 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: e454fd4b316f25b4491d2161128d32bc
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
