@@ -13,6 +13,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
     private static IExtensionProvider m_StoreExtensionProvider; // The store-specific Purchasing subsystems.
 
     public static string product_removeAds = "remove_ads";
+    public static string product_ultraHot = "ultrahot_mode";
 
     private void Awake()
     {
@@ -42,6 +43,7 @@ public class IAPManager : MonoBehaviour, IStoreListener
         var builder = ConfigurationBuilder.Instance(StandardPurchasingModule.Instance());
 
         builder.AddProduct(product_removeAds, ProductType.NonConsumable);
+        builder.AddProduct(product_ultraHot, ProductType.NonConsumable);
 
         UnityPurchasing.Initialize(this, builder);
     }
@@ -56,6 +58,11 @@ public class IAPManager : MonoBehaviour, IStoreListener
     public void BuyRemoveAds()
     {
         BuyProductID(product_removeAds);
+    }
+
+    public void BuyUltraHot()
+    {
+        BuyProductID(product_ultraHot);
     }
 
     void BuyProductID(string productId)
@@ -130,6 +137,14 @@ public class IAPManager : MonoBehaviour, IStoreListener
             GameManager.Instance.StopBanner();
             GameManager.Instance.DisableRemoveAds();
             
+            SceneManager.LoadScene("ModesMenu_Arte");
+        }
+
+        else if (String.Equals(args.purchasedProduct.definition.id, product_ultraHot, StringComparison.Ordinal))
+        {
+            GameManager.Instance.ultrahotAvailable = true;
+            PlayerPrefs.SetInt("ultraHot", 1);
+
             SceneManager.LoadScene("ModesMenu_Arte");
         }
 

@@ -31,10 +31,13 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     public string androidGameID = "3760923";
     public bool testMode;
     public bool removeAds;
+    public bool ultrahotAvailable;
 
     [HideInInspector]
-    public GameObject playParent;
-    public GameObject watchAdsParent;
+    public GameObject eob_playParent;
+    public GameObject eob_watchAdsParent;
+    public GameObject ultra_playParent;
+    public GameObject ultra_buyParent;
 
     //private ReviewManager _reviewManager;
     private float IARcounter = 0;
@@ -65,24 +68,40 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
         Advertisement.Initialize(iosGameID, testMode);
 #endif
 
-        playParent = GameObject.FindGameObjectWithTag("playParent");
-        watchAdsParent = GameObject.FindGameObjectWithTag("watchAdsParent");
+        eob_playParent = GameObject.FindGameObjectWithTag("playParent");
+        eob_watchAdsParent = GameObject.FindGameObjectWithTag("watchAdsParent");
         noAdsPopup = GameObject.Find("NoAdCanvas");
 
+        ultra_playParent = GameObject.Find("Ultra_Available");
+        ultra_buyParent = GameObject.Find("Ultra_NotAvailable");
+
         removeAds = PlayerPrefs.GetInt("removeAds") == 1 ? true : false;
+        ultrahotAvailable = PlayerPrefs.GetInt("ultraHot") == 1 ? true : false;
+
         if (!removeAds) //si no ha comprado eliminar anuncios
         {
             StartCoroutine(ShowBannerWhenInitialized());
-            if(watchAdsParent!=null) ChangeChildStatus(watchAdsParent, true);
-            if (playParent != null) ChangeChildStatus(playParent, false);
+            if(eob_watchAdsParent!=null) ChangeChildStatus(eob_watchAdsParent, true);
+            if (eob_playParent != null) ChangeChildStatus(eob_playParent, false);
 
         }
         else
         {
             DisableRemoveAds();
             StopBanner();
-            if (watchAdsParent != null) ChangeChildStatus(watchAdsParent, false);
-            if (playParent != null) ChangeChildStatus(playParent, true);
+            if (eob_watchAdsParent != null) ChangeChildStatus(eob_watchAdsParent, false);
+            if (eob_playParent != null) ChangeChildStatus(eob_playParent, true);
+        }
+
+        if(!ultrahotAvailable)
+        {
+            if (ultra_buyParent != null) ChangeChildStatus(ultra_buyParent, true);
+            if (ultra_playParent != null) ChangeChildStatus(ultra_playParent, false);
+        }
+        else
+        {
+            if (ultra_buyParent != null) ChangeChildStatus(ultra_buyParent, false);
+            if (ultra_playParent != null) ChangeChildStatus(ultra_playParent, true);
         }
         
     }
