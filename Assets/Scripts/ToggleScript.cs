@@ -10,10 +10,13 @@ public class ToggleScript : MonoBehaviour
 
     public bool withTime = true;
 
+    public float hotLevel = 1;
+
     private void Start()
     {
         GameManager.Instance.allowHot = allowHot;
         GameManager.Instance.withTime = withTime;
+        GameManager.Instance.hotLevel = hotLevel;
     }
 
     public void OnHotCheck(MovementToggleScript a)
@@ -32,5 +35,11 @@ public class ToggleScript : MonoBehaviour
         a.CheckToggleSprite(withTime);
 
         //GameManager.Instance.switching = true;
+    }
+
+    public void HotLevelCheck(float level)
+    {
+        hotLevel = level;
+        GameManager.Instance.hotLevel = hotLevel;
     }
 }

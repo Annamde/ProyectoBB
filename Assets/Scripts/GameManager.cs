@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     [Header("GameManager")]
     public bool allowHot = true;
     public bool withTime = true;
+    public float hotLevel = 1;
     public bool anyCanvasActive = false;
     private Canvas activecanvas;
     List<Canvas> allCanvas = new List<Canvas>();
