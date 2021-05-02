@@ -45,6 +45,10 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     private bool IARshowed = false;
     private Canvas ratingCanvas;
 
+    //AddNamesController
+    [HideInInspector]
+    public static List<string> nameList = new List<string>();
+
     private void Awake()
     {
         if (!created)

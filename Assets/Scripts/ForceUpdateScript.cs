@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
 
 
 public class ForceUpdateScript : MonoBehaviour
@@ -20,13 +18,9 @@ public class ForceUpdateScript : MonoBehaviour
         if (w.error != null)
         {
             Debug.Log("Error .. " + w.error);
-            // for example, often 'Error .. 404 Not Found'
         }
         else
         {
-            // don't forget to look in the 'bottom section'
-            // of Unity console to see the full text of
-            // multiline console messages.
             if(w.text.Contains(Application.version.ToString()))
             {
                 DisableCanvas();
