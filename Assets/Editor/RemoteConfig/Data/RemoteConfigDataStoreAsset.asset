@@ -45,7 +45,10 @@ MonoBehaviour:
     \"key\": \"CitaName\",\r\n      \"type\": \"string\",\r\n      \"value\": \"6-Cita3_Button\"\r\n   
     }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9fdcef1e-f91e-4671-ab56-86534a9bac40\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"LetrasName\",\r\n      \"type\": \"string\",\r\n     
-    \"value\": \"5-Letras_Button\"\r\n    }\r\n  }\r\n]"
+    \"value\": \"5-Letras_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"09686614-1b84-4e38-877e-7915ccfc6a3a\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"UltraHotName\",\r\n      \"value\": \"9,3-UltraHotName\",\r\n     
+    \"type\": \"string\"\r\n    }\r\n  }\r\n]"
   _rsLastCachedKeyList: "[\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9592ac37-6316-49d0-9e79-e1e7bab37674\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"NewPrefab\",\r\n      \"type\": \"bool\",\r\n     
     \"value\": true\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\":
@@ -72,7 +75,10 @@ MonoBehaviour:
     \"key\": \"CitaName\",\r\n      \"type\": \"string\",\r\n      \"value\": \"6-Cita3_Button\"\r\n   
     }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n      \"entityId\": \"9fdcef1e-f91e-4671-ab56-86534a9bac40\"\r\n   
     },\r\n    \"rs\": {\r\n      \"key\": \"LetrasName\",\r\n      \"type\": \"string\",\r\n     
-    \"value\": \"5-Letras_Button\"\r\n    }\r\n  }\r\n]"
+    \"value\": \"5-Letras_Button\"\r\n    }\r\n  },\r\n  {\r\n    \"metadata\": {\r\n     
+    \"entityId\": \"09686614-1b84-4e38-877e-7915ccfc6a3a\"\r\n    },\r\n    \"rs\":
+    {\r\n      \"key\": \"UltraHotName\",\r\n      \"value\": \"9,3-UltraHotName\",\r\n     
+    \"type\": \"string\"\r\n    }\r\n  }\r\n]"
   _environments: "[\r\n  {\r\n    \"projectId\": \"e7cb9916-6409-4b73-a430-eb5484911524\",\r\n   
     \"name\": \"Initial\",\r\n    \"id\": \"3679f2ee-a85f-419f-a46a-34e402d05616\",\r\n   
     \"createdAt\": \"2021-01-04T19:14:22Z\",\r\n    \"updatedAt\": \"2021-01-04T19:14:22Z\",\r\n   

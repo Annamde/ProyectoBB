@@ -47,6 +47,7 @@ public class SortMenuScript : MonoBehaviour
             modes[7].name = ConfigManager.appConfig.GetString("CitaName");
             modes[8].name = ConfigManager.appConfig.GetString("LetrasName");
             modes[9].name = ConfigManager.appConfig.GetString("EnviaOBebeName");
+            modes[10].name = ConfigManager.appConfig.GetString("UltraHotName");
         }
     }
     void SetActivePrefabNew(ConfigResponse response)
