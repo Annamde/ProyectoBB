@@ -7,7 +7,7 @@ public class SortMenuScript : MonoBehaviour
 {
     public List<GameObject> modes;
     public bool changeMenu = false;
-    public GameObject newEoB;
+    public GameObject newObject;
 
     public struct userAtributtes { }
     public struct appAtributtes { }
@@ -52,9 +52,9 @@ public class SortMenuScript : MonoBehaviour
     }
     void SetActivePrefabNew(ConfigResponse response)
     {
-        if (newEoB != null)
+        if (newObject != null)
         {
-            newEoB.SetActive(ConfigManager.appConfig.GetBool("NewPrefab"));
+            newObject.SetActive(ConfigManager.appConfig.GetBool("NewPrefab"));
         }
     }
 }
