@@ -101,8 +101,7 @@ public class TextManager_Ultra : MonoBehaviour
         }
 
         print(levelEnabled);
-        ChangeText();
-
+       
         clicks = 0;
     }
 
@@ -228,6 +227,17 @@ public class TextManager_Ultra : MonoBehaviour
 
         levelEndedCanvas.enabled = false;
         tapButton.SetActive(true);
+        ChangeText();
+    }
+
+    public void UpdateNamesList()
+    {
+        if (GameManager.nameList.Count > 0)
+        {
+            names.Clear();
+            names = GameManager.nameList;
+        }
+
         ChangeText();
     }
 }
