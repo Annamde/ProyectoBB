@@ -712,9 +712,9 @@ MonoBehaviour:
   levelEndedCanvas: {fileID: 735569499}
   startQuestion: 0
   tapButton: {fileID: 2061102306}
+  _warningOneNameText: {fileID: 1393653134}
+  _addNamesCanvas: {fileID: 1393653133}
   screenText: {fileID: 1507851803}
-  clicks: 0
-  levelEnabled: 0
 --- !u!1 &531446726
 GameObject:
   m_ObjectHideFlags: 0
@@ -1942,7 +1942,7 @@ PrefabInstance:
     - target: {fileID: 3791926576715046911, guid: abf1f57899711784c8b61bdad0426b6b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3791926576715046911, guid: abf1f57899711784c8b61bdad0426b6b,
         type: 3}
@@ -1968,6 +1968,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791926576715046911, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791926576715046911, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 387744851}
+    - target: {fileID: 3791926576715046911, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: UpdateNamesList
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791926576715046911, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791926576715046911, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961357139133017, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.000015258789
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961357139133017, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3805961357203251916, guid: abf1f57899711784c8b61bdad0426b6b,
         type: 3}
@@ -2013,6 +2048,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961357270295328, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1003497067}
+    - target: {fileID: 3805961357270295328, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961357270295328, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961357346354118, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -887.17993
       objectReference: {fileID: 0}
     - target: {fileID: 3805961357807836991, guid: abf1f57899711784c8b61bdad0426b6b,
         type: 3}
@@ -2141,6 +2196,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abf1f57899711784c8b61bdad0426b6b, type: 3}
+--- !u!223 &1393653133 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 3805961357270295328, guid: abf1f57899711784c8b61bdad0426b6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393653132}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1393653134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 402478168055862588, guid: abf1f57899711784c8b61bdad0426b6b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1393653132}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1393725071
 GameObject:
   m_ObjectHideFlags: 0

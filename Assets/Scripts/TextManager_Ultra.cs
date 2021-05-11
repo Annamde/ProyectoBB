@@ -16,30 +16,32 @@ public class TextManager_Ultra : MonoBehaviour
     public bool startQuestion;
     public GameObject tapButton;
 
+    [Header("Add Names Objects")]
+    [SerializeField]
+    private GameObject _warningOneNameText;
+    [SerializeField]
+    private Canvas _addNamesCanvas;
+
     List<int> usedRandom = new List<int>();
     List<int> freeRandom = new List<int>();
     List<string> names = new List<string>();
 
     TextAsset level1TextFile, level2TextFile, level3TextFile;
+    [Space(10)]
     public Text screenText;
     string[] level1QuestionsList, level2QuestionsList, level3QuestionsList, questionsList;
     int i;
     int turn;
 
-    public int clicks;
+    private int clicks;
 
-    public float levelEnabled = 1;
+    private float levelEnabled = 1;
 
     string name1 = "";
     string name2 = "";
 
     private void Start()
     {
-        names.Add("Carla");
-        names.Add("Alicia");
-        names.Add("Pau");
-        names.Add("Alex");
-
         i = 0;
         turn = 0;
 
@@ -103,6 +105,9 @@ public class TextManager_Ultra : MonoBehaviour
         print(levelEnabled);
        
         clicks = 0;
+
+        _warningOneNameText.SetActive(false);
+      
     }
 
     public void OnScreenTap()
@@ -232,12 +237,21 @@ public class TextManager_Ultra : MonoBehaviour
 
     public void UpdateNamesList()
     {
+        Debug.Log(GameManager.nameList.Count);
         if (GameManager.nameList.Count > 0)
         {
             names.Clear();
             names = GameManager.nameList;
         }
-
-        ChangeText();
+        if (GameManager.nameList.Count < 2)
+        {
+            _warningOneNameText.SetActive(true);
+        }
+        else
+        {
+            _warningOneNameText.SetActive(false);
+            _addNamesCanvas.enabled = false;
+            ChangeText();
+        }
     }
 }

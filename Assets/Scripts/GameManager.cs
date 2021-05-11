@@ -132,6 +132,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
 
     private void Update()
     {
+        Debug.Log("LISTA DE NOMBRES     " + nameList.Count);
 
         if (allCanvas.Count < counterAllModes)
         {

@@ -19,6 +19,8 @@ namespace AddNames
 
         [SerializeField]
         private GameObject _warningText;
+        [SerializeField]
+        private GameObject _warningOneNameText;
         
         private string _nameText;
 
@@ -29,8 +31,11 @@ namespace AddNames
                 for (int i = 0; i < PlayerPrefsX.GetStringArray("NamesArray").Length; i++)
                 {
                     GameManager.nameList.Add(PlayerPrefsX.GetStringArray("NamesArray")[i]);
-                    SetNewNameText(PlayerPrefsX.GetStringArray("NamesArray")[i]);
                 }
+            }
+            for (int i = 0; i < GameManager.nameList.Count; i++)
+            {
+                SetNewNameText(GameManager.nameList[i]);
             }
         }
 
@@ -38,7 +43,7 @@ namespace AddNames
         {
             SetWarningText(false);
             _nameText = _inputFieldText.text;
-            if (!GameManager.nameList.Contains(_nameText) || _nameText == "")
+            if (!GameManager.nameList.Contains(_nameText) || _nameText == "" )
             {
                 GameManager.nameList.Add(_nameText);
                 _inputFieldText.text = "";
@@ -58,6 +63,7 @@ namespace AddNames
         public void SetWarningText(bool active)
         {
             _warningText.SetActive(active);
+            _warningOneNameText.SetActive(false);
         }
 
         public void SaveAllNamesInPlayerPrefs()
