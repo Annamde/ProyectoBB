@@ -48,6 +48,8 @@ namespace AddNames
                 GameManager.nameList.Add(_nameText);
                 _inputFieldText.text = "";
                 SetNewNameText(_nameText);
+
+                SaveAllNamesInPlayerPrefs();
             }
             else
             {

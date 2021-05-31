@@ -237,10 +237,9 @@ public class TextManager_Ultra : MonoBehaviour
 
     public void UpdateNamesList()
     {
-        Debug.Log(GameManager.nameList.Count);
+        Debug.Log("UPDATE" + GameManager.nameList.Count);
         if (GameManager.nameList.Count > 0)
         {
-            names.Clear();
             names = GameManager.nameList;
         }
         if (GameManager.nameList.Count < 2)
