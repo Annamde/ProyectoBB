@@ -396,16 +396,31 @@ PrefabInstance:
       propertyPath: m_textInfo.pageCount
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2010173728672052850, guid: 0f5ad3557025b3b44aeb3c15a8b856da,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2010173728732730626, guid: 0f5ad3557025b3b44aeb3c15a8b856da,
         type: 3}
       propertyPath: m_Name
       value: RatingCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2010173728732730626, guid: 0f5ad3557025b3b44aeb3c15a8b856da,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2010173728732730630, guid: 0f5ad3557025b3b44aeb3c15a8b856da,
         type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2010173728732730630, guid: 0f5ad3557025b3b44aeb3c15a8b856da,
+        type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1003497067}
     - target: {fileID: 2010173728732730631, guid: 0f5ad3557025b3b44aeb3c15a8b856da,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -510,6 +525,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2010173728799474638, guid: 0f5ad3557025b3b44aeb3c15a8b856da,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2010173730175892729, guid: 0f5ad3557025b3b44aeb3c15a8b856da,
         type: 3}
@@ -849,6 +869,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allowHot: 1
   withTime: 1
+  hotLevel: 1
   anyCanvasActive: 0
   counterAllModes: 0
   noAdsPopup: {fileID: 0}
@@ -856,8 +877,11 @@ MonoBehaviour:
   androidGameID: 3760923
   testMode: 0
   removeAds: 0
-  playParent: {fileID: 0}
-  watchAdsParent: {fileID: 0}
+  ultrahotAvailable: 0
+  eob_playParent: {fileID: 0}
+  eob_watchAdsParent: {fileID: 0}
+  ultra_playParent: {fileID: 0}
+  ultra_buyParent: {fileID: 0}
   IARseconds: 0
 --- !u!4 &838418357
 Transform:
