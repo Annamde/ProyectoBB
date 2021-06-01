@@ -193,8 +193,6 @@ public class TextManager_Ultra : MonoBehaviour
 
     public void RepeatButton()
     {
-        print("repeat");
-
         foreach (string s in questionsList)
         {
             freeRandom.Add(i);
@@ -210,9 +208,6 @@ public class TextManager_Ultra : MonoBehaviour
 
     public void NextLevelButton()
     {
-
-        print("next");
-
         if (levelEnabled == 1)
             questionsList = level2QuestionsList;
 
@@ -237,7 +232,6 @@ public class TextManager_Ultra : MonoBehaviour
 
     public void UpdateNamesList()
     {
-        Debug.Log("UPDATE" + GameManager.nameList.Count);
         if (GameManager.nameList.Count > 0)
         {
             names = GameManager.nameList;
