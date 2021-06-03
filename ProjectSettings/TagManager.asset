@@ -8,6 +8,7 @@ TagManager:
   - playParent
   - watchAdsParent
   - YNButton
+  - GameManager
   layers:
   - Default
   - TransparentFX

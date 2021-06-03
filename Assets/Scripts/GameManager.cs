@@ -49,6 +49,8 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     [HideInInspector]
     public static List<string> nameList = new List<string>();
 
+    private IAPManager iapManager;
+
     private void Awake()
     {
         if (!created)
@@ -62,6 +64,8 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
         {
             Destroy(this.gameObject);
         }
+
+        iapManager = GetComponent<IAPManager>();
 
         Advertisement.AddListener(this);
 
@@ -97,16 +101,16 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
             if (eob_playParent != null) ChangeChildStatus(eob_playParent, true);
         }
 
-        //if(!ultrahotAvailable)
-        //{
-        //    if (ultra_buyParent != null) ChangeChildStatus(ultra_buyParent, true);
-        //    if (ultra_playParent != null) ChangeChildStatus(ultra_playParent, false);
-        //}
-        //else
-        //{
-        if (ultra_buyParent != null) ChangeChildStatus(ultra_buyParent, false);
-        if (ultra_playParent != null) ChangeChildStatus(ultra_playParent, true);
-        //}
+        if (!ultrahotAvailable)
+        {
+            if (ultra_buyParent != null) ChangeChildStatus(ultra_buyParent, true);
+            if (ultra_playParent != null) ChangeChildStatus(ultra_playParent, false);
+        }
+        else
+        {
+            if (ultra_buyParent != null) ChangeChildStatus(ultra_buyParent, false);
+            if (ultra_playParent != null) ChangeChildStatus(ultra_playParent, true);
+        }
 
     }
 
@@ -278,6 +282,16 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
         {
             child.gameObject.SetActive(status);
         }
+    }
+
+    public void BuyRemoveAds()
+    {
+        iapManager.BuyRemoveAds();
+    }
+
+    public void BuyUltraHot()
+    {
+        iapManager.BuyUltraHot();
     }
 
     //--------------------------------------------Unity Ads-----------------------------------------
