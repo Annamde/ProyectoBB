@@ -24,6 +24,8 @@ namespace AddNames
         
         private string _nameText;
 
+        public ScrollRect scroll;
+
         public void Start()
         {
             if (GameManager.nameList.Count == 0)
@@ -50,6 +52,8 @@ namespace AddNames
                 SetNewNameText(_nameText);
 
                 SaveAllNamesInPlayerPrefs();
+
+                StartCoroutine(ScrollDown());
             }
             else
             {
@@ -60,6 +64,7 @@ namespace AddNames
         {
             _nameGameObject.GetComponent<Text>().text = name;
             Object.Instantiate(_nameGameObject, _gridTransform);
+
         }
         
         public void SetWarningText(bool active)
@@ -71,6 +76,12 @@ namespace AddNames
         public void SaveAllNamesInPlayerPrefs()
         {
             PlayerPrefsX.SetStringArray("NamesArray", GameManager.nameList.ToArray());
+        }
+
+        IEnumerator ScrollDown()
+        {
+            yield return new WaitForSeconds(.1f);
+            scroll.verticalNormalizedPosition = 0f;
         }
     }
 }
