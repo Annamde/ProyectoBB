@@ -20,6 +20,8 @@ public class TextManager_Ultra : MonoBehaviour
     [SerializeField]
     private GameObject _warningOneNameText;
     [SerializeField]
+    private GameObject _warningSameTextObject;
+    [SerializeField]
     private Canvas _addNamesCanvas;
 
     List<int> usedRandom = new List<int>();
@@ -238,6 +240,7 @@ public class TextManager_Ultra : MonoBehaviour
         }
         if (GameManager.nameList.Count < 2)
         {
+            _warningSameTextObject.SetActive(false);
             _warningOneNameText.SetActive(true);
         }
         else
