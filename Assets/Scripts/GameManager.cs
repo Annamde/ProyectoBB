@@ -101,16 +101,16 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
             if (eob_playParent != null) ChangeChildStatus(eob_playParent, true);
         }
 
-        if (!ultrahotAvailable)
-        {
-            if (ultra_buyParent != null) ChangeChildStatus(ultra_buyParent, true);
-            if (ultra_playParent != null) ChangeChildStatus(ultra_playParent, false);
-        }
-        else
-        {
+        //if (!ultrahotAvailable)
+        //{
+        //    if (ultra_buyParent != null) ChangeChildStatus(ultra_buyParent, true);
+        //    if (ultra_playParent != null) ChangeChildStatus(ultra_playParent, false);
+        //}
+        //else
+        //{
             if (ultra_buyParent != null) ChangeChildStatus(ultra_buyParent, false);
             if (ultra_playParent != null) ChangeChildStatus(ultra_playParent, true);
-        }
+        //}
 
     }
 
