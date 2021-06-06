@@ -45,8 +45,9 @@ namespace AddNames
         {
             SetWarningText(false);
             _nameText = _inputFieldText.text;
-            if (!GameManager.nameList.Contains(_nameText) || _nameText == "" )
+            if (!GameManager.nameList.Contains(_nameText) && _nameText != "" )
             {
+               
                 GameManager.nameList.Add(_nameText);
                 _inputFieldText.text = "";
                 SetNewNameText(_nameText);
