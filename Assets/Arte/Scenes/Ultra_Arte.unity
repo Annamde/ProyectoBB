@@ -2272,6 +2272,36 @@ PrefabInstance:
       propertyPath: m_Name
       value: NameListController
       objectReference: {fileID: 0}
+    - target: {fileID: 3805961359223708147, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961359223708147, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: LoadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961359223708147, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961359223708147, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961359223708147, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_StringArgument
+      value: ModesMenu_Arte
+      objectReference: {fileID: 0}
+    - target: {fileID: 3805961359223708147, guid: abf1f57899711784c8b61bdad0426b6b,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1003497069}
     - target: {fileID: 5154614155637763744, guid: abf1f57899711784c8b61bdad0426b6b,
         type: 3}
       propertyPath: m_Color.r
