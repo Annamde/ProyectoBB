@@ -6,6 +6,9 @@ public class ButtonGooglePlayScript : MonoBehaviour
 {
     public void OpenStore()
     {
-        Application.OpenURL("market://details?id=" + Application.identifier);
+        if(Application.platform == RuntimePlatform.Android)
+            Application.OpenURL("market://details?id=" + Application.identifier);
+        //else if (Application.platform == RuntimePlatform.IPhonePlayer)
+            //url de la app una vez este publicada
     }
 }

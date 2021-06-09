@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
 
 
     [Header("AdsManager")]
+    string gameID;
     public string iosGameID = "3760922";
     public string androidGameID = "3760923";
     public bool testMode;
@@ -69,12 +70,14 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
 
         Advertisement.AddListener(this);
 
-#if UNITY_ANDROID
-        Advertisement.Initialize(androidGameID, testMode);
-#endif
-#if UNITY_IOS
-        Advertisement.Initialize(iosGameID, testMode);
-#endif
+        if (Application.platform == RuntimePlatform.IPhonePlayer)
+            gameID = iosGameID;
+        else if (Application.platform == RuntimePlatform.Android)
+            gameID = androidGameID;
+
+
+        Advertisement.Initialize(gameID, testMode);
+
 
         eob_playParent = GameObject.FindGameObjectWithTag("playParent");
         eob_watchAdsParent = GameObject.FindGameObjectWithTag("watchAdsParent");
