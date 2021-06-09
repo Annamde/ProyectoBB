@@ -14,4 +14,8 @@ public class SocialMediaScript : MonoBehaviour
         Application.OpenURL("https://twitter.com/DrinkKingGame_");
     }
 
+    public void OpenTikTok()
+    {
+        Application.OpenURL("https://www.tiktok.com/@drinkkinggame?lang=es");
+    }
 }
