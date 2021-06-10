@@ -127,6 +127,24 @@ Canvas:
     type: 3}
   m_PrefabInstance: {fileID: 7210453074301718605}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &243581974 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 146005916318767350, guid: 5c98d5032c8773b4080e393d4d254557,
+    type: 3}
+  m_PrefabInstance: {fileID: 2018433028}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &243581980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243581974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 688d220073af50e4f8574e4fd814cb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!223 &269818388 stripped
 Canvas:
   m_CorrespondingSourceObject: {fileID: 7784822364722738059, guid: d9555109e1dcd8d4d8f5d20b066ce4c6,
@@ -168,7 +186,6 @@ MonoBehaviour:
   hotLevel: 1
   anyCanvasActive: 0
   counterAllModes: 0
-  noAdsPopup: {fileID: 0}
   iosGameID: 3760922
   androidGameID: 3760923
   testMode: 0
@@ -752,11 +769,6 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 626884216}
-    - target: {fileID: 146005914325944164, guid: 5c98d5032c8773b4080e393d4d254557,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: set_enabled
-      objectReference: {fileID: 0}
     - target: {fileID: 146005914360257027, guid: 5c98d5032c8773b4080e393d4d254557,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -795,11 +807,6 @@ PrefabInstance:
     - target: {fileID: 146005915003502208, guid: 5c98d5032c8773b4080e393d4d254557,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 146005915175353136, guid: 5c98d5032c8773b4080e393d4d254557,
-        type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 146005915880749219, guid: 5c98d5032c8773b4080e393d4d254557,
@@ -887,11 +894,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 901630802}
-    - target: {fileID: 6435178327698954378, guid: 5c98d5032c8773b4080e393d4d254557,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6435178327698954379, guid: 5c98d5032c8773b4080e393d4d254557,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1441,6 +1443,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: NoAdCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1349850372225844767, guid: c42f187dc4424a244a37ce59cf3abf44,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 1349850373232616100, guid: c42f187dc4424a244a37ce59cf3abf44,
         type: 3}

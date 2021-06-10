@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     private Canvas activecanvas;
     List<Canvas> allCanvas = new List<Canvas>();
     public int counterAllModes;
-    public GameObject noAdsPopup;
+     GameObject noAdsPopup;
 
 
     [Header("AdsManager")]
@@ -81,7 +81,6 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
 
         eob_playParent = GameObject.FindGameObjectWithTag("playParent");
         eob_watchAdsParent = GameObject.FindGameObjectWithTag("watchAdsParent");
-        noAdsPopup = GameObject.Find("NoAdCanvas");
 
         ultra_playParent = GameObject.Find("Ultra_Available");
         ultra_buyParent = GameObject.Find("Ultra_NotAvailable");
@@ -223,7 +222,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
                 IARcounter += Time.deltaTime;
             else
             {
-                NativeReviewRequest.RequestReview()
+                NativeReviewRequest.RequestReview();
                 IARshowed = true;
             }
         }
@@ -354,6 +353,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
             }
             else
             {
+                noAdsPopup = GameObject.Find("NoAdCanvas");
                 noAdsPopup.GetComponent<Canvas>().enabled = true;
             }
         }

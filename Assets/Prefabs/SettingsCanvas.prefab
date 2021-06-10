@@ -4024,14 +4024,14 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 125
+    m_MaxSize: 80
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: PON EL TITULO
+  m_Text: RESTAURAR COMPRAS
 --- !u!1 &2146260019605200725
 GameObject:
   m_ObjectHideFlags: 0
@@ -4044,8 +4044,9 @@ GameObject:
   - component: {fileID: 8369752170735331047}
   - component: {fileID: 1186762608112206661}
   - component: {fileID: 2881545641178958008}
+  - component: {fileID: 1395241760}
   m_Layer: 5
-  m_Name: ButtonNOSEQUEDEIOS
+  m_Name: RestorePurchaseIOS
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4151,6 +4152,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1395241760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146260019605200725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17e7bab1326636c4cbb85efa03b6281a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2404241982578315309
 GameObject:
   m_ObjectHideFlags: 0
