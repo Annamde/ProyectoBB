@@ -922,7 +922,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2342156691866268128}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 87, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 90, y: 90, z: 150}
   m_Children: []
   m_Father: {fileID: 2342156693545501482}
@@ -1766,7 +1766,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ffa50adaf79df948ab0934a09385814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  modes:
+  _modes:
   - {fileID: 2342156693545501483}
   - {fileID: 2342156692856424895}
   - {fileID: 2342156693224356488}
@@ -1779,8 +1779,9 @@ MonoBehaviour:
   - {fileID: 2342156691936374583}
   - {fileID: 2092547486}
   - {fileID: 2342156692892454494}
-  changeMenu: 0
-  newObject: {fileID: 9088842131904164215}
+  _changeMenu: 0
+  _newObject: {fileID: 9088842131904164215}
+  _halloweenActive: 0
 --- !u!114 &2342156692240691390
 MonoBehaviour:
   m_ObjectHideFlags: 0
