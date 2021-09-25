@@ -6,14 +6,17 @@ public class EventSpritesScript : MonoBehaviour
 {
     [Header("Normal objects")]
     [SerializeField] private SpriteRenderer _mainLogoInScene;
-    [SerializeField] private Sprite _normalLogoSprite; 
+    [SerializeField] private Sprite _normalLogoSprite;
+    [SerializeField] private List<GameObject> _instrucctionsPanelObjects;
 
     [Header("Event objects")]
     [SerializeField]
     private List<GameObject> _eventSpritesList;
     [SerializeField]
     private Sprite _logoSprite;
-
+    [SerializeField]
+    private List<GameObject> _instrucctionsEventObjects;
+          
 
     public List<GameObject> EventSpritesList => _eventSpritesList;
 
@@ -28,6 +31,13 @@ public class EventSpritesScript : MonoBehaviour
             for (int i = 0; i < _eventSpritesList.Count; i++)
             {
                 _eventSpritesList[i].SetActive(true);
+            }
+        }
+        if (_instrucctionsEventObjects[0] != null)
+        {
+            for (int i = 0; i < _instrucctionsEventObjects.Count; i++)
+            {
+                _instrucctionsEventObjects[0].SetActive(true);
             }
         }
     }
