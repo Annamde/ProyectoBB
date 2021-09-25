@@ -33,11 +33,15 @@ public class EventSpritesScript : MonoBehaviour
                 _eventSpritesList[i].SetActive(true);
             }
         }
-        if (_instrucctionsEventObjects[0] != null)
+        if (_instrucctionsEventObjects[0] != null)//fALTAMIRARSE ESTO MEJOR Y ACABAR DE MONTARLO
         {
             for (int i = 0; i < _instrucctionsEventObjects.Count; i++)
             {
-                _instrucctionsEventObjects[0].SetActive(true);
+                _instrucctionsEventObjects[i].SetActive(true);
+            }
+            for (int i = 0; i < _instrucctionsPanelObjects.Count; i++)
+            {
+                _instrucctionsPanelObjects[i].SetActive(false);
             }
         }
     }
