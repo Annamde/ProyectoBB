@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class EventSpritesScript : MonoBehaviour
 {
@@ -60,6 +61,6 @@ public class EventSpritesScript : MonoBehaviour
 
     private bool ListIsNotEmpty(List<GameObject> list)
     {
-        return list[0] != null;
+        return list.First() != null;
     }
 }

@@ -50,6 +50,9 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
     [HideInInspector]
     public static List<string> nameList = new List<string>();
 
+    [HideInInspector]
+    public bool ActiveHalloweenEvent;
+
     private IAPManager iapManager;
 
     private void Awake()
