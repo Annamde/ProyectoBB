@@ -26,19 +26,22 @@ public class EventSpritesScript : MonoBehaviour
 
     public void EnableEventSprites()
     {
-        if (_eventSpritesList[0] != null)
+        if (ListIsNotEmpty(_eventSpritesList))
         {
             for (int i = 0; i < _eventSpritesList.Count; i++)
             {
                 _eventSpritesList[i].SetActive(true);
             }
         }
-        if (_instrucctionsEventObjects[0] != null)//fALTAMIRARSE ESTO MEJOR Y ACABAR DE MONTARLO
+        if (ListIsNotEmpty(_instrucctionsEventObjects))
         {
             for (int i = 0; i < _instrucctionsEventObjects.Count; i++)
             {
                 _instrucctionsEventObjects[i].SetActive(true);
             }
+        }
+        if (ListIsNotEmpty(_instrucctionsPanelObjects))
+        {
             for (int i = 0; i < _instrucctionsPanelObjects.Count; i++)
             {
                 _instrucctionsPanelObjects[i].SetActive(false);
@@ -53,5 +56,10 @@ public class EventSpritesScript : MonoBehaviour
             _mainLogoInScene.transform.localScale = new Vector3(150, 150, 1);
             _mainLogoInScene.sprite = _logoSprite;
         }
+    }
+
+    private bool ListIsNotEmpty(List<GameObject> list)
+    {
+        return list[0] != null;
     }
 }
