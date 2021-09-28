@@ -65,7 +65,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7c59122a23683c4eb97dbb19804f4c4, type: 3}
+  m_Sprite: {fileID: -5863625715479459650, guid: 97ee9bea0713f1e438b0fcc588aae372,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -140,7 +141,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300028, guid: f7c59122a23683c4eb97dbb19804f4c4, type: 3}
+  m_Sprite: {fileID: 8417135091573770536, guid: 97ee9bea0713f1e438b0fcc588aae372,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -320,13 +322,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 6831462746209055296}
-    characterCount: 0
+    characterCount: 6
     spriteCount: 0
     spaceCount: 1
-    wordCount: 0
+    wordCount: 2
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -487,7 +489,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 10, y: 483.05}
+  m_AnchoredPosition: {x: 0, y: 483.05}
   m_SizeDelta: {x: 820.90326, y: 341.89056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3394123899901521241
@@ -517,7 +519,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300026, guid: f7c59122a23683c4eb97dbb19804f4c4, type: 3}
+  m_Sprite: {fileID: -8163829208917997572, guid: 97ee9bea0713f1e438b0fcc588aae372,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -727,8 +730,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4, y: 483.05}
-  m_SizeDelta: {x: 820.90326, y: 341.89056}
+  m_AnchoredPosition: {x: 0, y: 476.6}
+  m_SizeDelta: {x: 789.7686, y: 328.92365}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8938034219768091910
 CanvasRenderer:
@@ -757,7 +760,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300024, guid: f7c59122a23683c4eb97dbb19804f4c4, type: 3}
+  m_Sprite: {fileID: -6097980417247468659, guid: 97ee9bea0713f1e438b0fcc588aae372,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -832,7 +836,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300022, guid: f7c59122a23683c4eb97dbb19804f4c4, type: 3}
+  m_Sprite: {fileID: -99221536739018632, guid: 97ee9bea0713f1e438b0fcc588aae372, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1295,7 +1299,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7c59122a23683c4eb97dbb19804f4c4, type: 3}
+  m_Sprite: {fileID: 5780524277755074943, guid: 97ee9bea0713f1e438b0fcc588aae372,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1632,13 +1637,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 573459434049433241}
-    characterCount: 0
+    characterCount: 6
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
+    spaceCount: 1
+    wordCount: 2
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -1689,7 +1694,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: -51.049805}
+  m_AnchoredPosition: {x: 0, y: -57}
   m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1904434096356101545
@@ -1946,13 +1951,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1938157081489206785}
-    characterCount: 0
+    characterCount: 12
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 0
+    spaceCount: 2
+    wordCount: 3
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
@@ -2004,7 +2009,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 470.8493}
+  m_AnchoredPosition: {x: -10, y: 470.8493}
   m_SizeDelta: {x: 820.90326, y: 341.89056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6067858323884216463
@@ -2034,7 +2039,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7c59122a23683c4eb97dbb19804f4c4, type: 3}
+  m_Sprite: {fileID: 1700331497219459848, guid: 97ee9bea0713f1e438b0fcc588aae372,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -13574,7 +13580,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 9, y: 471}
+  m_AnchoredPosition: {x: 0, y: 476}
   m_SizeDelta: {x: 820.90326, y: 341.89056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3126973991345882617
@@ -13604,7 +13610,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300012, guid: f7c59122a23683c4eb97dbb19804f4c4, type: 3}
+  m_Sprite: {fileID: 3035898668323395814, guid: 97ee9bea0713f1e438b0fcc588aae372,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15535,7 +15542,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7, y: 471}
+  m_AnchoredPosition: {x: 0, y: 479}
   m_SizeDelta: {x: 820.90326, y: 341.89056}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7143518325922541193
@@ -15565,7 +15572,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300030, guid: f7c59122a23683c4eb97dbb19804f4c4, type: 3}
+  m_Sprite: {fileID: -8784734419949543066, guid: 97ee9bea0713f1e438b0fcc588aae372,
+    type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -15719,7 +15727,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -46}
+  m_AnchoredPosition: {x: 0, y: -54}
   m_SizeDelta: {x: 700, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7516446497322970414
@@ -15819,13 +15827,13 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 7954578452263926232}
-    characterCount: 0
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
-    wordCount: 0
+    wordCount: 1
     linkCount: 0
-    lineCount: 0
-    pageCount: 0
+    lineCount: 1
+    pageCount: 1
     materialCount: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0

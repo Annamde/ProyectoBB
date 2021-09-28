@@ -9,17 +9,18 @@ public class EventSpritesScript : MonoBehaviour
     [SerializeField] private SpriteRenderer _mainLogoInScene;
     [SerializeField] private Sprite _normalLogoSprite;
     [SerializeField] private List<GameObject> _instrucctionsPanelObjects;
+    [SerializeField] private List<GameObject> _toggleNormalObject;
 
     [Header("Event objects")]
-    [SerializeField]
-    private List<GameObject> _eventSpritesList;
-    [SerializeField]
-    private Sprite _logoSprite;
-    [SerializeField]
-    private List<GameObject> _instrucctionsEventObjects;
+    [SerializeField] private List<GameObject> _eventSpritesList;
+    [SerializeField] private Sprite _logoSprite;
+    [SerializeField] private List<GameObject> _instrucctionsEventObjects;
+    [SerializeField] private List<Sprite> _toggleSpritesEvent;
           
 
     public List<GameObject> EventSpritesList => _eventSpritesList;
+   // public List<GameObject> 
+
 
     //---INFO LOGOS---
     //size logo normal 90/90/x
