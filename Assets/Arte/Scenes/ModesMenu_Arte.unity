@@ -653,7 +653,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 714318143}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -310, y: -128, z: 0}
+  m_LocalPosition: {x: -472, y: 136, z: 0}
   m_LocalScale: {x: 76.107185, y: 76.107185, z: 76.107185}
   m_Children: []
   m_Father: {fileID: 1934025020}
@@ -1343,6 +1343,7 @@ MonoBehaviour:
   - {fileID: 1619680383}
   - {fileID: 1228458363}
   - {fileID: 714318143}
+  - {fileID: 1787125010}
   _logoSprite: {fileID: 21300062, guid: dae5982abf27b094eacb4c72a8c206b0, type: 3}
   _instrucctionsEventObjects:
   - {fileID: 7210453074301718614}
