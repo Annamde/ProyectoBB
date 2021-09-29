@@ -15,11 +15,10 @@ public class EventSpritesScript : MonoBehaviour
     [SerializeField] private List<GameObject> _eventSpritesList;
     [SerializeField] private Sprite _logoSprite;
     [SerializeField] private List<GameObject> _instrucctionsEventObjects;
-    [SerializeField] private List<Sprite> _toggleSpritesEvent;
+    [SerializeField] private List<GameObject> _toggleSpritesEvent;
           
 
     public List<GameObject> EventSpritesList => _eventSpritesList;
-   // public List<GameObject> 
 
 
     //---INFO LOGOS---
@@ -47,6 +46,20 @@ public class EventSpritesScript : MonoBehaviour
             for (int i = 0; i < _instrucctionsPanelObjects.Count; i++)
             {
                 _instrucctionsPanelObjects[i].SetActive(false);
+            }
+        }
+        if (ListIsNotEmpty(_toggleSpritesEvent))
+        {
+            for (int i = 0; i < _toggleSpritesEvent.Count; i++)
+            {
+                _toggleSpritesEvent[i].SetActive(true);
+            }
+        }
+        if (ListIsNotEmpty(_toggleNormalObject))
+        {
+            for (int i = 0; i < _toggleNormalObject.Count; i++)
+            {
+                _toggleNormalObject[i].SetActive(false);
             }
         }
     }
