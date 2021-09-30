@@ -482,6 +482,7 @@ GameObject:
   m_Component:
   - component: {fileID: 194410326}
   - component: {fileID: 194410327}
+  - component: {fileID: 194410328}
   m_Layer: 0
   m_Name: "Telara\xF1a"
   m_TagString: Untagged
@@ -489,20 +490,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &194410326
-Transform:
+--- !u!224 &194410326
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194410325}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -339.84, y: -769.92004, z: -17280}
+  m_LocalPosition: {x: 0, y: 0, z: -17280}
   m_LocalScale: {x: 115.01485, y: 115.01485, z: 115.01485}
   m_Children: []
   m_Father: {fileID: 122854814}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 200, y: 194}
+  m_SizeDelta: {x: 3.7999878, y: 3.789978}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &194410327
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -553,6 +559,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &194410328
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194410325}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &270502184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,6 +1707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1521174335}
   - component: {fileID: 1521174336}
+  - component: {fileID: 1521174337}
   m_Layer: 0
   m_Name: "Ara\xF1a"
   m_TagString: Untagged
@@ -1687,20 +1715,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &1521174335
-Transform:
+--- !u!224 &1521174335
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521174334}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 368.63998, y: 664.32, z: -17280}
+  m_LocalPosition: {x: 0, y: 0, z: -17280}
   m_LocalScale: {x: 84.43647, y: 84.43647, z: 84.43647}
   m_Children: []
   m_Father: {fileID: 122854814}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -4.25, y: 0}
+  m_SizeDelta: {x: 4.25, y: 7.0699463}
+  m_Pivot: {x: -0, y: 1}
 --- !u!212 &1521174336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1751,6 +1784,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &1521174337
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521174334}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &2061102306
 GameObject:
   m_ObjectHideFlags: 0

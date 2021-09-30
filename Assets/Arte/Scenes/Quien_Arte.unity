@@ -216,7 +216,7 @@ RectTransform:
   - {fileID: 1626372164}
   - {fileID: 1544957129}
   - {fileID: 984409538}
-  - {fileID: 591663969}
+  - {fileID: 591663970}
   - {fileID: 1507851802}
   - {fileID: 1393725072}
   - {fileID: 1119176968}
@@ -306,6 +306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 171245876}
   - component: {fileID: 171245877}
+  - component: {fileID: 171245878}
   m_Layer: 0
   m_Name: MurcielagoSinColor (3)
   m_TagString: Untagged
@@ -313,20 +314,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &171245876
-Transform:
+--- !u!224 &171245876
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 171245875}
   m_LocalRotation: {x: -0, y: -0, z: 0.11598665, w: 0.99325085}
-  m_LocalPosition: {x: -391.68, y: -825.60004, z: -17280}
+  m_LocalPosition: {x: 0, y: 0, z: -17280}
   m_LocalScale: {x: 41.081768, y: 41.081768, z: 41.081764}
   m_Children: []
   m_Father: {fileID: 122854814}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.321001}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 102.60004, y: 137.75995}
+  m_SizeDelta: {x: 5.3900146, y: 3.3200073}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &171245877
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -377,6 +383,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &171245878
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171245875}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &270502184
 GameObject:
   m_ObjectHideFlags: 0
@@ -665,8 +692,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 591663969}
+  - component: {fileID: 591663970}
   - component: {fileID: 591663968}
+  - component: {fileID: 591663969}
   m_Layer: 0
   m_Name: Tumba
   m_TagString: Untagged
@@ -724,20 +752,46 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!4 &591663969
-Transform:
+--- !u!223 &591663969
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591663967}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &591663970
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 591663967}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -729.7, z: -17280}
+  m_LocalPosition: {x: 0, y: 0, z: -17280}
   m_LocalScale: {x: 115.19328, y: 115.19328, z: 115.19328}
   m_Children: []
   m_Father: {fileID: 122854814}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -14.719958, y: 233.65997}
+  m_SizeDelta: {x: 4.29, y: 4.210022}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &738767527
 GameObject:
   m_ObjectHideFlags: 0
@@ -748,6 +802,7 @@ GameObject:
   m_Component:
   - component: {fileID: 738767528}
   - component: {fileID: 738767529}
+  - component: {fileID: 738767530}
   m_Layer: 0
   m_Name: MurcielagoSinColor (4)
   m_TagString: Untagged
@@ -755,20 +810,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &738767528
-Transform:
+--- !u!224 &738767528
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 738767527}
   m_LocalRotation: {x: -0, y: -0, z: 0.11598665, w: 0.99325085}
-  m_LocalPosition: {x: -291.84, y: -656.64, z: -17280}
+  m_LocalPosition: {x: 0, y: 0, z: -17280}
   m_LocalScale: {x: 41.081768, y: 41.081768, z: 41.081764}
   m_Children: []
   m_Father: {fileID: 122854814}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 13.321001}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 202.44006, y: 306.71997}
+  m_SizeDelta: {x: 5.3900146, y: 3.3200073}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &738767529
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -819,6 +879,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &738767530
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 738767527}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &838418355
 GameObject:
   m_ObjectHideFlags: 0
@@ -888,6 +969,7 @@ GameObject:
   m_Component:
   - component: {fileID: 984409538}
   - component: {fileID: 984409539}
+  - component: {fileID: 984409540}
   m_Layer: 0
   m_Name: MurcielagoSinColor
   m_TagString: Untagged
@@ -895,20 +977,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &984409538
-Transform:
+--- !u!224 &984409538
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 984409537}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 391.68, y: -810.24, z: -17280}
+  m_LocalPosition: {x: 0, y: 0, z: -17280}
   m_LocalScale: {x: 41.081764, y: 41.081764, z: 41.081764}
   m_Children: []
   m_Father: {fileID: 122854814}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -132.03998, y: 153.12}
+  m_SizeDelta: {x: 5.3900146, y: 3.3200073}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &984409539
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -959,6 +1046,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &984409540
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 984409537}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1001 &1000573343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1680,6 +1788,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1544957129}
   - component: {fileID: 1544957130}
+  - component: {fileID: 1544957131}
   m_Layer: 0
   m_Name: MurcielagoSinColor (1)
   m_TagString: Untagged
@@ -1687,20 +1796,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &1544957129
-Transform:
+--- !u!224 &1544957129
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1544957128}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 318.72, y: -639.36, z: -17280}
+  m_LocalPosition: {x: 0, y: 0, z: -17280}
   m_LocalScale: {x: 41.081764, y: 41.081764, z: 41.081764}
   m_Children: []
   m_Father: {fileID: 122854814}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -205, y: 324}
+  m_SizeDelta: {x: 5.3900146, y: 3.3200073}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1544957130
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1751,6 +1865,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &1544957131
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1544957128}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &1626372163
 GameObject:
   m_ObjectHideFlags: 0
@@ -1761,6 +1896,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1626372164}
   - component: {fileID: 1626372165}
+  - component: {fileID: 1626372166}
   m_Layer: 0
   m_Name: MurcielagoSinColor (2)
   m_TagString: Untagged
@@ -1768,20 +1904,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!4 &1626372164
-Transform:
+--- !u!224 &1626372164
+RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1626372163}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 497.27997, y: -472.32, z: -17280}
+  m_LocalPosition: {x: 0, y: 0, z: -17280}
   m_LocalScale: {x: 60.725662, y: 60.725662, z: 60.725662}
   m_Children: []
   m_Father: {fileID: 122854814}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -26.439941, y: 491.03998}
+  m_SizeDelta: {x: 5.3900146, y: 3.3200073}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!212 &1626372165
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1832,6 +1973,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!223 &1626372166
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626372163}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1001 &1946044048
 PrefabInstance:
   m_ObjectHideFlags: 0
