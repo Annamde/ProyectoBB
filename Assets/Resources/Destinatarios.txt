@@ -11,10 +11,12 @@ Grupo familia
 Hermanx
 Tíx más cercano
 Primx
-Profesor
 Más guapx
 El de tu izquierda elige contacto
 El de tu derecha elige contacto
+El de delante elige contacto
+El más joven elige contacto
+El más viejo elige contacto
 Suegra
 Suegro
 Ex-suegra
@@ -35,6 +37,21 @@ Alguien con quien no has hablado nunca
 Alguien del género opuesto
 Contacto que empiece por C
 Primer contacto que empiece por A
+Primer contacto que empiece por S
+Primer contacto que empiece por L
+Primer contacto que empiece por D
+Primer contacto que empiece por J
+Primer contacto que empiece por M
+Primer contacto que empiece por P
+Primer contacto que empiece por R
+Primer contacto que empiece por T
+Primer contacto rubio
+Primer contacto castaño
+Primer contacto pelirrojo
+Contacto sin foto
+Primer contacto con gafas
 Pelirrojx
 Último hombre con el que hablaste
 Última mujer con la que hablaste
+Última llamada
+Última persona que besaste

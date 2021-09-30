@@ -110,7 +110,6 @@ Yo nunca me he roto el frenillo follando.
 Yo nunca me he masturbado con alguien ajeno al lado.
 Yo nunca me he acostado con alguien por lástima.
 Yo nunca me he masturbado en la ducha.
-Yo nunca me he follado a un animal.
 Yo nunca he atado a mi pareja durante el sexo.
 Yo nunca he sido atado durante el sexo.
 Yo nunca lo he hecho con alguien menor de edad.
@@ -131,7 +130,7 @@ Yo nunca me he masturbado en el coche.
 Yo nunca he mentido sobre ser virgen.
 Yo nunca me he masturbado y no me he lavado las manos después.
 Yo nunca he recibido un beso negro.
-Yo nunca he dadoun beso negro.
+Yo nunca he dado un beso negro.
 Yo nunca me he medido el pene.
 Yo nunca he follado en el cine.
 Yo nunca he follado en el capó de un coche.
@@ -268,3 +267,6 @@ Yo nunca he usado preservativos de sabores.
 Yo nunca he jugado al strip poker.
 Yo nunca me liaría con alguien de aquí.
 Yo nunca tendría relaciones con alguien aquí presente.
+Yo nunca he hecho beso de tres.
+Yo nunca me ha llegado a gustar el ex de alguien presente.
+Yo nunca he tenido sexo con el familiar de un amigo.
