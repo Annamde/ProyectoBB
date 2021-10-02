@@ -8,7 +8,7 @@ public class EventInScene : MonoBehaviour
     [SerializeField]
     private List<GameObject> _eventObjects;
 
-    private void Awake()
+    private void Start()
     {
         if (GameManager.Instance.ActiveHalloweenEvent)
         {

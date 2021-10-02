@@ -32,7 +32,7 @@ public class RemoteConfigDrinkKingOptions : MonoBehaviour //esta en el modoscont
     {
         _changeMenu = ConfigManager.appConfig.GetBool("changeMenu");
 
-        if (_changeMenu && _modes[2] != null)
+        if (_changeMenu && _modes.First() != null)
         {
             _modes = _modes.OrderBy(go => go.name).ToList();
 
@@ -70,11 +70,11 @@ public class RemoteConfigDrinkKingOptions : MonoBehaviour //esta en el modoscont
     private void EnableHalloweenAssets(ConfigResponse response)
     {
         _halloweenActive = ConfigManager.appConfig.GetBool("HalloweenActive");
+        GameManager.Instance.ActiveHalloweenEvent = _halloweenActive;
         if (_halloweenActive)
         {
             _halloweenEventScript.EnableEventSprites();
             _halloweenEventScript.ChangeLogoSprite();
         }
     }
-
 }
