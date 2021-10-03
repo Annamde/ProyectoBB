@@ -1,4 +1,4 @@
-﻿using System.Collections;
+﻿using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
@@ -10,12 +10,14 @@ public class EventSpritesScript : MonoBehaviour
     [SerializeField] private Sprite _normalLogoSprite;
     [SerializeField] private List<GameObject> _instrucctionsPanelObjects;
     [SerializeField] private List<GameObject> _toggleNormalObject;
+    [SerializeField] private List<Text> _modesTitles;
 
     [Header("Event objects")]
     [SerializeField] private List<GameObject> _eventSpritesList;
     [SerializeField] private Sprite _logoSprite;
     [SerializeField] private List<GameObject> _instrucctionsEventObjects;
     [SerializeField] private List<GameObject> _toggleSpritesEvent;
+    [SerializeField] private Font _modeEventFont;
           
 
     public List<GameObject> EventSpritesList => _eventSpritesList;
@@ -60,6 +62,13 @@ public class EventSpritesScript : MonoBehaviour
             for (int i = 0; i < _toggleNormalObject.Count; i++)
             {
                 _toggleNormalObject[i].SetActive(false);
+            }
+        }
+        if (_modesTitles.First() != null && _modeEventFont != null)
+        {
+            for (int i = 0; i < _modesTitles.Count; i++)
+            {
+                _modesTitles[i].font = _modeEventFont;
             }
         }
     }
