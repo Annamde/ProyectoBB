@@ -488,6 +488,7 @@ MonoBehaviour:
   ultra_buyParent: {fileID: 0}
   IARseconds: 600
   ActiveHalloweenEvent: 0
+  ActiveXmasEvent: 0
 --- !u!4 &420994938
 Transform:
   m_ObjectHideFlags: 0
@@ -2291,16 +2292,7 @@ MonoBehaviour:
   - {fileID: 448227471}
   - {fileID: 1774155693}
   _toggleNormalObject:
-  - {fileID: 2071552533}
-  - {fileID: 1823460037}
-  - {fileID: 1989747771}
-  - {fileID: 1380837549}
-  - {fileID: 2108207237}
-  - {fileID: 953735943}
-  - {fileID: 1847063928}
-  - {fileID: 1858443396}
-  - {fileID: 1969194156}
-  - {fileID: 1943398071}
+  - {fileID: 0}
   _modesTitles:
   - {fileID: 1571899349}
   - {fileID: 1431348874}
@@ -2334,7 +2326,8 @@ MonoBehaviour:
   - {fileID: 1094601381}
   - {fileID: 1752317725}
   - {fileID: 1385164914}
-  _toggleSpritesEvent: []
+  _toggleSpritesEvent:
+  - {fileID: 0}
   _modeEventFont: {fileID: 0}
 --- !u!4 &1758419123
 Transform:

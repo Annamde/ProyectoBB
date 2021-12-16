@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
 
     [HideInInspector]
     public bool ActiveHalloweenEvent;
+    public bool ActiveXmasEvent;
 
     private IAPManager iapManager;
 

@@ -86,7 +86,7 @@ public class RemoteConfigDrinkKingOptions : MonoBehaviour //esta en el modoscont
     private void EnableXmasAssets(ConfigResponse response)
     {
         _xmasActive = ConfigManager.appConfig.GetBool("XmasActive");
-        GameManager.Instance.ActiveHalloweenEvent = _xmasActive;
+        GameManager.Instance.ActiveXmasEvent = _xmasActive;
         if (_xmasActive)
         {
             _xmasEventScript.ChangeLogoSprite();

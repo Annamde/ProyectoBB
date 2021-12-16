@@ -87,6 +87,9 @@ public class EventSpritesScript : MonoBehaviour
 
     private bool ListIsNotEmpty(List<GameObject> list)
     {
+        if (list == null)
+            return false;
+
         return list.First() != null;
     }
 }

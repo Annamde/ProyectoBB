@@ -1,22 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-public class EventInScene : MonoBehaviour
+public abstract class EventInScene : MonoBehaviour
 {
     [SerializeField]
     private List<GameObject> _eventObjects;
 
     private void Start()
     {
-        if (GameManager.Instance.ActiveHalloweenEvent)
-        {
-            ActiveEventObjects();
-        }
+        InitEvent();
     }
 
-    private void ActiveEventObjects()
+    protected abstract void InitEvent();
+
+    protected void ActiveEventObjects()
     {
         if (ListIsNotEmpty(_eventObjects))
         {
