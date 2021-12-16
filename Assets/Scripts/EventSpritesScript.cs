@@ -15,6 +15,7 @@ public class EventSpritesScript : MonoBehaviour
     [Header("Event objects")]
     [SerializeField] private List<GameObject> _eventSpritesList;
     [SerializeField] private Sprite _logoSprite;
+    [SerializeField] private bool _needChangeLogoSize;
     [SerializeField] private List<GameObject> _instrucctionsEventObjects;
     [SerializeField] private List<GameObject> _toggleSpritesEvent;
     [SerializeField] private Font _modeEventFont;
@@ -77,7 +78,9 @@ public class EventSpritesScript : MonoBehaviour
     {
         if (_logoSprite != null && _mainLogoInScene != null)
         {
-            _mainLogoInScene.transform.localScale = new Vector3(150, 150, 1);
+            if (_needChangeLogoSize)
+                _mainLogoInScene.transform.localScale = new Vector3(150, 150, 1);
+
             _mainLogoInScene.sprite = _logoSprite;
         }
     }

@@ -14,6 +14,10 @@ public class RemoteConfigDrinkKingOptions : MonoBehaviour //esta en el modoscont
     [SerializeField] private EventSpritesScript _halloweenEventScript;
     private bool _halloweenActive;
 
+    [Header("Xmas")]
+    [SerializeField] private EventSpritesScript _xmasEventScript;
+    private bool _xmasActive;
+
     public struct userAtributtes { }
     public struct appAtributtes { }
 
@@ -25,6 +29,7 @@ public class RemoteConfigDrinkKingOptions : MonoBehaviour //esta en el modoscont
         ConfigManager.FetchCompleted += SetMenuUI;
         ConfigManager.FetchCompleted += SetActivePrefabNew;
         ConfigManager.FetchCompleted += EnableHalloweenAssets;
+        ConfigManager.FetchCompleted += EnableXmasAssets;
         ConfigManager.FetchConfigs<userAtributtes, appAtributtes>(new userAtributtes(), new appAtributtes());
     }
 
@@ -75,6 +80,18 @@ public class RemoteConfigDrinkKingOptions : MonoBehaviour //esta en el modoscont
         {
             _halloweenEventScript.EnableEventSprites();
             _halloweenEventScript.ChangeLogoSprite();
+        }
+    }
+
+    private void EnableXmasAssets(ConfigResponse response)
+    {
+        _xmasActive = ConfigManager.appConfig.GetBool("XmasActive");
+        GameManager.Instance.ActiveHalloweenEvent = _xmasActive;
+        if (_xmasActive)
+        {
+            _xmasEventScript.ChangeLogoSprite();
+            _xmasEventScript.EnableEventSprites();
+            
         }
     }
 }
