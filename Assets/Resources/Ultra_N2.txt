@@ -48,3 +48,11 @@
 {0}, el grupo elige con quién te vas 5 minutos
 {0}, siéntate en el regazo de {1}
 {0}, siéntate en el regazo del jugador que quieras
+{0}, besa sensualmente el abdomen de {1}
+{0}, besa sensualmente el abdomen del jugador de tu derecha
+{0}, {1} elige con quién te besas
+{0}, {1} elige qué prenda de ropa te quitas (no ropa interior)
+{0}, toca sensualmente los pechos de {1}
+{0}, muerde la nuca de {1}
+{0}, besale sensualmente la nuca de {1}
+{0}, acariciale sensualmente la nuca de {1}
