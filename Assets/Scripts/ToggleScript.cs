@@ -12,11 +12,19 @@ public class ToggleScript : MonoBehaviour
 
     public float hotLevel = 1;
 
+    public bool includeYN = true;
+    public bool includeVoR = true;
+    public bool includeQuien = true;
+
     private void Start()
     {
         GameManager.Instance.allowHot = allowHot;
         GameManager.Instance.withTime = withTime;
         GameManager.Instance.hotLevel = hotLevel;
+
+        GameManager.Instance.includeYN = includeYN;
+        GameManager.Instance.includeVoR = includeVoR;
+        GameManager.Instance.includeQuien = includeQuien;
     }
 
     public void OnHotCheck(MovementToggleScript a)
@@ -41,5 +49,26 @@ public class ToggleScript : MonoBehaviour
     {
         hotLevel = level;
         GameManager.Instance.hotLevel = hotLevel;
+    }
+
+    public void OnYNCheck(MovementToggleScript a)
+    {
+        includeYN = !includeYN;
+        GameManager.Instance.includeYN = includeYN;
+        a.CheckToggleSprite(includeYN);
+    }
+
+    public void OnVoRCheck(MovementToggleScript a)
+    {
+        includeVoR = !includeVoR;
+        GameManager.Instance.includeVoR = includeVoR;
+        a.CheckToggleSprite(includeVoR);
+    }
+
+    public void OnQuienCheck(MovementToggleScript a)
+    {
+        includeQuien = !includeQuien;
+        GameManager.Instance.includeQuien = includeQuien;
+        a.CheckToggleSprite(includeQuien);
     }
 }

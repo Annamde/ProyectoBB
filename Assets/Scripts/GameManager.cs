@@ -56,6 +56,12 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
 
     private IAPManager iapManager;
 
+    [Header("Mix")]
+    public bool includeYN = true;
+    public bool includeVoR = true;
+    public bool includeQuien = true;
+
+
     private void Awake()
     {
         if (!created)
@@ -233,6 +239,7 @@ public class GameManager : MonoBehaviour, IUnityAdsListener
 #endif
 
     }
+
 
     public void ResetPlayerPrefs()
     {
