@@ -61,6 +61,7 @@ public class RemoteConfigDrinkKingOptions : MonoBehaviour //esta en el modoscont
            _modes[8].name = ConfigManager.appConfig.GetString("LetrasName");
            _modes[9].name = ConfigManager.appConfig.GetString("EnviaOBebeName");
            _modes[10].name = ConfigManager.appConfig.GetString("UltraHotName");
+           _modes[12].name = ConfigManager.appConfig.GetString("MixName");
         }
     }
 
