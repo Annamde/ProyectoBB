@@ -650,6 +650,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!223 &537190531 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 2574955411016498592, guid: 56a39f53e9220294ca43e23963428666,
+    type: 3}
+  m_PrefabInstance: {fileID: 2574955410902663692}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &544284741
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,6 +2971,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SettingsCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 6435178327698954383, guid: 5c98d5032c8773b4080e393d4d254557,
+        type: 3}
+      propertyPath: myCanvas
+      value: 
+      objectReference: {fileID: 537190531}
     - target: {fileID: 7654722250735291539, guid: 5c98d5032c8773b4080e393d4d254557,
         type: 3}
       propertyPath: m_AnchorMin.y
